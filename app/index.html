@@ -38,7 +38,7 @@
     <script src="js/common.js"></script>
   </head>
   <body>
-    <div id="my-page">
+    <div>
       <div>
         <div class="loader">
           <div class="loader_inner"><?xml version="1.0" standalone="no"?>
@@ -48,77 +48,56 @@
           </div>
         </div>
       </div>
-      <div class="mfp-hide white-popup mfp-with-anim popup" id="popup">
-        <p class="success_mail">Спасибо! Ваша заявка уже обрабатывается менеджером и в ближайшее время он с вами свяжется.</p>
-        <form>
-          <p class="modal-title">Введите данные</p>
-          <p class="modal-paragraph">и мы Вам перезвоним</p>
-          <div>
-            <div class="input_wrap"><i class="fa fa-check"></i>
-              <input name="name" type="text" placeholder="Имя">
-            </div>
-            <div class="input_wrap"><i class="fa fa-check"></i>
-              <input name="phone" type="text" placeholder="Введите свой телефон">
-            </div>
-            <div class="input_wrap"><i class="fa fa-check"></i>
-              <input class="mask" name="phone_mask" type="text" placeholder="+38(___) ___-__-__">
-            </div>
-            <div class="input_wrap"><i class="fa fa-check"></i>
-              <input name="email" type="text" placeholder="E-mail">
-            </div>
-            <div class="input_wrap"><i class="fa fa-check"></i>
-              <textarea name="textarea" type="text" placeholder="Описание заяки"></textarea>
-            </div>
-            <div class="select">
-              <div class="slct_arrow"><i class="fa fa-angle-down"></i></div><a class="slct" href="#">Выбор заголовков:</a>
-              <ul class="drop">
-                <li>Вы крутые</li>
-                <li>Я в Вас влюбился</li>
-                <li>Быстрей Вас только Флеш</li>
-              </ul>
-              <input type="hidden" name="services">
-            </div>
-          </div>
-          <input type="hidden" name="form_name" value="">
-          <input type="hidden" name="form_type" value="modal">
-          <input type="submit" value="Отправить">
-        </form>
-      </div>
-      <div class="overlay"></div>
-      <!-- Модальное окно success-->
-      <div class="mfp-hide white-popup mfp-with-anim popup" id="popup-success">
-        <p class="success_mail">Заявка отправлена</p>
-      </div>
-      <header class="header" id="my-header">
+      <!--block modal
+      include modal
+      
+      -->
+      <header class="header">
         <div class="container">
-          <div class="header__wrap">
-            <!--.header__logo
-            a(href="/" class="logo" title="Логотип").
-                Ваш Логотип
-            -->
-            <nav class="header__nav">
-              <ul>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Reservation</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="index.html"></a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Elements</a></li>
-                <li><a href="#">shop</a></li>
-              </ul>
-            </nav>
-            <!--.header__modala(data-effect="mfp-zoom-in" data-info="Обратный звонок" href="#popup" class="open-popup-link" title='Вызов стандартного модального окна') Обратный звонок
-            --><a class="hamburger hamburger--collapse" href="#my-menu"><span class="hamburger-box"><span class="hamburger-inner"></span></span></a>
-            <nav id="my-menu">
-              <ul>
-                <li><a href="#">item 1</a></li>
-                <li class="active"><a href="#">item 2</a></li>
-              </ul>
-            </nav>
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="header__logo"><a href="index.html"><img src="img/logo.png"></a></div>
+            </div>
+            <div class="col-lg-7">
+              <div class="header__nav">
+                <ul class="header__items">
+                  <li class="header__nav-active"><a href="#">Интернет для дома</a></li>
+                  <li><a href="#">Интернет для бизнеса</a></li>
+                  <li><a href="#">Облачное видеонаблюдение</a></li>
+                  <li><a href="#">Наши контакты</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="header__personal"><a class="header__button" href="#">подключиться!</a><a class="header__cabinet" href="#"><img src="img/personal_ic.png"><span>Личный<br>кабинет</span></a></div>
+            </div>
           </div>
+          <!--.header__wrap
+          //.header__logo
+              a(href="/" class="logo" title="Логотип").
+                  Ваш Логотип
+          nav.header__nav
+              ul
+                  -var links = [{title:'About us', href:'#'},{title:'Reservation', href:'#'},{title:'Gallery', href:'#'},{title:'', href:"index.html"},{title:'Blog', href:'#'}, {title:'Elements', href:'#'}, {title:'shop', href:'#'}];
+                  each i in links
+                      li
+                          a(href=i.href)= i.title
+          //.header__modal
+              a(data-effect="mfp-zoom-in" data-info="Обратный звонок" href="#popup" class="open-popup-link" title='Вызов стандартного модального окна') Обратный звонок
+          //a(href="#my-menu").hamburger.hamburger--collapse
+              span.hamburger-box
+                  span.hamburger-inner
+          //nav#my-menu
+              ul
+                  li
+                      a(href="#") item 1
+                  li.active
+                      a(href="#") item 2
+          
+          -->
         </div>
       </header>
-      <main id="my-content">
+      <main id="idex_page">
         <section class="top-section">
           <div class="container">
             <div class="row">
@@ -132,68 +111,31 @@
         <section class="intermediate">
           <div class="container">
             <div class="row">
-              <div class="intermediate_title">
-                <h3>Заполните форму и мы бесплатно перезвоним и ответим на ваши вопросы</h3>
-              </div>
-              <div class="intermediate_wrap">
-                <form class="clearfix" id="form-file">
-                  <!--.file_wrapinput(type='file' name='field')
-                  -->
-                  <div class="row">
-                    <div class="intermediate_item">
-                      <div class="input_wrap"><i class="fa fa-check"></i>
-                        <input name="name" type="text" placeholder="Имя">
-                      </div>
-                    </div>
-                    <div class="intermediate_item">
-                      <div class="input_wrap"><i class="fa fa-check"></i>
-                        <input name="email" type="text" placeholder="Почта">
-                      </div>
-                    </div>
-                    <div class="intermediate_item">
-                      <div class="input_wrap"><i class="fa fa-check"></i>
-                        <input name="phone" type="text" placeholder="Телефон">
-                      </div>
-                    </div>
-                    <input type="hidden" name="form_name" value="baseForm">
-                    <input type="hidden" name="form_type" value="normal">
-                    <div class="intermediate_item">
-                      <input type="submit" value="Записаться">
-                    </div>
-                  </div>
-                </form>
-              </div>
+              <!--    h3 Заполните форму и мы бесплатно перезвоним и ответим на ваши вопросы-->
+              <!--.intermediate_wrap-->
+              <!--    form#form-file.clearfix-->
+              <!--        //.file_wrap-->
+              <!--            input(type='file' name='field')-->
+              <!--        .row-->
+              <!--            .intermediate_item-->
+              <!--                .input_wrap-->
+              <!--                    i.fa.fa-check-->
+              <!--                    input(name='name', type='text', placeholder='Имя')-->
+              <!--            .intermediate_item-->
+              <!--                .input_wrap-->
+              <!--                    i.fa.fa-check-->
+              <!--                    input(name='email', type='text', placeholder='Почта')-->
+              <!--            .intermediate_item-->
+              <!--                .input_wrap-->
+              <!--                    i.fa.fa-check-->
+              <!--                    input(name='phone', type='text', placeholder='Телефон')-->
+              <!--            input(type='hidden', name='form_name', value='baseForm')-->
+              <!--            input(type='hidden', name='form_type', value='normal')-->
+              <!--            .intermediate_item-->
+              <!--                input(type='submit', value='Записаться')-->
             </div>
           </div>
         </section>
-        <!--section.s-call
-        form.callback
-            //.success - эфект затемнения
-            .s-call__success
-                span Спасибо за заявку
-        
-            //название сайта
-            input(type='hidden' name='project_name' value='Site Name !')
-            //почта админа
-            input(type='hidden' name='admin_email' value='slavikov.net@mail.ru')
-            //тема письма
-            input(type='hidden' name='form_subject' value='Form Subject')
-            //с какой страницы
-            input(type="hidden" name="Станица" value="")
-        
-            .formhead Оставить заявку
-        
-            // END Hidden Required Fields
-            input(type='text' name='Name' placeholder='You name...' required='')
-            input(type='text' name='E-mail' placeholder='You E-mail...' required='')
-        
-            input(type='text' name='Phone' placeholder='You phone...' required='')
-            select(name="Услуга")
-                option услуга 1
-                option услуга 2
-                option услуга 3
-            button Send
-        -->
       </main>
       <footer class="footer" id="my-footer">
         <h3>footer</h3>

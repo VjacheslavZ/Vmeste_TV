@@ -38,18 +38,43 @@ html(class="no-js" lang='en')
         script(src='js/common.js')
 
     body
-        div#my-page
+        div
             div
                 .loader
                     .loader_inner
                         include ../img/preloader.svg
 
-            block modal
+            //block modal
                 include modal
 
-            header#my-header.header
+            header.header
                 .container
-                    .header__wrap
+                    .row
+                        .col-lg-3.col-md-3.col-sm-3
+                            .header__logo
+                                a(href="index.html")
+                                    img(src="img/logo.png")
+                        .col-lg-7
+                            .header__nav
+                                ul.header__items
+                                    li.header__nav-active
+                                        a(href="#") Интернет для дома
+                                    li
+                                        a(href="#") Интернет для бизнеса
+                                    li
+                                        a(href="#") Облачное видеонаблюдение
+                                    li
+                                        a(href="#") Наши контакты
+                        .col-lg-6
+                            .header__personal
+                                a(href="#").header__button подключиться!
+                                a(href="#").header__cabinet
+                                    img(src="img/personal_ic.png")
+                                    span Личный
+                                        br
+                                        | кабинет
+
+                    //.header__wrap
                         //.header__logo
                             a(href="/" class="logo" title="Логотип").
                                 Ваш Логотип
@@ -61,10 +86,10 @@ html(class="no-js" lang='en')
                                         a(href=i.href)= i.title
                         //.header__modal
                             a(data-effect="mfp-zoom-in" data-info="Обратный звонок" href="#popup" class="open-popup-link" title='Вызов стандартного модального окна') Обратный звонок
-                        a(href="#my-menu").hamburger.hamburger--collapse
+                        //a(href="#my-menu").hamburger.hamburger--collapse
                             span.hamburger-box
                                 span.hamburger-inner
-                        nav#my-menu
+                        //nav#my-menu
                             ul
                                 li
                                     a(href="#") item 1

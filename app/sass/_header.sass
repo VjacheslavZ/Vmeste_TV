@@ -1,16 +1,66 @@
 .header
   width: 100%
+  padding: 18px 0
   &__nav
+    padding-top: 13px
+  &__items
+    display: flex
+    flex-direction: row
+    //justify-content: space-between
+    li
+      display: block
+      font-family: $ERegular
+      font-size: 16px
+      line-height: 20px
+      text-transform: uppercase
+      a
+        transition: all .3s ease
+        border-bottom: 1px solid transparent
+        color: $text_grey_color
+        &:hover
+          border-bottom: 1px solid $text-green_color
+          color: $text-green_color
+    li.header__nav-active
+      font-family: $EExtraBold
+      a
+        color: $text_accent_color
+        &:hover
+          color: $text_accent_color
+          border-bottom: 1px solid transparent
+    //li + li
+      margin-left: 60px
+  &__button
+    background-color: $btn_color
     display: inline-block
+    border: none
+    text-decoration: none
+    padding: 15px 26px
+    font-size: 19px
+    font-family: $ESemiBold
+    color: $text_grey_color
+    text-transform: uppercase
+    letter-spacing: 2px
+    //border-radius: 2px
+    text-align: center
     position: relative
-    ul
-      li
-        list-style: none
-        display: inline-block
-        a
-          margin-right: 15px
-          color: #fff
-          text-decoration: none
-          transition: .5s
-.hamburger
+    outline: none
+    transition: background-color .1s ease
+    transition: box-shadow .3s ease
+    &:hover
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.25)
+      color: $text_grey_color
+  &__personal
+    display: flex
+    align-items: center
+    justify-content: flex-end
+  &__cabinet
+    margin-left: 32px
+    span
+      display: inline-block
+      vertical-align: middle
+      //width: 70px
+      margin-left: 20px
+      line-height: 19px
+
+//.hamburger
   display: none

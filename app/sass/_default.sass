@@ -1,36 +1,44 @@
-.container
-  width: 1170px
-  margin: 0 auto
-
 body
   font-size: 16px
-  font-family: $OpenSansRegular
-  background-color: $bgColor
+  font-family: $ERegular
+  background-color: $bgColorMain
   margin: 0
   position: relative
   line-height: 1.6
   overflow-x: hidden
   -webkit-tap-highlight-color: transparent
+
   //внешний вид скроллбара
-  scrollbar-base-color: $scroll_barr_color
-  scrollbar-arrow-color: $scroll_barr_color
+  //scrollbar-base-color: $scroll_barr_color
+  //scrollbar-arrow-color: $scroll_barr_color
   //внешний вид скроллбара для -webkit- остальное тут https://poselab.com/en/blog/custom-scrollbars-in-webkit/
-  &::-webkit-scrollbar
+  //&::-webkit-scrollbar
     width: 17px
-  &::-webkit-scrollbar-thumb
+  //&::-webkit-scrollbar-thumb
     background-color: $scroll_barr_color
     &:hover
       background-color: darken($scroll_barr_color, 10%)
-  &::-webkit-scrollbar-track-piece
+  //&::-webkit-scrollbar-track-piece
     background-color: transparent
 
 p,ul
   padding: 0
   margin: 0
+
 li
   list-style: none
 
-.button
+a
+  color: #000
+  text-decoration-color: transparent
+  &:hover
+    color: #000
+
+a:focus, a:hover
+  text-decoration: none
+  text-decoration-color: transparent
+
+.cusom__button
   display: inline-block
   border: none
   color: #fff
@@ -81,7 +89,7 @@ input, textarea, select
   margin-top: 10px
   //стиль для черточки
   &:focus:required:invalid
-    color: blue
+    color: #000
   &::-webkit-input-placeholder
     color: #000
   &::-moz-placeholder
