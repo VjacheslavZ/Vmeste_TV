@@ -48,10 +48,23 @@
           </div>
         </div>
       </div>
-      <!--block modal
-      include modal
-      
-      -->
+      <div class="mfp-hide white-popup mfp-with-anim popup" id="callBack"><a class="callback__show-plans" href="#">Посмотреть все тарифы</a>
+        <form class="callback mfp-close-btn-in" name="popUp">
+          <div class="callback__wrap">
+            <div class="callback__form-name">
+              <input type="text" name="street" placeholder="Улица" required="">
+              <input type="text" name="fullName" placeholder="ФИО" required="">
+            </div>
+            <div class="callback__form-contacts">
+              <input type="text" name="house" placeholder="Дом" required="">
+              <input type="text" name="flat" placeholder="Кв." required="">
+              <input type="text" name="phone" placeholder="Тел." required="">
+            </div>
+            <input type="hidden" name="form_name" value="">
+          </div>
+          <button class="custom__btn-form">подключить!</button>
+        </form>
+      </div>
       <header class="header">
         <div class="container">
           <div class="row">
@@ -128,20 +141,20 @@
                     <div class="designer__finish-price"><span class="designer__price-txt">и того в месяц</span><span class="designer__price-finish"></span></div>
                   </div>
                   <div class="designer__builder-form_wrap">
-                    <form class="designer__builder-form" id="form" name="Физическое лицо">
+                    <form class="designer__builder-form" name="Физическое лицо">
                       <div class="designer__select-wrap"><span class="designer__item-title"> Wifi-роутер</span>
                         <div class="designer__item">
-                          <input class="radio" type="radio" name="router" value="Аренда 100 Р/мес" id="rent" required="">
+                          <input class="radio" type="radio" name="router" value="Аренда 100 Р/мес" id="rent">
                           <label for="rent">Аренда 100 Р/мес</label>
                         </div>
                         <div class="designer__item">
-                          <input class="radio" type="radio" name="router" value="Выкуп 1500 Р" id="buy" required="">
+                          <input class="radio" type="radio" name="router" value="Выкуп 1500 Р" id="buy">
                           <label for="buy">Выкуп 1500 Р</label>
                         </div>
                       </div>
                       <div class="designer__select-wrap"><span class="designer__item-title"> кабельное тв</span>
                         <div class="designer__item">
-                          <input class="radio" type="radio" name="tv" value="Кабельное ТВ (115 каналов) 100 Р/мес" id="tv" required="">
+                          <input class="radio" type="radio" name="tv" value="Кабельное ТВ (115 каналов) 100 Р/мес" id="tv">
                           <label for="tv">Кабельное ТВ (115 каналов) 100 Р/мес</label>
                         </div>
                         <div class="designer__item">
@@ -151,17 +164,17 @@
                       </div>
                       <div class="designer__select-wrap"><span class="designer__item-title"> дополнительно</span>
                         <div class="designer__item">
-                          <input class="radio" type="radio" name="additional" value="Безлимитный телефон, 350 Р/мес" id="phone" required="">
+                          <input class="radio" type="radio" name="additional" value="Безлимитный телефон, 350 Р/мес" id="phone">
                           <label for="phone">Безлимитный телефон, 350 Р/мес</label>
                         </div>
                         <div class="designer__item">
-                          <input class="radio" type="radio" name="additional" value="Антивирус «Касперского», 99 Р/мес" id="antivirus" required="">
+                          <input class="radio" type="radio" name="additional" value="Антивирус «Касперского», 99 Р/мес" id="antivirus">
                           <label for="antivirus">Антивирус «Касперского», 99 Р/мес</label>
                         </div>
                       </div>
                       <input type="hidden" name="form_name" value="baseForm">
                       <input type="hidden" name="form_type" value="normal">
-                      <button class="custom__btn-form" href="#callBack">я молодец!</button>
+                      <!--button(href="#callBack" type="submit").custom__btn-form я молодец!--><a class="custom__btn-form" href="#callBack">я молодец!</a>
                     </form>
                   </div>
                 </div>

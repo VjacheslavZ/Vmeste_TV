@@ -186,6 +186,8 @@ a:focus, a:hover {
   .custom__btn-form:hover {
     -webkit-box-shadow: 0 2px 17px rgba(7, 78, 31, 0.51), 0 0 88.9px 4.1px rgba(206, 242, 0, 0.55);
             box-shadow: 0 2px 17px rgba(7, 78, 31, 0.51), 0 0 88.9px 4.1px rgba(206, 242, 0, 0.55); }
+  .custom__btn-form:focus {
+    outline: none; }
 
 input, textarea, select {
   background-color: #fff;
@@ -279,6 +281,12 @@ input, textarea, select {
 .radio:checked + label:after {
   opacity: 1; }
 
+input.error + label {
+  color: red; }
+
+#form label.error {
+  display: none !important; }
+
 .input_wrap {
   position: relative;
   display: block; }
@@ -289,6 +297,90 @@ input, textarea, select {
     right: 16px;
     font-size: 14px;
     color: #35be70; }
+
+.mfp-close-btn-in .mfp-close {
+  color: #fff; }
+
+.mfp-content {
+  text-align: center; }
+
+.white-popup.mfp-with-anim.popup {
+  display: inline-block;
+  text-align: initial;
+  position: relative;
+  padding: 35px 50px 60px;
+  width: 653px;
+  -webkit-box-shadow: 0px 17px 100px 13px #e4e4e433;
+          box-shadow: 0px 17px 100px 13px #e4e4e433;
+  background-color: #0a2538; }
+  .white-popup.mfp-with-anim.popup:before {
+    content: "";
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    left: 0;
+    -webkit-box-shadow: -2px -8px 100px 15px #ffffff21;
+            box-shadow: -2px -8px 100px 15px #ffffff21; }
+
+.mfp-close-btn-in .mfp-close {
+  top: 28px;
+  right: 37px; }
+
+.callback {
+  position: relative;
+  display: block;
+  margin-top: 80px;
+  text-align: center; }
+  .callback__show-plans {
+    font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    color: #176bc2;
+    border-bottom: 1px solid #176bc2; }
+    .callback__show-plans:hover {
+      color: #176bc2; }
+  .callback__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .callback__wrap input {
+      -webkit-border-radius: 0;
+              border-radius: 0;
+      width: 100%; }
+      .callback__wrap input:last-child {
+        margin-top: 19px; }
+  .callback__form-name {
+    width: 60%; }
+  .callback__form-contacts {
+    width: 40%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .callback__form-contacts input:first-child {
+      width: 90px; }
+    .callback__form-contacts input:nth-child(2) {
+      width: 90px; }
+    .callback__form-contacts input {
+      width: 200px; }
+  .callback .custom__btn-form {
+    margin-top: 55px;
+    padding: 26px 54px; }
+  .callback input.error {
+    border-color: red; }
 
 .header {
   width: 100%;

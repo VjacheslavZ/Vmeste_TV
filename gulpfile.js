@@ -52,7 +52,7 @@ gulp.task("scripts-libs", function () {
       "app/libs/owl.carousel/dist/owl.carousel.min.js",
       "app/libs/magnific-popup/dist/jquery.magnific-popup.min.js",
       // "app/libs/tooltipster/dist/js/tooltipster.bundle.js",
-      // "app/libs/jquery-validation/dist/jquery.validate.js",
+      "app/libs/jquery-validation/dist/jquery.validate.js",
       // "app/libs/jquery-mask-plugin/dist/jquery.mask.min.js",
       // "app/libs/select2/dist/js/select2.full.js",
       // "app/libs/mmenu/mmenu/jquery.mmenu.all.js",
