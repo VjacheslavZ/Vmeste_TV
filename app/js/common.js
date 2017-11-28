@@ -56,9 +56,9 @@ $(document).ready(function () {
     });
 
 });
+
 //modal
 $(document).ready(function () {
-
     $("#service__slider").owlCarousel({
         loop: true,
         items: 1,
@@ -115,46 +115,31 @@ $(document).ready(function () {
     })();
 
 
+    //    //$(".footer__nav-links ul li").equalHeights();
+
+
+
     //попап
     $("a[href='#callBack']").magnificPopup({
         removalDelay: 300,
         mainClass: 'mfp-fade'
-    });});
+    });
+
+    // $(".col-lg-8").equalHeights();
+});
+
+
+
+
+
 
 $(document).ready(function () {
 
-    // Инициализация маски в input
-    // $(".mask").mask("+38(999) 999-99-99");
-
-    //mob menu
-    // $("#my-menu").mmenu({
-    //     extensions: ["theme-black", "effect-menu-slide", "pagedim-black"],
-    //     offCanvas: {
-    //         position: "right"
-    //     }
-    // });
-
-    //   Get the API
-    // var api = $("#my-menu").data("mmenu");
-    //
-    // //   Hook into methods
-    // api.bind("open:finish", function() {
-    //     $(".hamburger").addClass("is-active")
-    // }).bind("close:finish", function () {
-    //     $(".hamburger").removeClass("is-active")
-    // })
-
-    //styling select
-    // $("select").selectize({
-    //     create: true,
-    //     sortText: "text",
-    // });
 
     //hide preloader
     $(".loader_inner").fadeOut("slow");
     $(".loader").fadeOut("slow");
 
-    //com
 });
 
 

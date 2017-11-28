@@ -77,8 +77,59 @@ html(class="no-js" lang='en')
 
             block main
 
-            footer.footer#my-footer
-                h3 footer
+            footer.footer
+                .container
+                    .row
+                        .footer__wrap.clearfix
+                            .col-lg-8
+                                .footer__main.footer__info
+                                    .footer__logo
+                                        a(href="#")
+                                            img(src="img/logo-footer.png")
+                                        span.footer__copyRight © «Вместе» 2017
+
+                                    .footer__nav
+                                        .footer__nav-links
+                                            span Компания
+                                            ul
+                                                li
+                                                    a(href="#") О нас
+                                                li
+                                                    a(href="#") Оплата услуг
+                                                li
+                                                    a(href="#") Наши партнеры
+                                                li
+                                                    a(href="#") Вакансии
+                                                li
+                                                   a(href="#") Контакты
+                                        .footer__nav-links
+                                            span Интернет для
+                                                ul
+                                                    li
+                                                        a(href="#") Загородного дома.
+                                                    li
+                                                        a(href="#") Многоквартирного дома
+                                                    li
+                                                        a(href="#") Бизнеса
+                                            .footer__searc
+                                                input(type="search" name="searc" placeholder="найти")#footer_search
+                                                button.footer__search-btn
+                                                    i.fa.fa-search
+
+                            .col-lg-8
+                                .footer__social.footer__info
+                                    .footer__social-networks
+                                        a(href="#" target="_blank").footer__mail
+                                        a(href="#" target="_blank").footer__tw
+                                        a(href="#" target="_blank").footer__vk
+                                    .footer__made
+                                        span Сделано в
+                                            a(href="#") Деловом мире
+
+
+
+
+
 
         link(rel='stylesheet', href='css/libs.min.css')
         link(rel='stylesheet', href='css/main.css')
