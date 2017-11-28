@@ -66,14 +66,41 @@ block main
                             p.designer__info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
 
                         .col-lg-11
-                            .designer__set-speed
-
-                                input#ex6(type='text', data-slider-value='50')
-
-
-
-                                span#ex6CurrentSliderValLabel
-                                    | Current Slider Value:
-                                    span#ex6SliderVal 3
-
-
+                            .designer__builder-wrap
+                                .designer__set-speed
+                                    input#designer__set_speed(type='text', data-slider-value='50')
+                                    span#ex6CurrentSliderValLabel
+                                        | Current Slider Value:
+                                        span#ex6SliderVal 3
+                                .designer__finish-price
+                                    span.designer__price-txt и того в месяц
+                                    span.designer__price-finish
+                            .designer__builder-form_wrap
+                                form#form(name="Физическое лицо").designer__builder-form
+                                    .designer__select-wrap
+                                        span.designer__item-title  Wifi-роутер
+                                        .designer__item
+                                            input(type="radio" name="router" value="Аренда 100 Р/мес" id="rent" required="").radio
+                                            label(for="rent") Аренда 100 Р/мес
+                                        .designer__item
+                                            input(type="radio" name="router" value="Выкуп 1500 Р" id="buy" required="").radio
+                                            label(for="buy") Выкуп 1500 Р
+                                    .designer__select-wrap
+                                        span.designer__item-title  кабельное тв
+                                        .designer__item
+                                            input(type="radio" name="tv" value="Кабельное ТВ (115 каналов) 100 Р/мес" id="tv" required="").radio
+                                            label(for="tv") Кабельное ТВ (115 каналов) 100 Р/мес
+                                        .designer__item
+                                            input(type="radio" name="tv" value="IpTV (159 каналов) 300 Р/мес" id="ip_tv" required="").radio
+                                            label(for="ip_tv") IpTV (159 каналов) 300 Р/мес
+                                    .designer__select-wrap
+                                        span.designer__item-title  дополнительно
+                                        .designer__item
+                                            input(type="radio" name="additional" value="Безлимитный телефон, 350 Р/мес" id="phone" required="").radio
+                                            label(for="phone") Безлимитный телефон, 350 Р/мес
+                                        .designer__item
+                                            input(type="radio" name="additional" value="Антивирус «Касперского», 99 Р/мес" id="antivirus" required="").radio
+                                            label(for="antivirus") Антивирус «Касперского», 99 Р/мес
+                                    input(type='hidden', name='form_name', value='baseForm')
+                                    input(type='hidden', name='form_type', value='normal')
+                                    button(href="#callBack").custom__btn-form я молодец!

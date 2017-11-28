@@ -301,14 +301,18 @@ $(document).ready(function () {
         // }
     });
 
-    $("#ex6").slider({
+    var summ = $(".designer__price-finish");
+    var priceSpeed = 10;
+
+    $("#designer__set_speed").slider({
         tooltip: 'always',
         formatter: function(value) {
 
 
 
-            return  value;
+            summ.text(value * priceSpeed);
 
+            return  value;
         },
         ticks_labels: ['0 Mbit/s', '25 Mbit/s', '50 Mbit/s', '75 Mbit/s', '100 Mbit/s'],
         min: 0,
@@ -319,12 +323,9 @@ $(document).ready(function () {
     );
 
     (function foo() {
-
-        var txt2 = $("<p></p>").text("Mbit/s");
-
-        $(".tooltip-main").append(txt2)
-
-        txt2.addClass("test")
+        var mbit = $("<span></span>").text("Mbit/s");
+        $(".tooltip-main").append(mbit)
+        mbit.addClass("designer__current-speed_text")
     })();
 
     // $("#ex6").on("slide", function(slideEvt) {

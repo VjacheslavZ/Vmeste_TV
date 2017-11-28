@@ -121,8 +121,48 @@
                   <p class="designer__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
                 </div>
                 <div class="col-lg-11">
-                  <div class="designer__set-speed">
-                    <input id="ex6" type="text" data-slider-value="50"><span id="ex6CurrentSliderValLabel">Current Slider Value:<span id="ex6SliderVal">3</span></span>
+                  <div class="designer__builder-wrap">
+                    <div class="designer__set-speed">
+                      <input id="designer__set_speed" type="text" data-slider-value="50"><span id="ex6CurrentSliderValLabel">Current Slider Value:<span id="ex6SliderVal">3</span></span>
+                    </div>
+                    <div class="designer__finish-price"><span class="designer__price-txt">и того в месяц</span><span class="designer__price-finish"></span></div>
+                  </div>
+                  <div class="designer__builder-form_wrap">
+                    <form class="designer__builder-form" id="form" name="Физическое лицо">
+                      <div class="designer__select-wrap"><span class="designer__item-title"> Wifi-роутер</span>
+                        <div class="designer__item">
+                          <input class="radio" type="radio" name="router" value="Аренда 100 Р/мес" id="rent" required="">
+                          <label for="rent">Аренда 100 Р/мес</label>
+                        </div>
+                        <div class="designer__item">
+                          <input class="radio" type="radio" name="router" value="Выкуп 1500 Р" id="buy" required="">
+                          <label for="buy">Выкуп 1500 Р</label>
+                        </div>
+                      </div>
+                      <div class="designer__select-wrap"><span class="designer__item-title"> кабельное тв</span>
+                        <div class="designer__item">
+                          <input class="radio" type="radio" name="tv" value="Кабельное ТВ (115 каналов) 100 Р/мес" id="tv" required="">
+                          <label for="tv">Кабельное ТВ (115 каналов) 100 Р/мес</label>
+                        </div>
+                        <div class="designer__item">
+                          <input class="radio" type="radio" name="tv" value="IpTV (159 каналов) 300 Р/мес" id="ip_tv" required="">
+                          <label for="ip_tv">IpTV (159 каналов) 300 Р/мес</label>
+                        </div>
+                      </div>
+                      <div class="designer__select-wrap"><span class="designer__item-title"> дополнительно</span>
+                        <div class="designer__item">
+                          <input class="radio" type="radio" name="additional" value="Безлимитный телефон, 350 Р/мес" id="phone" required="">
+                          <label for="phone">Безлимитный телефон, 350 Р/мес</label>
+                        </div>
+                        <div class="designer__item">
+                          <input class="radio" type="radio" name="additional" value="Антивирус «Касперского», 99 Р/мес" id="antivirus" required="">
+                          <label for="antivirus">Антивирус «Касперского», 99 Р/мес</label>
+                        </div>
+                      </div>
+                      <input type="hidden" name="form_name" value="baseForm">
+                      <input type="hidden" name="form_type" value="normal">
+                      <button class="custom__btn-form" href="#callBack">я молодец!</button>
+                    </form>
                   </div>
                 </div>
               </div>

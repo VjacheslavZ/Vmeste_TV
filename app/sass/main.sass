@@ -142,9 +142,24 @@
     font-size: 16px
     line-height: 22px
   &__set-speed
-    padding: 20px 20px 0 50px
+    position: relative
+    margin-top: 21px
+
+  &__builder-wrap
+    display: flex
+    padding: 29px 20px 42px 50px
     background-color: #f6f6f6
-    height: 500px
+    position: relative
+    &:before
+      content: ""
+      width: 0
+      height: 0
+      border-bottom: 18px solid #fff
+      border-right: 18px solid transparent
+      position: absolute
+      bottom: 0
+      left: 0
+
   //calculator
   .slider.slider-horizontal
     width: 705px
@@ -152,19 +167,18 @@
     position: absolute
   .slider-selection
     display: none
-  .slider-track
-    background-image: none
   .slider.slider-horizontal .slider-track
     height: 3px
     background-color: #898989
-  .slider.slider-horizontal .slider-tick-label-container
-    display: flex
-    justify-content: space-between
+    margin-top: -3px
+    background-image: none
   .slider.slider-horizontal .slider-tick-label-container
     white-space: normal
     color: #7b7b7b
   .slider.slider-horizontal .slider-tick-label-container .slider-tick-label
-    width: 50px
+    width: 46px
+    line-height: 1
+    font-size: 12px
   .slider-tick-label
     position: relative
     &:before
@@ -176,15 +190,49 @@
       background-color: #7b7b7b
       top: -23px
       left: 50%
-
   .slider-tick-label-container
+    .slider-tick-label:not(:last-child)
+      &:after
+        content: ""
+        display: block
+        background: url("../img/split-double.png") repeat
+        width: 163px
+        height: 10px
+        position: absolute
+        top: -17px
+        left: 31px
     .slider-tick-label:first-child
+      position: absolute
+      left: -23px
       &:before
-        left: 0
+        left: 23px
+      //&:after
+      //  content: ""
+      //  display: block
+      //  background: url("../img/split-double.png") repeat
+      //  width: 163px
+      //  height: 10px
+      //  position: absolute
+      //  top: -17px
+      //  left: 31px
+    .slider-tick-label:nth-child(2)
+      position: absolute
+      left: calc(25% - 25px)
+      &:before
+        left: 23px
+    .slider-tick-label:nth-child(3)
+      position: absolute
+      left: calc(50% - 25px)
+    .slider-tick-label:nth-child(4)
+      position: absolute
+      left: calc(75% - 25px)
+
     .slider-tick-label:last-child
+      position: absolute
+      right: -23px
       &:before
         left: inherit
-        right: 0
+        right: 23px
 
   //ползунок
   .slider-handle.min-slider-handle.round
@@ -196,10 +244,106 @@
     background-image: none
   .slider .tooltip-inner
     white-space: normal
-    width: 50px
+    // width: 50px
     text-align: center
+    font-family: $LBold
+    font-size: 31px
   .slider .tooltip.top
-    top: -10px
+    top: -40px
     width: 56px
-    height: 66px
+    height: 56px
     background-color: #b7d700
+    position: relative
+    &:before
+      content: ""
+      position: absolute
+      bottom: -11px
+      right: calc(50% - 10px)
+      width: -10px
+      height: 0
+      border-left: 10px solid transparent
+      border-right: 10px solid transparent
+      border-top: 11px solid #b7d700
+  .slider.slider-horizontal .slider-tick-label-container
+    margin-top: 0
+  //.slider .tooltip-inner
+    width: inherit
+  &__current-speed_text
+    position: absolute
+    font-family: $LRegular
+    font-size: 11px
+    bottom: 1px
+    left: 0
+    right: 0
+    text-align: center
+    font-weight: 800
+  #ex6CurrentSliderValLabel
+    display: none
+  &__finish-price
+    margin-left: 60px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__price-txt
+    width: 75px
+    color: #7b7b7b
+    font-family: $ESemiBold
+    font-size: 16px
+    line-height: 24px
+    text-transform: uppercase
+  &__price-finish
+    color: $text_accent_color
+    font-size: 60px
+    font-family: $EExtraBold
+    line-height: 26px
+    margin-left: 10px
+    &:after
+      content: "\f158"
+      font-family: "FontAwesome"
+      font-size: 52px
+
+
+  &__builder-form_wrap
+    padding: 16px 0 20px 50px
+    background-color: #e4e4e4
+    position: relative
+    &:before
+      content: ""
+      width: 0
+      height: 0
+      border-top: 18px solid #fff
+      border-right: 18px solid transparent
+      position: absolute
+      top: 0
+      left: 0
+  &__builder-form
+    width: 705px
+    display: flex
+    justify-content: space-between
+  &__select-wrap
+    display: flex
+    flex-direction: column
+  &__item-title
+    text-transform: uppercase
+    font-size: 16px
+    font-family: $ESemiBold
+    color: $text_accent_color
+    margin-bottom: 8px
+  &__item
+    display: flex
+    align-items: center
+    input
+      cursor: pointer
+    label
+      font-size: 14px
+      font-family: $LRegular
+      color: $text_grey_color
+      margin-left: 10px
+    & + .designer__item
+      margin-top: 5px
+  .custom__btn-form
+    position: absolute
+    right: 18px
+    bottom: 20px
+
+
