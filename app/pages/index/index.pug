@@ -45,7 +45,7 @@ block main
                                 li.active
                                     a(href='#1', data-toggle='tab') конструктор тарифов
                                 li
-                                    a(href='#1', data-toggle='tab') посмотреть готовые тарифы
+                                    a(href='#2', data-toggle='tab') посмотреть готовые тарифы
 
                     .col-lg-11
                         #service__slider.owl-carousel.owl-theme.service__slider
@@ -60,49 +60,96 @@ block main
         section.designer
             .container
                 .row
-                    .designer__wrap
-                        .col-lg-5.col-md-6
-                            p.designer__title конструктор тарифов
-                            p.designer__info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    .tab-content
+                        //табы
+                        #1.tab-pane.active
+                            .designer__wrap
+                                .col-lg-5.col-md-6
+                                    p.designer__title конструктор тарифов
+                                    p.designer__info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
 
-                        .col-lg-11
-                            .designer__builder-wrap
-                                .designer__set-speed
-                                    input#designer__set_speed(type='text', data-slider-value='50')
-                                    span#ex6CurrentSliderValLabel
-                                        | Current Slider Value:
-                                        span#ex6SliderVal 3
-                                .designer__finish-price
-                                    span.designer__price-txt и того в месяц
-                                    span.designer__price-finish
-                            .designer__builder-form_wrap
-                                form(name="Физическое лицо").designer__builder-form
-                                    .designer__select-wrap
-                                        span.designer__item-title  Wifi-роутер
-                                        .designer__item
-                                            input(type="radio" name="router" value="Аренда 100 Р/мес" id="rent").radio
-                                            label(for="rent") Аренда 100 Р/мес
-                                        .designer__item
-                                            input(type="radio" name="router" value="Выкуп 1500 Р" id="buy").radio
-                                            label(for="buy") Выкуп 1500 Р
-                                    .designer__select-wrap
-                                        span.designer__item-title  кабельное тв
-                                        .designer__item
-                                            input(type="radio" name="tv" value="Кабельное ТВ (115 каналов) 100 Р/мес" id="tv").radio
-                                            label(for="tv") Кабельное ТВ (115 каналов) 100 Р/мес
-                                        .designer__item
-                                            input(type="radio" name="tv" value="IpTV (159 каналов) 300 Р/мес" id="ip_tv" required="").radio
-                                            label(for="ip_tv") IpTV (159 каналов) 300 Р/мес
-                                    .designer__select-wrap
-                                        span.designer__item-title  дополнительно
-                                        .designer__item
-                                            input(type="radio" name="additional" value="Безлимитный телефон, 350 Р/мес" id="phone").radio
-                                            label(for="phone") Безлимитный телефон, 350 Р/мес
-                                        .designer__item
-                                            input(type="radio" name="additional" value="Антивирус «Касперского», 99 Р/мес" id="antivirus").radio
-                                            label(for="antivirus") Антивирус «Касперского», 99 Р/мес
-                                    input(type='hidden', name='form_name', value='baseForm')
-                                    input(type='hidden', name='form_type', value='normal')
+                                .col-lg-11
+                                    .designer__builder-wrap
+                                        .designer__set-speed
+                                            input#designer__set_speed(type='text', data-slider-value='50')
+                                            span#ex6CurrentSliderValLabel
+                                                | Current Slider Value:
+                                                span#ex6SliderVal 3
+                                        .designer__finish-price
+                                            span.designer__price-txt и того в месяц
+                                            span.designer__price-finish
+                                    .designer__builder-form_wrap
+                                        form(name="Физическое лицо").designer__builder-form
+                                            .designer__select-wrap
+                                                span.designer__item-title  Wifi-роутер
+                                                .designer__item
+                                                    input(type="radio" name="router" value="Аренда 100 Р/мес" id="rent").radio
+                                                    label(for="rent") Аренда 100 Р/мес
+                                                .designer__item
+                                                    input(type="radio" name="router" value="Выкуп 1500 Р" id="buy").radio
+                                                    label(for="buy") Выкуп 1500 Р
+                                            .designer__select-wrap
+                                                span.designer__item-title  кабельное тв
+                                                .designer__item
+                                                    input(type="radio" name="tv" value="Кабельное ТВ (115 каналов) 100 Р/мес" id="tv").radio
+                                                    label(for="tv") Кабельное ТВ (115 каналов) 100 Р/мес
+                                                .designer__item
+                                                    input(type="radio" name="tv" value="IpTV (159 каналов) 300 Р/мес" id="ip_tv" required="").radio
+                                                    label(for="ip_tv") IpTV (159 каналов) 300 Р/мес
+                                            .designer__select-wrap
+                                                span.designer__item-title  дополнительно
+                                                .designer__item
+                                                    input(type="radio" name="additional" value="Безлимитный телефон, 350 Р/мес" id="phone").radio
+                                                    label(for="phone") Безлимитный телефон, 350 Р/мес
+                                                .designer__item
+                                                    input(type="radio" name="additional" value="Антивирус «Касперского», 99 Р/мес" id="antivirus").radio
+                                                    label(for="antivirus") Антивирус «Касперского», 99 Р/мес
+                                            input(type='hidden', name='form_name', value='baseForm')
+                                            input(type='hidden', name='form_type', value='normal')
 
-                                    //button(href="#callBack" type="submit").custom__btn-form я молодец!
-                                    a(href="#callBack").custom__btn-form я молодец!
+                                            //button(href="#callBack" type="submit").custom__btn-form я молодец!
+                                            a(href="#callBack").custom__btn-form я молодец!
+                        #2.tab-pane
+                            .designer__wrap
+                                .col-lg-5.col-md-6
+                                    p.designer__title конструктор тарифов
+                                    p.designer__info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+
+        //секция новости
+        section.news
+            .container
+                // заинклудить
+                .row
+                    .col-lg-16
+                        p.news__title новости
+                        a(href="#").news__all-news Архив новостей
+                .news__wrap
+                    .row
+                        .col-lg-4
+                            a(href="#").news__link
+                                .news__photo
+                                    img(src="img/news_1.jpg")
+                                    span.news__date 18 августа 2017
+                                p.news__name Заголовок новости номер раз
+                                p.news__description Подзаголовок, отражающий суть новости в двух-трех предложениях
+                        .col-lg-4
+                            a(href="#").news__link
+                                .news__photo
+                                    img(src="img/news_2.jpg")
+                                    span.news__date 9 августа 2017
+                                p.news__name Или два... мне просто нужно было посмотреть...
+                                p.news__description Подзаголовок, отражающий суть новости в двух-трех предложениях
+                        .col-lg-4
+                            a(href="#").news__link
+                                .news__photo
+                                    img(src="img/news_3.jpg")
+                                    span.news__date 8 августа 2017
+                                p.news__name Как оно будет выглядеть в несколько строк
+                                p.news__description Подзаголовок, отражающий суть новости в двух-трех предложениях
+                        .col-lg-4
+                            a(href="#").news__link
+                                .news__photo
+                                    img(src="img/news_4.jpg")
+                                    span.news__date 8 августа 2017
+                                p.news__name Или два... мне просто нужно было посмотреть...
+                                p.news__description Подзаголовок, отражающий суть новости в двух-трех предложениях

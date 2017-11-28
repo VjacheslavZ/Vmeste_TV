@@ -382,6 +382,77 @@ input.error + label {
   .callback input.error {
     border-color: red; }
 
+.tab-content .tab-pane {
+  display: none; }
+
+.tab-content .active {
+  display: block; }
+
+#idex_page .news .news__title {
+  border-top: 1px solid #bfbfbf; }
+
+.news {
+  padding: 54px 0 100px 0; }
+  .news__title {
+    padding-top: 36px;
+    text-transform: uppercase;
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #4d4d4d;
+    font-size: 22px;
+    display: block;
+    letter-spacing: 2px;
+    line-height: 9px; }
+  .news__all-news {
+    color: #8b8b8b;
+    font-size: 12px;
+    font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom .3s ease;
+    -o-transition: border-bottom .3s ease;
+    transition: border-bottom .3s ease; }
+    .news__all-news:hover {
+      color: #8b8b8b;
+      border-bottom: 1px solid #8b8b8b; }
+  .news__wrap {
+    padding-top: 30px; }
+  .news__link:hover img {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+  .news__photo {
+    position: relative;
+    overflow: hidden; }
+    .news__photo img {
+      -webkit-transition: -webkit-transform .3s ease;
+      transition: -webkit-transform .3s ease;
+      -o-transition: transform .3s ease;
+      transition: transform .3s ease;
+      transition: transform .3s ease, -webkit-transform .3s ease;
+      width: 100%;
+      height: auto; }
+  .news__date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #808080;
+    font-size: 12px;
+    font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: block;
+    background: #fff;
+    padding-right: 5px; }
+  .news__name {
+    margin-top: 24px;
+    display: inline-block;
+    font-size: 24px;
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #084067;
+    text-decoration: underline; }
+  .news__description {
+    color: #454545;
+    font-size: 16px;
+    font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 20px; }
+
 .header {
   width: 100%;
   padding: 18px 0; }

@@ -110,7 +110,7 @@
                   <!--после заинклудить эти табы-->
                   <ul class="nav nav-tabs service__price-builder">
                     <li class="active"><a href="#1" data-toggle="tab">конструктор тарифов</a></li>
-                    <li><a href="#1" data-toggle="tab">посмотреть готовые тарифы</a></li>
+                    <li><a href="#2" data-toggle="tab">посмотреть готовые тарифы</a></li>
                   </ul>
                 </ul>
               </div>
@@ -128,56 +128,100 @@
         <section class="designer">
           <div class="container">
             <div class="row">
-              <div class="designer__wrap">
-                <div class="col-lg-5 col-md-6">
-                  <p class="designer__title">конструктор тарифов</p>
-                  <p class="designer__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
-                </div>
-                <div class="col-lg-11">
-                  <div class="designer__builder-wrap">
-                    <div class="designer__set-speed">
-                      <input id="designer__set_speed" type="text" data-slider-value="50"><span id="ex6CurrentSliderValLabel">Current Slider Value:<span id="ex6SliderVal">3</span></span>
+              <div class="tab-content">
+                <!--табы-->
+                <div class="tab-pane active" id="1">
+                  <div class="designer__wrap">
+                    <div class="col-lg-5 col-md-6">
+                      <p class="designer__title">конструктор тарифов</p>
+                      <p class="designer__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
                     </div>
-                    <div class="designer__finish-price"><span class="designer__price-txt">и того в месяц</span><span class="designer__price-finish"></span></div>
-                  </div>
-                  <div class="designer__builder-form_wrap">
-                    <form class="designer__builder-form" name="Физическое лицо">
-                      <div class="designer__select-wrap"><span class="designer__item-title"> Wifi-роутер</span>
-                        <div class="designer__item">
-                          <input class="radio" type="radio" name="router" value="Аренда 100 Р/мес" id="rent">
-                          <label for="rent">Аренда 100 Р/мес</label>
+                    <div class="col-lg-11">
+                      <div class="designer__builder-wrap">
+                        <div class="designer__set-speed">
+                          <input id="designer__set_speed" type="text" data-slider-value="50"><span id="ex6CurrentSliderValLabel">Current Slider Value:<span id="ex6SliderVal">3</span></span>
                         </div>
-                        <div class="designer__item">
-                          <input class="radio" type="radio" name="router" value="Выкуп 1500 Р" id="buy">
-                          <label for="buy">Выкуп 1500 Р</label>
-                        </div>
+                        <div class="designer__finish-price"><span class="designer__price-txt">и того в месяц</span><span class="designer__price-finish"></span></div>
                       </div>
-                      <div class="designer__select-wrap"><span class="designer__item-title"> кабельное тв</span>
-                        <div class="designer__item">
-                          <input class="radio" type="radio" name="tv" value="Кабельное ТВ (115 каналов) 100 Р/мес" id="tv">
-                          <label for="tv">Кабельное ТВ (115 каналов) 100 Р/мес</label>
-                        </div>
-                        <div class="designer__item">
-                          <input class="radio" type="radio" name="tv" value="IpTV (159 каналов) 300 Р/мес" id="ip_tv" required="">
-                          <label for="ip_tv">IpTV (159 каналов) 300 Р/мес</label>
-                        </div>
+                      <div class="designer__builder-form_wrap">
+                        <form class="designer__builder-form" name="Физическое лицо">
+                          <div class="designer__select-wrap"><span class="designer__item-title"> Wifi-роутер</span>
+                            <div class="designer__item">
+                              <input class="radio" type="radio" name="router" value="Аренда 100 Р/мес" id="rent">
+                              <label for="rent">Аренда 100 Р/мес</label>
+                            </div>
+                            <div class="designer__item">
+                              <input class="radio" type="radio" name="router" value="Выкуп 1500 Р" id="buy">
+                              <label for="buy">Выкуп 1500 Р</label>
+                            </div>
+                          </div>
+                          <div class="designer__select-wrap"><span class="designer__item-title"> кабельное тв</span>
+                            <div class="designer__item">
+                              <input class="radio" type="radio" name="tv" value="Кабельное ТВ (115 каналов) 100 Р/мес" id="tv">
+                              <label for="tv">Кабельное ТВ (115 каналов) 100 Р/мес</label>
+                            </div>
+                            <div class="designer__item">
+                              <input class="radio" type="radio" name="tv" value="IpTV (159 каналов) 300 Р/мес" id="ip_tv" required="">
+                              <label for="ip_tv">IpTV (159 каналов) 300 Р/мес</label>
+                            </div>
+                          </div>
+                          <div class="designer__select-wrap"><span class="designer__item-title"> дополнительно</span>
+                            <div class="designer__item">
+                              <input class="radio" type="radio" name="additional" value="Безлимитный телефон, 350 Р/мес" id="phone">
+                              <label for="phone">Безлимитный телефон, 350 Р/мес</label>
+                            </div>
+                            <div class="designer__item">
+                              <input class="radio" type="radio" name="additional" value="Антивирус «Касперского», 99 Р/мес" id="antivirus">
+                              <label for="antivirus">Антивирус «Касперского», 99 Р/мес</label>
+                            </div>
+                          </div>
+                          <input type="hidden" name="form_name" value="baseForm">
+                          <input type="hidden" name="form_type" value="normal">
+                          <!--button(href="#callBack" type="submit").custom__btn-form я молодец!--><a class="custom__btn-form" href="#callBack">я молодец!</a>
+                        </form>
                       </div>
-                      <div class="designer__select-wrap"><span class="designer__item-title"> дополнительно</span>
-                        <div class="designer__item">
-                          <input class="radio" type="radio" name="additional" value="Безлимитный телефон, 350 Р/мес" id="phone">
-                          <label for="phone">Безлимитный телефон, 350 Р/мес</label>
-                        </div>
-                        <div class="designer__item">
-                          <input class="radio" type="radio" name="additional" value="Антивирус «Касперского», 99 Р/мес" id="antivirus">
-                          <label for="antivirus">Антивирус «Касперского», 99 Р/мес</label>
-                        </div>
-                      </div>
-                      <input type="hidden" name="form_name" value="baseForm">
-                      <input type="hidden" name="form_type" value="normal">
-                      <!--button(href="#callBack" type="submit").custom__btn-form я молодец!--><a class="custom__btn-form" href="#callBack">я молодец!</a>
-                    </form>
+                    </div>
                   </div>
                 </div>
+                <div class="tab-pane" id="2">
+                  <div class="designer__wrap">
+                    <div class="col-lg-5 col-md-6">
+                      <p class="designer__title">конструктор тарифов</p>
+                      <p class="designer__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--секция новости-->
+        <section class="news">
+          <div class="container">
+            <!-- заинклудить-->
+            <div class="row">
+              <div class="col-lg-16">
+                <p class="news__title">новости</p><a class="news__all-news" href="#">Архив новостей</a>
+              </div>
+            </div>
+            <div class="news__wrap">
+              <div class="row">
+                <div class="col-lg-4"><a class="news__link" href="#">
+                    <div class="news__photo"><img src="img/news_1.jpg"><span class="news__date">18 августа 2017</span></div>
+                    <p class="news__name">Заголовок новости номер раз</p>
+                    <p class="news__description">Подзаголовок, отражающий суть новости в двух-трех предложениях</p></a></div>
+                <div class="col-lg-4"><a class="news__link" href="#">
+                    <div class="news__photo"><img src="img/news_2.jpg"><span class="news__date">9 августа 2017</span></div>
+                    <p class="news__name">Или два... мне просто нужно было посмотреть...</p>
+                    <p class="news__description">Подзаголовок, отражающий суть новости в двух-трех предложениях</p></a></div>
+                <div class="col-lg-4"><a class="news__link" href="#">
+                    <div class="news__photo"><img src="img/news_3.jpg"><span class="news__date">8 августа 2017</span></div>
+                    <p class="news__name">Как оно будет выглядеть в несколько строк</p>
+                    <p class="news__description">Подзаголовок, отражающий суть новости в двух-трех предложениях</p></a></div>
+                <div class="col-lg-4"><a class="news__link" href="#">
+                    <div class="news__photo"><img src="img/news_4.jpg"><span class="news__date">8 августа 2017</span></div>
+                    <p class="news__name">Или два... мне просто нужно было посмотреть...</p>
+                    <p class="news__description">Подзаголовок, отражающий суть новости в двух-трех предложениях</p></a></div>
               </div>
             </div>
           </div>
