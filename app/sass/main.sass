@@ -5,21 +5,201 @@
 @import "part"
 @import "header"
 
-// Секция top-section
 
-.top-section
-  text-align: center
-  min-height: 600px
-  height: 100vh
-  //background: url(../img/header_bg.jpg) no-repeat
-  background-size: cover
+//Секция сервис
+.service
   &__title
-    color: red
+    color: $tect_title_color
+    font-size: 34px
+    font-family: $ELight
+    margin-top: 38px
+    font-weight: 300
+    margin-left: 40px
+  &__item
+    background-color: $text_green_color
+    padding: 25px 0 19px 24px
+    position: relative
+    &:hover
+      background-color: $btn_color
+      .service__name, .service__description
+        color: $text_black_color
+      .service__img_default
+        display: none
+        opacity: 0
+      .service__img_hover
+        transition: all .3s ease
+        display: block
+        opacity: 1
+        visibility: visible
+        z-index: 1
+      .service__item-arrow
+        display: block
+        position: absolute
+        width: 40px
+        top: -25px
+        bottom: 0
+        right: -20px
+        height: 101px
+        z-index: 9
+        background-color: $btn_color
+        padding: 31px 6px
+        &:after
+          content: ""
+          display: block
+          position: absolute
+          @include sprite($arrow_right)
+    & + .service__item
+      margin-top: 2px
+  &__img
+    margin-right: 15px
+  &__img_hover
+    opacity: 1
+  &__item-content
+    display: flex
+    align-items: center
+    position: relative
+    span
+      display: block
+  &__name
+    color: $text_white_color
+    font-size: 36px
+    text-transform: uppercase
+    font-family: $EBold
+    line-height: 32px
+    transition: color .3s ease
+  &__description
+    color: $text_white_color
+    font-family: $ERegular
+    font-size: 16px
+    transition: color .3s ease
+  &__img_hover
+    position: relative
+    z-index: -1
+    transition: all .3s ease
+    display: none
+    opacity: 0
+    visibility: hidden
+  &__arrow_active
+    opacity: 1
+    display: block
+    height: 100px
+    font-size:
+    background-color: $btn_color
+  .service__item-arrow
+    display: none
+  &__slider
+    margin-top: 9px
+    img
+      width: 100%
+      height: auto
+  .owl-nav
     position: absolute
-    top: calc(50% - 50px)
+    bottom: 0%
     left: 0
     right: 0
+  .owl-theme .owl-nav [class*=owl-]
+    background-color: transparent
+  .owl-carousel .owl-nav .owl-next
+    position: absolute
+    right: -12px
+    bottom: -9px
+  .owl-carousel .owl-nav .owl-prev
+    position: absolute
+    right: 18px
+    bottom: -9px
+  &__price-builder
+    padding: 10px 80px 0 45px
+    display: flex
+    li
+      min-width: 180px
+    a
+      font-size: 16px
+      text-transform: uppercase
+      font-family: $ERegular
+      //font-weight: 900px
+      color: $text_accent_color
+      &:hover
+        border-bottom: 1px solid #8899a9
+    .active
+      a
+        color: $text_grey_color
+        font-family: $ESemiBold
+
+//секция конструктор тарифов
+.designer
+  &__wrap
+    padding-top: 60px
+  &__title
+    color: $text_green_color
+    font-family: $EBold
+    font-size: 28px
+    text-transform: uppercase
+    letter-spacing: 1px
+    line-height: 51px
+  &__info
+    color: $text_grey_color
+    font-family: $LMedium
+    font-size: 16px
+    line-height: 22px
+  &__set-speed
+    padding: 20px 20px 0 50px
+    background-color: #f6f6f6
+    height: 500px
+  //calculator
+  .slider.slider-horizontal
+    width: 705px
+  .slider .tooltip.top
+    position: absolute
+  .slider-selection
+    display: none
+  .slider-track
+    background-image: none
+  .slider.slider-horizontal .slider-track
+    height: 3px
+    background-color: #898989
+  .slider.slider-horizontal .slider-tick-label-container
+    display: flex
+    justify-content: space-between
+  .slider.slider-horizontal .slider-tick-label-container
+    white-space: normal
+    color: #7b7b7b
+  .slider.slider-horizontal .slider-tick-label-container .slider-tick-label
+    width: 50px
+  .slider-tick-label
+    position: relative
     &:before
       content: ""
       display: block
-      //@include sprite($mail_to)
+      width: 1px
+      height: 20px
+      position: absolute
+      background-color: #7b7b7b
+      top: -23px
+      left: 50%
+
+  .slider-tick-label-container
+    .slider-tick-label:first-child
+      &:before
+        left: 0
+    .slider-tick-label:last-child
+      &:before
+        left: inherit
+        right: 0
+
+  //ползунок
+  .slider-handle.min-slider-handle.round
+    width: 16px
+    height: 16px
+    background-color: #aecb06
+    box-shadow: inset  0 -1px 4px black, 0 0 5px #cef200
+  .slider-handle
+    background-image: none
+  .slider .tooltip-inner
+    white-space: normal
+    width: 50px
+    text-align: center
+  .slider .tooltip.top
+    top: -10px
+    width: 56px
+    height: 66px
+    background-color: #b7d700

@@ -28,7 +28,7 @@
 @font-face {
   font-family: "Exo2-Light";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   src: url(../fonts/Exo2-Light/Exo2-Light.ttf) format("truetype");
   src: url(../fonts/Exo2-Light/Exo2-Light.eot) format("embedded-opentype");
   src: url(../fonts/Exo2-Light/Exo2-Light.eot?#iefix) format("embedded-opentype");
@@ -179,6 +179,27 @@ input, textarea, select {
   input option, textarea option, select option {
     color: #000; }
 
+.slider__btn {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 33px;
+  color: #000;
+  background-color: #fff; }
+  .slider__btn:hover {
+    background-color: #cef200; }
+
 .input_wrap {
   position: relative;
   display: block; }
@@ -274,19 +295,246 @@ input, textarea, select {
       margin-left: 20px;
       line-height: 19px; }
 
-.top-section {
-  text-align: center;
-  min-height: 600px;
-  height: 100vh;
-  -webkit-background-size: cover;
-          background-size: cover; }
-  .top-section__title {
-    color: red;
+.service__title {
+  color: #aeaeae;
+  font-size: 34px;
+  font-family: "Exo2-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-top: 38px;
+  font-weight: 300;
+  margin-left: 40px; }
+
+.service__item {
+  background-color: #b7d700;
+  padding: 25px 0 19px 24px;
+  position: relative; }
+  .service__item:hover {
+    background-color: #cef200; }
+    .service__item:hover .service__name, .service__item:hover .service__description {
+      color: #000; }
+    .service__item:hover .service__img_default {
+      display: none;
+      opacity: 0; }
+    .service__item:hover .service__img_hover {
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease;
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      z-index: 1; }
+    .service__item:hover .service__item-arrow {
+      display: block;
+      position: absolute;
+      width: 40px;
+      top: -25px;
+      bottom: 0;
+      right: -20px;
+      height: 101px;
+      z-index: 9;
+      background-color: #cef200;
+      padding: 31px 6px; }
+      .service__item:hover .service__item-arrow:after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url(../img/sprite.png);
+        background-position: -82px -27px;
+        width: 19px;
+        height: 36px; }
+  .service__item + .service__item {
+    margin-top: 2px; }
+
+.service__img {
+  margin-right: 15px; }
+
+.service__img_hover {
+  opacity: 1; }
+
+.service__item-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+  .service__item-content span {
+    display: block; }
+
+.service__name {
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 32px;
+  -webkit-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease; }
+
+.service__description {
+  color: #fff;
+  font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  -webkit-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease; }
+
+.service__img_hover {
+  position: relative;
+  z-index: -1;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  display: none;
+  opacity: 0;
+  visibility: hidden; }
+
+.service__arrow_active {
+  opacity: 1;
+  display: block;
+  height: 100px;
+  background-color: #cef200; }
+
+.service .service__item-arrow {
+  display: none; }
+
+.service__slider {
+  margin-top: 9px; }
+  .service__slider img {
+    width: 100%;
+    height: auto; }
+
+.service .owl-nav {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: 0; }
+
+.service .owl-theme .owl-nav [class*=owl-] {
+  background-color: transparent; }
+
+.service .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: -12px;
+  bottom: -9px; }
+
+.service .owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  right: 18px;
+  bottom: -9px; }
+
+.service__price-builder {
+  padding: 10px 80px 0 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .service__price-builder li {
+    min-width: 180px; }
+  .service__price-builder a {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #084067; }
+    .service__price-builder a:hover {
+      border-bottom: 1px solid #8899a9; }
+  .service__price-builder .active a {
+    color: #4e4e4e;
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+.designer__wrap {
+  padding-top: 60px; }
+
+.designer__title {
+  color: #b7d700;
+  font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 51px; }
+
+.designer__info {
+  color: #4e4e4e;
+  font-family: "Lato-Medium", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px; }
+
+.designer__set-speed {
+  padding: 20px 20px 0 50px;
+  background-color: #f6f6f6;
+  height: 500px; }
+
+.designer .slider.slider-horizontal {
+  width: 705px; }
+
+.designer .slider .tooltip.top {
+  position: absolute; }
+
+.designer .slider-selection {
+  display: none; }
+
+.designer .slider-track {
+  background-image: none; }
+
+.designer .slider.slider-horizontal .slider-track {
+  height: 3px;
+  background-color: #898989; }
+
+.designer .slider.slider-horizontal .slider-tick-label-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.designer .slider.slider-horizontal .slider-tick-label-container {
+  white-space: normal;
+  color: #7b7b7b; }
+
+.designer .slider.slider-horizontal .slider-tick-label-container .slider-tick-label {
+  width: 50px; }
+
+.designer .slider-tick-label {
+  position: relative; }
+  .designer .slider-tick-label:before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 20px;
     position: absolute;
-    top: -webkit-calc(50% - 50px);
-    top: calc(50% - 50px);
-    left: 0;
-    right: 0; }
-    .top-section__title:before {
-      content: "";
-      display: block; }
+    background-color: #7b7b7b;
+    top: -23px;
+    left: 50%; }
+
+.designer .slider-tick-label-container .slider-tick-label:first-child:before {
+  left: 0; }
+
+.designer .slider-tick-label-container .slider-tick-label:last-child:before {
+  left: inherit;
+  right: 0; }
+
+.designer .slider-handle.min-slider-handle.round {
+  width: 16px;
+  height: 16px;
+  background-color: #aecb06;
+  -webkit-box-shadow: inset  0 -1px 4px black, 0 0 5px #cef200;
+          box-shadow: inset  0 -1px 4px black, 0 0 5px #cef200; }
+
+.designer .slider-handle {
+  background-image: none; }
+
+.designer .slider .tooltip-inner {
+  white-space: normal;
+  width: 50px;
+  text-align: center; }
+
+.designer .slider .tooltip.top {
+  top: -10px;
+  width: 56px;
+  height: 66px;
+  background-color: #b7d700; }

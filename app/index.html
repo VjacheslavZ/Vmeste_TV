@@ -72,67 +72,60 @@
               <div class="header__personal"><a class="header__button" href="#">подключиться!</a><a class="header__cabinet" href="#"><img src="img/personal_ic.png"><span>Личный<br>кабинет</span></a></div>
             </div>
           </div>
-          <!--.header__wrap
-          //.header__logo
-              a(href="/" class="logo" title="Логотип").
-                  Ваш Логотип
-          nav.header__nav
-              ul
-                  -var links = [{title:'About us', href:'#'},{title:'Reservation', href:'#'},{title:'Gallery', href:'#'},{title:'', href:"index.html"},{title:'Blog', href:'#'}, {title:'Elements', href:'#'}, {title:'shop', href:'#'}];
-                  each i in links
-                      li
-                          a(href=i.href)= i.title
-          //.header__modal
-              a(data-effect="mfp-zoom-in" data-info="Обратный звонок" href="#popup" class="open-popup-link" title='Вызов стандартного модального окна') Обратный звонок
-          //a(href="#my-menu").hamburger.hamburger--collapse
-              span.hamburger-box
-                  span.hamburger-inner
-          //nav#my-menu
-              ul
-                  li
-                      a(href="#") item 1
-                  li.active
-                      a(href="#") item 2
-          
-          -->
         </div>
       </header>
       <main id="idex_page">
-        <section class="top-section">
+        <!--Секция сервис-->
+        <section class="service">
           <div class="container">
             <div class="row">
-              <div class="top-section__title">
-                <h1><span>text</span> text</h1>
-                <p>text desk</p>
+              <div class="col-lg-5 col-md-6">
+                <h1 class="service__title">Интернет для дома</h1>
+                <ul class="service__items-swich">
+                  <li class="service__item"><a class="service__item-content" href="#">
+                      <div class="service__img"><img class="service__img_default" src="img/world-ic.png"><img class="service__img_hover" src="img/world-ic-hover.png"></div>
+                      <div><span class="service__name">интернет</span><span class="service__description">надежный и быстрый, до 100 Мбит/с</span></div>
+                      <div class="service__item-arrow"></div></a></li>
+                  <li class="active service__item"><a class="service__item-content" href="#">
+                      <div class="service__img"><img class="service__img_default" src="img/tc_ic.png"><img class="service__img_hover" src="img/tc_ic-hover.png"></div>
+                      <div><span class="service__name">телевидение</span><span class="service__description">все самое интересное на 115 (49 hd) каналах</span></div>
+                      <div class="service__item-arrow"></div></a></li>
+                  <li class="service__item"><a class="service__item-content" href="#">
+                      <div class="service__img"><img class="service__img_default" src="img/phone_ic.png"><img class="service__img_hover" src="img/phone_ic-hover.png"></div>
+                      <div><span class="service__name">телефония</span><span class="service__description">безлимитный домашний телефон</span></div>
+                      <div class="service__item-arrow"></div></a></li>
+                  <!--после заинклудить эти табы-->
+                  <ul class="nav nav-tabs service__price-builder">
+                    <li class="active"><a href="#1" data-toggle="tab">конструктор тарифов</a></li>
+                    <li><a href="#1" data-toggle="tab">посмотреть готовые тарифы</a></li>
+                  </ul>
+                </ul>
+              </div>
+              <div class="col-lg-11">
+                <div class="owl-carousel owl-theme service__slider" id="service__slider">
+                  <div><img src="img/slider_baner.jpg"></div>
+                  <div><img src="img/slider_baner.jpg"></div>
+                  <div><img src="img/slider_baner.jpg"></div>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="intermediate">
+        <!--секция конструктор тарифов-->
+        <section class="designer">
           <div class="container">
             <div class="row">
-              <!--    h3 Заполните форму и мы бесплатно перезвоним и ответим на ваши вопросы-->
-              <!--.intermediate_wrap-->
-              <!--    form#form-file.clearfix-->
-              <!--        //.file_wrap-->
-              <!--            input(type='file' name='field')-->
-              <!--        .row-->
-              <!--            .intermediate_item-->
-              <!--                .input_wrap-->
-              <!--                    i.fa.fa-check-->
-              <!--                    input(name='name', type='text', placeholder='Имя')-->
-              <!--            .intermediate_item-->
-              <!--                .input_wrap-->
-              <!--                    i.fa.fa-check-->
-              <!--                    input(name='email', type='text', placeholder='Почта')-->
-              <!--            .intermediate_item-->
-              <!--                .input_wrap-->
-              <!--                    i.fa.fa-check-->
-              <!--                    input(name='phone', type='text', placeholder='Телефон')-->
-              <!--            input(type='hidden', name='form_name', value='baseForm')-->
-              <!--            input(type='hidden', name='form_type', value='normal')-->
-              <!--            .intermediate_item-->
-              <!--                input(type='submit', value='Записаться')-->
+              <div class="designer__wrap">
+                <div class="col-lg-5 col-md-6">
+                  <p class="designer__title">конструктор тарифов</p>
+                  <p class="designer__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
+                </div>
+                <div class="col-lg-11">
+                  <div class="designer__set-speed">
+                    <input id="ex6" type="text" data-slider-value="50"><span id="ex6CurrentSliderValLabel">Current Slider Value:<span id="ex6SliderVal">3</span></span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

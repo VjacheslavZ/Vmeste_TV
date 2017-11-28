@@ -269,6 +269,73 @@ $(document).ready(function () {
 //modal
 $(document).ready(function () {
 
+    $("#service__slider").owlCarousel({
+        loop: true,
+        items: 1,
+        nav: true,
+        dots: false,
+        margin: 30,
+        autoplay: false,
+        response: true,
+        navText: ["<i class=\"fa fa-angle-left slider__btn\"></i>","<i class=\"fa fa-angle-right slider__btn\"></i>"],
+        autoplayTimeout: 4000,
+        // responsive: {
+        //     1200: {
+        //         margin: 15
+        //     },
+        //     1200: {
+        //         items: 3
+        //     },
+        //     767: {
+        //         items: 2
+        //     },
+        //     667: {
+        //         items: 2
+        //     },
+        //     600: {
+        //         items: 1
+        //     },
+        //     0: {
+        //         items: 1
+        //     },
+        // }
+    });
+
+    $("#ex6").slider({
+        tooltip: 'always',
+        formatter: function(value) {
+
+
+
+            return  value;
+
+        },
+        ticks_labels: ['0 Mbit/s', '25 Mbit/s', '50 Mbit/s', '75 Mbit/s', '100 Mbit/s'],
+        min: 0,
+        max: 100,
+        step: 10,
+        }
+
+    );
+
+    (function foo() {
+
+        var txt2 = $("<p></p>").text("Mbit/s");
+
+        $(".tooltip-main").append(txt2)
+
+        txt2.addClass("test")
+    })();
+
+    // $("#ex6").on("slide", function(slideEvt) {
+    //     $("#ex6SliderVal").text(slideEvt.value);
+    // });
+
+
+    // (function () {
+    //     // $("#service__slider .owl-nav").appendTo(".owl-carousel .owl-stage-outer")
+    // })()
+
     // инициализация tooltipster
     // if (window.matchMedia("(min-width: 992px)").matches) {
     //     $(".header_modal a").tooltipster({
@@ -362,7 +429,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 
     // Инициализация маски в input
-    $(".mask").mask("+38(999) 999-99-99");
+    // $(".mask").mask("+38(999) 999-99-99");
 
     //mob menu
     // $("#my-menu").mmenu({

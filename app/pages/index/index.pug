@@ -4,42 +4,76 @@ block title
 
 block main
     main#idex_page
-        section.top-section
+        //Секция сервис
+        section.service
             .container
                 .row
-                    .top-section__title
-                        h1
-                            span text
-                            |  text
-                        p text desk
-        section.intermediate
+                    .col-lg-5.col-md-6
+                        h1.service__title Интернет для дома
+
+                        ul.service__items-swich
+                            li.service__item
+                                a(href='#').service__item-content
+                                    div.service__img
+                                        img(src="img/world-ic.png").service__img_default
+                                        img(src="img/world-ic-hover.png").service__img_hover
+                                    div
+                                        span.service__name интернет
+                                        span.service__description надежный и быстрый, до 100 Мбит/с
+                                    .service__item-arrow
+                            li.active.service__item
+                                a(href='#').service__item-content
+                                    div.service__img
+                                        img(src="img/tc_ic.png").service__img_default
+                                        img(src="img/tc_ic-hover.png").service__img_hover
+                                    div
+                                        span.service__name телевидение
+                                        span.service__description все самое интересное на 115 (49 hd) каналах
+                                    .service__item-arrow
+                            li.service__item
+                                a(href='#').service__item-content
+                                    div.service__img
+                                        img(src="img/phone_ic.png").service__img_default
+                                        img(src="img/phone_ic-hover.png").service__img_hover
+                                    div
+                                        span.service__name телефония
+                                        span.service__description безлимитный домашний телефон
+                                    .service__item-arrow
+
+                            //после заинклудить эти табы
+                            ul.nav.nav-tabs.service__price-builder
+                                li.active
+                                    a(href='#1', data-toggle='tab') конструктор тарифов
+
+                                li
+                                    a(href='#1', data-toggle='tab') посмотреть готовые тарифы
+
+                    .col-lg-11
+                        #service__slider.owl-carousel.owl-theme.service__slider
+                            div
+                                img(src="img/slider_baner.jpg")
+                            div
+                                img(src="img/slider_baner.jpg")
+                            div
+                                img(src="img/slider_baner.jpg")
+        //секция конструктор тарифов
+        section.designer
             .container
                 .row
+                    .designer__wrap
+                        .col-lg-5.col-md-6
+                            p.designer__title конструктор тарифов
+                            p.designer__info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+
+                        .col-lg-11
+                            .designer__set-speed
+
+                                input#ex6(type='text', data-slider-value='50')
 
 
-                    //    h3 Заполните форму и мы бесплатно перезвоним и ответим на ваши вопросы
-                    //.intermediate_wrap
-                    //    form#form-file.clearfix
-                    //        //.file_wrap
-                    //            input(type='file' name='field')
-                    //        .row
-                    //            .intermediate_item
-                    //                .input_wrap
-                    //                    i.fa.fa-check
-                    //                    input(name='name', type='text', placeholder='Имя')
-                    //            .intermediate_item
-                    //                .input_wrap
-                    //                    i.fa.fa-check
-                    //                    input(name='email', type='text', placeholder='Почта')
-                    //            .intermediate_item
-                    //                .input_wrap
-                    //                    i.fa.fa-check
-                    //                    input(name='phone', type='text', placeholder='Телефон')
-                    //            input(type='hidden', name='form_name', value='baseForm')
-                    //            input(type='hidden', name='form_type', value='normal')
-                    //            .intermediate_item
-                    //                input(type='submit', value='Записаться')
 
-
+                                span#ex6CurrentSliderValLabel
+                                    | Current Slider Value:
+                                    span#ex6SliderVal 3
 
 
