@@ -48,12 +48,13 @@ gulp.task("css-libs", ['sass'], function () {
 gulp.task("scripts-libs", function () {
    return gulp.src([
       "app/libs/jquery/dist/jquery.min.js",
-      "app/libs/bootstrap/dist/js/bootstrap.js",
+      "app/libs/jquery-equalheights/jquery.equalheights.min.js",
+
+       "app/libs/bootstrap/dist/js/bootstrap.js",
       "app/libs/owl.carousel/dist/owl.carousel.min.js",
       "app/libs/magnific-popup/dist/jquery.magnific-popup.min.js",
       "app/libs/jquery-validation/dist/jquery.validate.js",
        "app/libs/HighlyCustomizable/dist/bootstrap-slider.min.js",
-       "app/libs/jquery-equalheights/jquery.equalheights.min.js",
 
    ])
        .pipe(concat("libs.min.js"))

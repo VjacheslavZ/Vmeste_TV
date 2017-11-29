@@ -556,6 +556,163 @@
 //--------страница TV
 
 .tv
-  background: url("../img/tv_bg.jpg") no-repeat
+  background: url("../img/tv_bg.jpg") no-repeat center
+
+
+.tv-list
+  background: url("../img/tv_list_bg.jpg") no-repeat center
+  max-height: 840px
+  padding: 61px 0 100px 0
+  background-size: cover
+  &__title
+    font-family: $ESemiBold
+    font-size: 16px
+    text-transform: uppercase
+    color: $text_greyLight_color
+    text-align: center
+    display: block
+  &__type-toggle
+    font-family: $ESemiBold
+    font-size: 16px
+    color: #000
+    text-transform: uppercase
+    li
+      display: inline-block
+      a
+        padding: 4px 22px
+        display: block
+        background-color: #eaeaea
+        color: #7a7a7a
+        letter-spacing: 1px
+    li.active
+      a
+        transition: background-color .3s ease
+        background-color: $btn_color
+        color: #000
+        &:hover
+          color: #000
+  &__channels-list
+    font-size: 22px
+    font-family: $ESemiBold
+    text-transform: uppercase
+    margin-top: 36px
+    li + li
+      margin-top: 5px
+    a
+      text-decoration: underline
+      color: $text_greyLight_color
+      transition: color .3s ease
+      &:hover
+        color: #cef200
+    .active-list
+      a
+        color: $text_accent_color
+        //cursor: default
+        text-decoration: none
+        font-size: 22px
+        font-family: $EExtraBold
+  &__selected-package
+    display: inline-block
+    color: $text_grey_color
+    font-family: $EExtraBold
+    font-size: 16px
+    text-transform: uppercase
+    margin-left: 46px
+
+  &__list-chanels
+    font-family: $ERegular
+    font-size: 16px
+    text-transform: uppercase
+  &__list-all
+    ul
+      margin-top: 47px
+      display: flex
+      flex-wrap: wrap
+      flex-direction: column
+      align-content: space-around
+      height: 500px
+    li:hover
+      span
+        color: #cef200
+        border-color: #cef200
+    img
+      display: inline-block
+      vertical-align: middle
+    span
+      display: inline-block
+      margin-left: 12px
+      vertical-align: middle
+      border-bottom: 1px solid #454545
+      font-size: 18px
+      font-family: $LRegular
+      color: #454545
+      line-height: 28px
+      transition: all .3s ease
+
+.form-full
+  padding: 67px 0 70px 0
+  background-color: #084067
+  &__title
+    font-family: $ESemiBold
+    font-size: 16px
+    text-transform: uppercase
+    color: #cef200
+    text-align: center
+    display: block
+  .tv-list__type-toggle li.active a
+    background-color: #cef200
+  .tv-list__type-toggle li a
+    background-color: #1c7699
+    color: #fefefe
+  .tab-content
+    span
+      font-family: $ESemiBold
+      font-size: 22px
+      color: #fff
+      margin: 31px 0 14px 0
+      display: block
+      width: 294px
+      text-transform: uppercase
+      line-height: 28px
+    .designer__item label
+      font-size: 16px
+      color: #fff
+    .radio:not(checked) + label
+      padding: 0 0 0 25px
+    .radio:not(checked) + label:before
+      border-color: #fff
+  .designer__select-wrap
+    min-height: 113px
+  input
+    background: #fff
+    color: #717171
+    font-family: $ELight
+    font-size: 18px
+    border-radius: 0
+    border: 1px solid transparent
+  .tab-content
+    input.error
+      border: 1px solid red
+    input.error +label
+      color: red
+  &__name
+    input
+      width: 100%
+    input + input
+      margin-top: 19px
+
+  .callback__form-contacts
+    width: 220px
+    input:last-child
+      margin-top: 19px
+
+  &__adress
+    padding-left: 50px
+  .custom__btn-form
+    padding: 29px 40px
+    display: block
+    width: 100%
+  &__equipment
+    padding-left: 30px
 
 @import "footer"

@@ -20,11 +20,11 @@ $(document).ready(function () {
                 },
                 street: {
                     required: true,
-                    minlength: 3
+                    minlength: 1
                 },
                 fullName: {
                     required: true,
-                    minlength: 1
+                    minlength: 2
                 },
                 house: {
                     required: true,
@@ -38,6 +38,21 @@ $(document).ready(function () {
                     required: true,
                     minlength: 5
                 },
+
+
+
+
+                canals: {
+                    required: true,
+                },
+
+                receiver: {
+                    required: true,
+                },
+                equipment: {
+                    required: true,
+                },
+
 
             },
 
@@ -115,9 +130,8 @@ $(document).ready(function () {
     })();
 
 
-    //    //$(".footer__nav-links ul li").equalHeights();
 
-
+    //$(".form-full .designer__select-wrap").equalHeights();
 
     //попап
     $("a[href='#callBack']").magnificPopup({

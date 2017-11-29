@@ -136,8 +136,10 @@ a {
   color: #000;
   -webkit-text-decoration-color: transparent;
           text-decoration-color: transparent; }
-  a:hover {
+  a:hover, a:focus {
     color: #000; }
+  a:visited {
+    outline: none; }
 
 h1 {
   margin: 0; }
@@ -212,7 +214,7 @@ a:focus, a:hover {
 
 input, textarea, select {
   background-color: #fff;
-  border: 1px solid #000;
+  border: 1px solid transparent;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   padding: 8px 22px;
@@ -221,16 +223,16 @@ input, textarea, select {
   font-size: 16px;
   color: #000; }
   input:focus:required:invalid, textarea:focus:required:invalid, select:focus:required:invalid {
-    color: #000; }
+    color: #717171; }
   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
-    color: #000; }
+    color: #717171; }
   input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
-    color: #000;
+    color: #717171;
     opacity: 1; }
   input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
-    color: #000; }
+    color: #717171; }
   input option, textarea option, select option {
-    color: #000; }
+    color: #717171; }
 
 .slider__btn {
   width: 30px;
@@ -485,7 +487,7 @@ input.error + label {
     margin-top: 55px;
     padding: 26px 54px; }
   .callback input.error {
-    border-color: red; }
+    border: 1px solid red; }
 
 .tab-content .tab-pane {
   display: none; }
@@ -1285,7 +1287,171 @@ input.error + label {
     cursor: pointer; }
 
 .tv {
-  background: url("../img/tv_bg.jpg") no-repeat; }
+  background: url("../img/tv_bg.jpg") no-repeat center; }
+
+.tv-list {
+  background: url("../img/tv_list_bg.jpg") no-repeat center;
+  max-height: 840px;
+  padding: 61px 0 100px 0;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .tv-list__title {
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #454545;
+    text-align: center;
+    display: block; }
+  .tv-list__type-toggle {
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase; }
+    .tv-list__type-toggle li {
+      display: inline-block; }
+      .tv-list__type-toggle li a {
+        padding: 4px 22px;
+        display: block;
+        background-color: #eaeaea;
+        color: #7a7a7a;
+        letter-spacing: 1px; }
+    .tv-list__type-toggle li.active a {
+      -webkit-transition: background-color .3s ease;
+      -o-transition: background-color .3s ease;
+      transition: background-color .3s ease;
+      background-color: #cef200;
+      color: #000; }
+      .tv-list__type-toggle li.active a:hover {
+        color: #000; }
+  .tv-list__channels-list {
+    font-size: 22px;
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    margin-top: 36px; }
+    .tv-list__channels-list li + li {
+      margin-top: 5px; }
+    .tv-list__channels-list a {
+      text-decoration: underline;
+      color: #454545;
+      -webkit-transition: color .3s ease;
+      -o-transition: color .3s ease;
+      transition: color .3s ease; }
+      .tv-list__channels-list a:hover {
+        color: #cef200; }
+    .tv-list__channels-list .active-list a {
+      color: #084067;
+      text-decoration: none;
+      font-size: 22px;
+      font-family: "Exo2-ExtraBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .tv-list__selected-package {
+    display: inline-block;
+    color: #4e4e4e;
+    font-family: "Exo2-ExtraBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 46px; }
+  .tv-list__list-chanels {
+    font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase; }
+  .tv-list__list-all ul {
+    margin-top: 47px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-content: space-around;
+        -ms-flex-line-pack: distribute;
+            align-content: space-around;
+    height: 500px; }
+  .tv-list__list-all li:hover span {
+    color: #cef200;
+    border-color: #cef200; }
+  .tv-list__list-all img {
+    display: inline-block;
+    vertical-align: middle; }
+  .tv-list__list-all span {
+    display: inline-block;
+    margin-left: 12px;
+    vertical-align: middle;
+    border-bottom: 1px solid #454545;
+    font-size: 18px;
+    font-family: "Lato-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #454545;
+    line-height: 28px;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+
+.form-full {
+  padding: 67px 0 70px 0;
+  background-color: #084067; }
+  .form-full__title {
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #cef200;
+    text-align: center;
+    display: block; }
+  .form-full .tv-list__type-toggle li.active a {
+    background-color: #cef200; }
+  .form-full .tv-list__type-toggle li a {
+    background-color: #1c7699;
+    color: #fefefe; }
+  .form-full .tab-content span {
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 22px;
+    color: #fff;
+    margin: 31px 0 14px 0;
+    display: block;
+    width: 294px;
+    text-transform: uppercase;
+    line-height: 28px; }
+  .form-full .tab-content .designer__item label {
+    font-size: 16px;
+    color: #fff; }
+  .form-full .tab-content .radio:not(checked) + label {
+    padding: 0 0 0 25px; }
+  .form-full .tab-content .radio:not(checked) + label:before {
+    border-color: #fff; }
+  .form-full .designer__select-wrap {
+    min-height: 113px; }
+  .form-full input {
+    background: #fff;
+    color: #717171;
+    font-family: "Exo2-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    border: 1px solid transparent; }
+  .form-full .tab-content input.error {
+    border: 1px solid red; }
+  .form-full .tab-content input.error + label {
+    color: red; }
+  .form-full__name input {
+    width: 100%; }
+  .form-full__name input + input {
+    margin-top: 19px; }
+  .form-full .callback__form-contacts {
+    width: 220px; }
+    .form-full .callback__form-contacts input:last-child {
+      margin-top: 19px; }
+  .form-full__adress {
+    padding-left: 50px; }
+  .form-full .custom__btn-form {
+    padding: 29px 40px;
+    display: block;
+    width: 100%; }
+  .form-full__equipment {
+    padding-left: 30px; }
 
 .footer {
   background: #f2f2f2;
