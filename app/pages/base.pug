@@ -4,6 +4,7 @@ html(class="no-js" lang='en')
         meta(charset='UTF-8')
         meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
         meta(http-equiv='X-UA-Compatible', content='ie=edge')
+
         title
             block title
 
@@ -47,6 +48,9 @@ html(class="no-js" lang='en')
             block modal
                 include modal
 
+            //block tabs
+                include tabs
+
             header.header
                 .container
                     .row
@@ -67,7 +71,7 @@ html(class="no-js" lang='en')
                                         a(href="#") Наши контакты
                         .col-lg-6
                             .header__personal
-                                a(href="#").header__button подключиться!
+                                a(href="#callBack").header__button подключиться!
                                 a(href="#").header__cabinet
                                     img(src="img/personal_ic.png")
                                     span Личный
@@ -125,6 +129,8 @@ html(class="no-js" lang='en')
                                     .footer__made
                                         span Сделано в
                                             a(href="#") Деловом мире
+
+
 
 
 
