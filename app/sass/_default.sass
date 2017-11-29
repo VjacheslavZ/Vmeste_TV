@@ -183,3 +183,74 @@ input.error
 
 #form label.error
   display: none !important
+
+.default-section
+  position: relative
+  padding: 43px 0 65px 0
+  background-size: cover
+  height: 550px
+  .container
+    display: flex
+    height: 100%
+  &__title
+    display: flex
+    height: 100%
+    flex-direction: column
+    justify-content: space-between
+  &:before
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    background-color: rgba(0,0,0, .5)
+  &__wrap
+    display: flex
+  &__info
+    padding-top: 7px
+    display: block
+    width: 220px
+    font-size: 22px
+    font-family: $ESemiBold
+    color: $text_white_color
+    text-transform: uppercase
+    line-height: 22px
+    letter-spacing: 2px
+  &__top
+    li
+      display: inline-block
+
+    li.active
+      a
+        color: #aecb06
+        font-family: $ERegular
+        font-size: 12px
+    li + li
+      margin-left: 10px
+    a
+      text-decoration: underline
+      color: $text_white_color
+      font-family: $ERegular
+      font-size: 12px
+      text-transform: uppercase
+  &__main-content
+    h1
+      font-size: 60px
+      font-family: $EBold
+      color: $text_white_color
+      text-transform: uppercase
+      letter-spacing: 2px
+      line-height: 86px
+    p
+      font-family: $LSemiboldIt
+      font-size: 20px
+      color: $text_white_color
+      line-height: 26px
+  &__article
+    padding: 66px 0
+    p
+      font-family: $LRegular
+      font-size: 18px
+      color: $text_greyLight_color
+      line-height: 24px

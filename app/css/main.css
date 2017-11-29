@@ -308,6 +308,90 @@ input.error + label {
 #form label.error {
   display: none !important; }
 
+.default-section {
+  position: relative;
+  padding: 43px 0 65px 0;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 550px; }
+  .default-section .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%; }
+  .default-section__title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .default-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .default-section__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .default-section__info {
+    padding-top: 7px;
+    display: block;
+    width: 220px;
+    font-size: 22px;
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 22px;
+    letter-spacing: 2px; }
+  .default-section__top li {
+    display: inline-block; }
+  .default-section__top li.active a {
+    color: #aecb06;
+    font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px; }
+  .default-section__top li + li {
+    margin-left: 10px; }
+  .default-section__top a {
+    text-decoration: underline;
+    color: #fff;
+    font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase; }
+  .default-section__main-content h1 {
+    font-size: 60px;
+    font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 86px; }
+  .default-section__main-content p {
+    font-family: "Lato-SemiboldItalic", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    line-height: 26px; }
+  .default-section__article {
+    padding: 66px 0; }
+    .default-section__article p {
+      font-family: "Lato-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 18px;
+      color: #454545;
+      line-height: 24px; }
+
 .input_wrap {
   position: relative;
   display: block; }
@@ -1026,10 +1110,7 @@ input.error + label {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around; }
+    display: flex; }
   .full-news__date {
     font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 12px;
@@ -1202,6 +1283,9 @@ input.error + label {
     height: 61px;
     display: inline-block;
     cursor: pointer; }
+
+.tv {
+  background: url("../img/tv_bg.jpg") no-repeat; }
 
 .footer {
   background: #f2f2f2;
