@@ -394,6 +394,22 @@ input.error + label {
       color: #454545;
       line-height: 24px; }
 
+.customBtn {
+  z-index: 999;
+  cursor: pointer; }
+  .customBtn:before {
+    content: "";
+    display: block;
+    background-image: url(../img/sprite.png);
+    background-position: -153px 0px;
+    width: 18px;
+    height: 34px; }
+
+.customNextBtn:before {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
 .input_wrap {
   position: relative;
   display: block; }
@@ -687,7 +703,7 @@ input.error + label {
         display: block;
         position: absolute;
         background-image: url(../img/sprite.png);
-        background-position: 0px -102px;
+        background-position: 0px -75px;
         width: 19px;
         height: 36px; }
   .service__item + .service__item {
@@ -1453,6 +1469,133 @@ input.error + label {
   .form-full__equipment {
     padding-left: 30px; }
 
+.tarif {
+  background: url("../img/tarif_bg.jpg") no-repeat center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.standart-tarifs {
+  background: url("../img/standart_tarifs_bg.jpg") no-repeat center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding: 40px 0 44px 0; }
+  .standart-tarifs .container {
+    position: relative; }
+  .standart-tarifs__title {
+    padding: 0 45px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .standart-tarifs__title p {
+      display: block;
+      width: 75px;
+      font-size: 16px;
+      font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 22px;
+      letter-spacing: 1px; }
+    .standart-tarifs__title a {
+      font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 11px;
+      color: #0088e7;
+      text-decoration: underline;
+      text-transform: uppercase; }
+  .standart-tarifs__slider-wrap {
+    margin-top: 33px;
+    padding: 0 45px;
+    position: relative; }
+  .standart-tarifs .item {
+    padding: 30px;
+    color: #454545;
+    background-color: #ececec;
+    font-size: 16px;
+    width: 343px;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    -o-transition: transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+    margin: 0 auto; }
+    .standart-tarifs .item:hover {
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05);
+      -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.75);
+              box-shadow: 0 0 30px rgba(0, 0, 0, 0.75); }
+  .standart-tarifs .item__wrap {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .standart-tarifs__name {
+    font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    color: #084067;
+    line-height: 36px; }
+  .standart-tarifs__description {
+    font-family: "Lato-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin-top: 11px;
+    display: block;
+    line-height: 20px; }
+  .standart-tarifs__info {
+    padding: 17px 0 22px 17px;
+    line-height: 21px;
+    border-top: 1px solid #454545;
+    border-bottom: 1px solid #454545;
+    font-family: "Lato-Medium", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin-top: 22px; }
+    .standart-tarifs__info li {
+      position: relative; }
+      .standart-tarifs__info li:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #bedf00;
+        position: absolute;
+        top: 9px;
+        left: -15px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+    .standart-tarifs__info li + li {
+      margin-top: 15px; }
+  .standart-tarifs__price {
+    font-size: 44px;
+    font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #bedf00;
+    display: inline-block;
+    line-height: 52px; }
+    .standart-tarifs__price:after {
+      content: "\f158";
+      font-family: "FontAwesome"; }
+  .standart-tarifs .custom__btn-form {
+    font-size: 19px;
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #fff;
+    padding: 15px 40px;
+    display: block;
+    margin-top: 15px; }
+    .standart-tarifs .custom__btn-form:hover {
+      color: #000; }
+  .standart-tarifs .customBtn {
+    position: absolute;
+    top: 50%; }
+  .standart-tarifs .customNextBtn {
+    right: 0; }
+  .standart-tarifs .owl-stage {
+    padding: 35px 0 35px 0; }
+  .standart-tarifs .owl-theme .owl-dots .owl-dot span {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    background-color: #094062; }
+  .standart-tarifs .owl-theme .owl-dots .owl-dot.active span, .standart-tarifs .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #cef200; }
+  .standart-tarifs .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: -7px; }
+
 .footer {
   background: #f2f2f2;
   padding: 56px 0 60px 0; }
@@ -1569,17 +1712,17 @@ input.error + label {
       display: block; }
   .footer__mail:before {
     background-image: url(../img/sprite.png);
-    background-position: -99px -102px;
+    background-position: -99px -75px;
     width: 20px;
     height: 20px; }
   .footer__tw:before {
     background-image: url(../img/sprite.png);
-    background-position: -69px -102px;
+    background-position: -69px -75px;
     width: 20px;
     height: 20px; }
   .footer__vk:before {
     background-image: url(../img/sprite.png);
-    background-position: -153px 0px;
+    background-position: 0px -121px;
     width: 20px;
     height: 20px; }
   .footer__made {

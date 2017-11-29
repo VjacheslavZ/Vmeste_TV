@@ -256,3 +256,14 @@ input.error
       font-size: 18px
       color: $text_greyLight_color
       line-height: 24px
+
+.customBtn
+  z-index: 999
+  cursor: pointer
+  &:before
+    content: ""
+    display: block
+    @include sprite($arrow_right_green)
+.customNextBtn
+  &:before
+    transform: rotate(180deg)

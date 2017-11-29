@@ -106,6 +106,54 @@ $(document).ready(function () {
         // }
     });
 
+    $("#standart-tarifs__slider").owlCarousel({
+        loop: true,
+        items: 4,
+        nav: false,
+        dots: true,
+        margin: 30,
+        // autoplay: true,
+        response: true,
+        navText: ["<i class=\"fa fa-angle-left slider__btn\"></i>","<i class=\"fa fa-angle-right slider__btn\"></i>"],
+        autoplayTimeout: 4000,
+
+        // responsive: {
+        //     1200: {
+        //         margin: 15
+        //     },
+        //     1200: {
+        //         items: 3
+        //     },
+        //     767: {
+        //         items: 2
+        //     },
+        //     667: {
+        //         items: 2
+        //     },
+        //     600: {
+        //         items: 1
+        //     },
+        //     0: {
+        //         items: 1
+        //     },
+        // }
+    });
+
+
+    let CustomNextBtn =  $('.standart-tarifs .customNextBtn');
+    let CustomPrevBtn =  $('.standart-tarifs .customPrevBtn');
+
+    CustomNextBtn.click(function() {
+        $("#standart-tarifs__slider").trigger('next.owl.carousel', [700]);
+    });
+    CustomPrevBtn.click(function() {
+        $("#standart-tarifs__slider").trigger('prev.owl.carousel', [700]);
+    });
+
+
+
+
+
     var summ = $(".designer__price-finish");
     var priceSpeed = 10;
 

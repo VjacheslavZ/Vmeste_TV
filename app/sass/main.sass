@@ -715,4 +715,117 @@
   &__equipment
     padding-left: 30px
 
+.tarif
+  background: url("../img/tarif_bg.jpg") no-repeat center
+  background-size: cover
+
+
+//секция готовые тарифы
+.standart-tarifs
+  background: url("../img/standart_tarifs_bg.jpg") no-repeat center
+  background-size: cover
+  padding: 40px 0 44px 0
+  .container
+    position: relative
+  &__title
+    padding: 0 45px
+    display: flex
+    justify-content: space-between
+    p
+      display: block
+      width: 75px
+      font-size: 16px
+      font-family: $ESemiBold
+      text-transform: uppercase
+      color: #fff
+      line-height: 22px
+      letter-spacing: 1px
+    a
+      font-family: $ERegular
+      font-size: 11px
+      color: #0088e7
+      text-decoration: underline
+      text-transform: uppercase
+  &__slider-wrap
+    margin-top: 33px
+    padding: 0 45px
+    position: relative
+
+  .item
+    padding: 30px
+    color: #454545
+    background-color: #ececec
+    font-size: 16px
+    width: 343px
+    transition: transform .3s ease
+    margin: 0 auto
+    &:hover
+      transform: scale(1.05)
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.75)
+  .item__wrap
+    margin-top: 20px
+    margin-bottom: 20px
+  &__name
+    font-family: $EBold
+    font-size: 32px
+    color: #084067
+    line-height: 36px
+  &__description
+    font-family: $LRegular
+    margin-top: 11px
+    display: block
+    line-height: 20px
+  &__info
+    padding: 17px 0 22px 17px
+    line-height: 21px
+    border-top: 1px solid #454545
+    border-bottom: 1px solid #454545
+    font-family: $LMedium
+    margin-top: 22px
+    li
+      position: relative
+      &:before
+        content: ""
+        width: 10px
+        height: 10px
+        background-color: #bedf00
+        position: absolute
+        top: 9px
+        left: -15px
+        border-radius: 50%
+    li + li
+      margin-top: 15px
+  &__price
+    font-size: 44px
+    font-family: $EBold
+    color: #bedf00
+    display: inline-block
+    line-height: 52px
+    &:after
+      content: "\f158"
+      font-family: "FontAwesome"
+  .custom__btn-form
+    font-size: 19px
+    font-family: $ESemiBold
+    color: #fff
+    padding: 15px 40px
+    display: block
+    margin-top: 15px
+    &:hover
+      color: #000
+  .customBtn
+    position: absolute
+    top: 50%
+  .customNextBtn
+    right: 0
+
+  .owl-stage
+    padding: 35px 0 35px 0
+  .owl-theme .owl-dots .owl-dot span
+    border-radius: 0
+    background-color: #094062
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+    background-color: #cef200
+  .owl-theme .owl-nav.disabled+.owl-dots
+    margin-top: -7px
 @import "footer"
