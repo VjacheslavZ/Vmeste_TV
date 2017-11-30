@@ -9,12 +9,12 @@ block main
         section.tv.default-section
             .container
                 .row
-                    .col-lg-3
+                    .col-sm-3
                         .default-section__wrap
                             .default-section__info
                                 span кабельное телевидение
 
-                    .col-lg-10.default-section__title
+                    .col-sm-10.default-section__title
                         .default-section__top
                             ul.default-section__type
                                 li.active
@@ -28,16 +28,16 @@ block main
         section.default-section__article
             .container
                 .row
-                    .col-lg-offset-3.col-lg-10
+                    .col-md-offset-3.col-md-10
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.m quaera voluptatem.
 
         //секция список каналов
         section.tv-list
             .container
                 .row
-                    .col-lg-3
+                    .col-md-3.col-sm-3
                         span.tv-list__title пакеты каналов
-                    .col-lg-4
+                    .col-md-4.col-sm-5
                         ul.nav.nav-tabs.tv-list__type-toggle
 
                             li.active
@@ -83,7 +83,7 @@ block main
                                         li
                                             a(href="#list_categoty_sport", data-toggle='tab') Спортивные
 
-                    .col-lg-6
+                    .col-md-6
                         p.tv-list__selected-package пакет
                             span «HD»
                         span.tv-list__list-chanels /список каналов:
@@ -251,12 +251,14 @@ block main
                                                 img(src="img/logo_tv.png")
                                                 span Общедоступные
 
+
+
         section.form-full
             .container
                 .row
-                    .col-lg-3
+                    .col-md-3.col-sm-5
                         span.form-full__title подключение
-                    .col-lg-4
+                    .col-md-4.col-sm-5
                         ul.nav.nav-tabs.tv-list__type-toggle
 
                             li.active
@@ -268,7 +270,7 @@ block main
                     .tab-content
                         form#form_tv_cable(name="Кабельное").tab-pane.active
 
-                            .col-lg-offset-3.col-lg-4
+                            .col-md-offset-3.col-md-4.col-sm-5
 
                                 span Выберите нужное количество ТВ-каналов
 
@@ -284,8 +286,8 @@ block main
                                     input(type="text" name="street" placeholder="Улица" required='')
                                     input(type="text" name="fullName" placeholder="ФИО" required='')
 
-                            .col-lg-3
 
+                            .col-md-3.col-sm-5
                                 .form-full__adress
                                     span Количество ТВ-приемников
 
@@ -305,7 +307,7 @@ block main
                                     input(type="text" name="flat" placeholder="Кв." required='')
                                     input(type="text" name="phone" placeholder="Тел." required='')
 
-                            .col-lg-4
+                            .col-md-4.col-sm-6
 
                                 .form-full__equipment
                                     span Оборудование для подключения
@@ -325,4 +327,53 @@ block main
 
 
                         form#form_ip_tv.tab-pane(name="ip_tv")
-                            p f2
+                            .col-md-offset-3.col-md-4.col-sm-5
+
+                                span Выберите нужное количество ТВ-каналов
+
+                                .designer__select-wrap
+                                    .designer__item
+                                        input(type="radio" name="canals" value="Кабельное ТВ (115 каналов) 100 Р/мес" id="cable").radio
+                                        label(for="cable") Кабельное ТВ (115 каналов) 100 Р/мес
+
+                                .form-full__name
+                                    input(type="text" name="street" placeholder="Улица" required='')
+                                    input(type="text" name="fullName" placeholder="ФИО" required='')
+
+
+                            .col-md-3.col-sm-5
+                                .form-full__adress
+                                    span Количество ТВ-приемников
+
+                                    .designer__select-wrap
+                                        .designer__item
+                                            input(type="radio" name="receiver" value="1 - 2" id="1-2").radio
+                                            label(for="1-2") 1 - 2
+                                        .designer__item
+                                            input(type="radio" name="receiver" value="1 - 3" id="1-3").radio
+                                            label(for="1-3") 1 - 3
+                                        .designer__item
+                                            input(type="radio" name="receiver" value="1 - 5" id="1-5").radio
+                                            label(for="1-5") 1 - 5
+
+                                .callback__form-contacts
+                                    input(type="text" name="house" placeholder="Дом" required='')
+                                    input(type="text" name="flat" placeholder="Кв." required='')
+                                    input(type="text" name="phone" placeholder="Тел." required='')
+
+                            .col-md-4.col-sm-6
+
+                                .form-full__equipment
+                                    span Оборудование для подключения
+                                    .designer__select-wrap
+                                        .designer__item
+                                            input(type="radio" name="equipment" value="Выкуп приставки DVB-C 2000 Р" id="equipment_1").radio
+                                            label(for="equipment_1") Выкуп приставки DVB-C 2000 Р
+                                        .designer__item
+                                            input(type="radio" name="equipment" value="Выкуп приставки Eltex nv-102 3500 Р" id="equipment_2").radio
+                                            label(for="equipment_2") Выкуп приставки Eltex nv-102 3500 Р
+                                        .designer__item
+                                            input(type="radio" name="equipment" value="Аренда приставки 50 Р/мес" id="rent").radio
+                                            label(for="rent") Аренда приставки 50 Р/мес
+                                //button.custom__btn-form я молодец!
+                                button(href="#callBack" type="submit").custom__btn-form я молодец!

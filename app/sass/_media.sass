@@ -2,11 +2,18 @@
   /**/
   //Секция сервис
   .service
+    &__name
+      font-size: 31px
     &__title
       font-size: 29px
       margin-top: 0
     &__item
-      padding: 8px 0 6px 24px
+      padding: 6px 0 6px 24px
+      &:hover
+        .service__item-arrow
+          height: 70px
+          padding: 17px 6px
+          top: -8px
     &__description
       font-size: 15px
 
@@ -17,8 +24,121 @@
       padding: 29px 20px 42px 31px
     &__builder-form_wrap
       padding: 16px 0 20px 31px
+    &__title
+      line-height: 30px
+    &__info
+      line-height: 20px
+    &__price-txt
+      font-size: 14px
+      line-height: 21px
+    &__price-finish
+      font-size: 47px
+    .custom__btn-form
+      padding: 20px 10px
+      bottom: 68px
 
   .designer .slider.slider-horizontal
     width: 500px
   .designer .slider-tick-label-container .slider-tick-label:not(:last-child):after
     width: 117px
+
+
+  //секция новости
+  .news
+    &__name
+      font-size: 20px
+      line-height: 24px
+
+  //страница новости
+  .full-news
+    &__list
+      padding: 25px 25px 25px 50px
+
+  //страница тарифы секция готовые тарифы
+  .standart-tarifs
+    &__name
+      font-size: 19px
+    &__info
+      padding: 8px 0 22px 8px
+
+  .tarif__page
+    &__wrap
+      padding: 0 0 0 33px
+    .designer .custom__btn-form
+      padding: 20px 10px
+      bottom: 68px
+      font-size: 26px
+      right: 7px
+
+  //страница TV
+  .form-full
+    &__adress
+      padding-left: 0
+    &__equipment
+      padding-left: 0
+    .tab-content
+      span
+        font-size: 16px
+        line-height: 24px
+        width: 100%
+        min-height: 50px
+      .designer__item label
+        font-size: 13px
+    .callback__form-contacts
+      width: 100%
+      justify-content: space-between
+    .custom__btn-form
+      font-size: 27px
+      width: 100%
+      padding: 34px 40px
+
+
+  //слайдер акции
+  .slider-shares
+    .customPrevBtn
+      left: 10%
+    .customNextBtn
+      right: 10%
+
+@media only screen and (max-width : 1200px)
+  .container
+    padding: 0 10px
+  .header
+    &__logo
+      img
+        width: 100%
+        height: auto
+    &__nav
+      padding-top: 0
+    &__items
+      text-align: center
+    &__items li
+      font-size: 12px
+    &__button
+      font-size: 11px
+
+  .service__item:hover .service__item-arrow
+    display: none
+
+  .footer__nav-links + .footer__nav-links
+    margin-left: 20px
+  .footer__made span
+    right: 20px
+
+  .form-full .callback__form-contacts input:last-child
+    width: 100%
+
+
+  .slider-shares .item .custom__btn-form
+    bottom: 20px
+    font-size: 12px
+
+
+  .add-services__item
+    width: 415px
+
+
+  .designer__builder-wrap
+    margin-top: 20px
+  .tarif__page .designer__wrap
+    padding: 0

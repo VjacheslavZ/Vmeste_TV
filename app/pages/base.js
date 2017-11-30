@@ -1,13 +1,9 @@
 // validation
 $(document).ready(function () {
     $.each($("form"), function () {
-
         $(this).validate({
-
             errorPlacement: function (error, element) {
-
             },
-
             rules: {
                 router: {
                     required: true
@@ -38,10 +34,6 @@ $(document).ready(function () {
                     required: true,
                     minlength: 5
                 },
-
-
-
-
                 canals: {
                     required: true,
                 },
@@ -52,10 +44,7 @@ $(document).ready(function () {
                 equipment: {
                     required: true,
                 },
-
-
             },
-
             messages:{
                 router: {
                     required: false
@@ -69,7 +58,6 @@ $(document).ready(function () {
             }
         });
     });
-
 });
 
 //modal
@@ -84,26 +72,6 @@ $(document).ready(function () {
         response: true,
         navText: ["<i class=\"fa fa-angle-left slider__btn\"></i>","<i class=\"fa fa-angle-right slider__btn\"></i>"],
         autoplayTimeout: 4000,
-        // responsive: {
-        //     1200: {
-        //         margin: 15
-        //     },
-        //     1200: {
-        //         items: 3
-        //     },
-        //     767: {
-        //         items: 2
-        //     },
-        //     667: {
-        //         items: 2
-        //     },
-        //     600: {
-        //         items: 1
-        //     },
-        //     0: {
-        //         items: 1
-        //     },
-        // }
     });
 
     $("#standart-tarifs__slider").owlCarousel({
@@ -117,26 +85,17 @@ $(document).ready(function () {
         navText: ["<i class=\"fa fa-angle-left slider__btn\"></i>","<i class=\"fa fa-angle-right slider__btn\"></i>"],
         autoplayTimeout: 4000,
 
-        // responsive: {
-        //     1200: {
-        //         margin: 15
-        //     },
-        //     1200: {
-        //         items: 3
-        //     },
-        //     767: {
-        //         items: 2
-        //     },
-        //     667: {
-        //         items: 2
-        //     },
-        //     600: {
-        //         items: 1
-        //     },
-        //     0: {
-        //         items: 1
-        //     },
-        // }
+        responsive: {
+            1615: {
+                items: 4
+            },
+            1200: {
+                items: 3
+            },
+            992: {
+                items: 2
+            },
+        }
     });
 
 
@@ -149,9 +108,6 @@ $(document).ready(function () {
     CustomPrevBtn.click(function() {
         $("#standart-tarifs__slider").trigger('prev.owl.carousel', [700]);
     });
-
-
-
 
 
     var summ = $(".designer__price-finish");
@@ -171,15 +127,16 @@ $(document).ready(function () {
 
     );
 
+
+
     (function changeFinalPrice() {
         var mbit = $("<span></span>").text("Mbit/s");
-        $(".tooltip-main").append(mbit)
+
+        $(".tooltip-main").append(mbit);
         mbit.addClass("designer__current-speed_text")
     })();
 
 
-
-    //$(".form-full .designer__select-wrap").equalHeights();
 
     //попап
     $("a[href='#callBack']").magnificPopup({
@@ -187,7 +144,7 @@ $(document).ready(function () {
         mainClass: 'mfp-fade'
     });
 
-    // $(".col-lg-8").equalHeights();
+
 
     //video
     let playButton = $("#play-pause"),
@@ -206,7 +163,6 @@ $(document).ready(function () {
 
         }
     });
-
     video.click(function() {
         if(this.play()){
             this.pause();
@@ -214,6 +170,24 @@ $(document).ready(function () {
             videoBg.css({"opacity":"1"});
         }
     });
+
+
+
+    $('.slider-shares__wrap').slick({
+        // infinite: false,
+        centerMode: true,
+        centerPadding: '290px',
+        slidesToShow: 1,
+        prevArrow: $('.slider-shares .customPrevBtn'),
+        nextArrow: $('.slider-shares .customNextBtn'),
+        responsive:[{
+            breakpoint: 1600,
+            settings:{
+                centerPadding: '200px',
+            }
+        }]
+    });
+
 });
 
 

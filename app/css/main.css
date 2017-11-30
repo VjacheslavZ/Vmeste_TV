@@ -1268,7 +1268,7 @@ input.error + label {
   position: relative;
   height: 440px; }
   .video .video__bg {
-    background: url("../img/video_bg.jpg") no-repeat;
+    background: url("../img/video_bg.jpg") no-repeat center;
     -webkit-background-size: cover;
             background-size: cover;
     position: absolute;
@@ -1674,6 +1674,103 @@ input.error + label {
   .tarif__page .designer .custom__btn-form {
     padding: 39px 26px; }
 
+.slider-shares {
+  position: relative;
+  padding: 40px 20px; }
+  .slider-shares__show-all {
+    position: absolute;
+    top: -6px;
+    left: 14px;
+    text-transform: uppercase;
+    color: #cef200;
+    font-size: 16px;
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    cursor: pointer;
+    z-index: 11; }
+    .slider-shares__show-all:hover {
+      color: #cef200; }
+  .slider-shares__baner-wrap {
+    position: relative; }
+    .slider-shares__baner-wrap:before {
+      content: "";
+      top: 45px;
+      bottom: 45px;
+      left: -10px;
+      position: absolute;
+      -webkit-box-shadow: 1px 1px 55px 12px rgba(0, 142, 242, 0.68);
+              box-shadow: 1px 1px 55px 12px rgba(0, 142, 242, 0.68);
+      z-index: -1; }
+    .slider-shares__baner-wrap:after {
+      content: "";
+      top: 45px;
+      bottom: 45px;
+      right: -10px;
+      position: absolute;
+      -webkit-box-shadow: -5px 2px 55px 12px rgba(0, 142, 242, 0.68);
+              box-shadow: -5px 2px 55px 12px rgba(0, 142, 242, 0.68);
+      z-index: -1; }
+  .slider-shares .customBtn {
+    position: absolute;
+    top: -webkit-calc(50% - 17px);
+    top: calc(50% - 17px); }
+  .slider-shares .customNextBtn {
+    right: 14%; }
+  .slider-shares .customPrevBtn {
+    left: 14%; }
+  .slider-shares .item {
+    position: relative; }
+    .slider-shares .item:focus {
+      outline: none; }
+    .slider-shares .item a {
+      position: absolute;
+      font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      text-decoration: underline;
+      top: 20px;
+      right: 40px;
+      z-index: 10; }
+    .slider-shares .item .custom__btn-form {
+      top: initial;
+      bottom: 45px;
+      text-decoration: none;
+      font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 19px;
+      color: #000;
+      padding: 12px 22px; }
+  .slider-shares .slick-track {
+    padding: 40px 0; }
+  .slider-shares .slick-slide {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    position: relative; }
+    .slider-shares .slick-slide:before {
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 10; }
+    .slider-shares .slick-slide img {
+      width: 100%; }
+    .slider-shares .slick-slide a {
+      opacity: 0; }
+  .slider-shares .slick-active {
+    z-index: 99;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+    .slider-shares .slick-active:before {
+      background-color: transparent; }
+    .slider-shares .slick-active a {
+      opacity: 1; }
+
 .footer {
   background: #f2f2f2;
   padding: 56px 0 60px 0; }
@@ -1818,18 +1915,109 @@ input.error + label {
 
 @media only screen and (max-width: 1614px) {
   /**/
+  .service__name {
+    font-size: 31px; }
   .service__title {
     font-size: 29px;
     margin-top: 0; }
   .service__item {
-    padding: 8px 0 6px 24px; }
+    padding: 6px 0 6px 24px; }
+    .service__item:hover .service__item-arrow {
+      height: 70px;
+      padding: 17px 6px;
+      top: -8px; }
   .service__description {
     font-size: 15px; }
   .designer__builder-wrap {
     padding: 29px 20px 42px 31px; }
   .designer__builder-form_wrap {
     padding: 16px 0 20px 31px; }
+  .designer__title {
+    line-height: 30px; }
+  .designer__info {
+    line-height: 20px; }
+  .designer__price-txt {
+    font-size: 14px;
+    line-height: 21px; }
+  .designer__price-finish {
+    font-size: 47px; }
+  .designer .custom__btn-form {
+    padding: 20px 10px;
+    bottom: 68px; }
   .designer .slider.slider-horizontal {
     width: 500px; }
   .designer .slider-tick-label-container .slider-tick-label:not(:last-child):after {
-    width: 117px; } }
+    width: 117px; }
+  .news__name {
+    font-size: 20px;
+    line-height: 24px; }
+  .full-news__list {
+    padding: 25px 25px 25px 50px; }
+  .standart-tarifs__name {
+    font-size: 19px; }
+  .standart-tarifs__info {
+    padding: 8px 0 22px 8px; }
+  .tarif__page__wrap {
+    padding: 0 0 0 33px; }
+  .tarif__page .designer .custom__btn-form {
+    padding: 20px 10px;
+    bottom: 68px;
+    font-size: 26px;
+    right: 7px; }
+  .form-full__adress {
+    padding-left: 0; }
+  .form-full__equipment {
+    padding-left: 0; }
+  .form-full .tab-content span {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    min-height: 50px; }
+  .form-full .tab-content .designer__item label {
+    font-size: 13px; }
+  .form-full .callback__form-contacts {
+    width: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .form-full .custom__btn-form {
+    font-size: 27px;
+    width: 100%;
+    padding: 34px 40px; }
+  .slider-shares .customPrevBtn {
+    left: 10%; }
+  .slider-shares .customNextBtn {
+    right: 10%; } }
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 10px; }
+  .header__logo img {
+    width: 100%;
+    height: auto; }
+  .header__nav {
+    padding-top: 0; }
+  .header__items {
+    text-align: center; }
+  .header__items li {
+    font-size: 12px; }
+  .header__button {
+    font-size: 11px; }
+  .service__item:hover .service__item-arrow {
+    display: none; }
+  .footer__nav-links + .footer__nav-links {
+    margin-left: 20px; }
+  .footer__made span {
+    right: 20px; }
+  .form-full .callback__form-contacts input:last-child {
+    width: 100%; }
+  .slider-shares .item .custom__btn-form {
+    bottom: 20px;
+    font-size: 12px; }
+  .add-services__item {
+    width: 415px; }
+  .designer__builder-wrap {
+    margin-top: 20px; }
+  .tarif__page .designer__wrap {
+    padding: 0; } }
