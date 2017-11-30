@@ -1596,6 +1596,84 @@ input.error + label {
   .standart-tarifs .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: -7px; }
 
+.add-services {
+  background-color: #f2f2f2; }
+  .add-services__wrap {
+    padding: 41px 40px 60px 46px; }
+  .add-services__title {
+    display: inline-block;
+    width: 150px;
+    font-size: 16px;
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #4e4e4e;
+    text-transform: uppercase; }
+  .add-services__tarif-wrap {
+    margin-top: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .add-services__item {
+    margin-top: 40px;
+    color: #4e4e4e;
+    width: 460px; }
+  .add-services__ic {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .add-services__name {
+    text-transform: uppercase;
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    margin-left: 7px;
+    color: #084067;
+    line-height: 29px; }
+  .add-services__description {
+    font-family: "Lato-Medium", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 9px;
+    line-height: 20px;
+    line-height: 20px; }
+  .add-services__price {
+    font-size: 36px;
+    color: #bedf00;
+    font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0 0 0 10px; }
+    .add-services__price:after {
+      content: "\f158";
+      font-family: "FontAwesome"; }
+
+.tarif__page .designer {
+  padding: 46px 0 60px 0;
+  background-color: #fff; }
+  .tarif__page .designer__wrap {
+    padding: 0 0 0 46px; }
+  .tarif__page .designer__prev {
+    font-size: 16px;
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #4e4e4e;
+    text-transform: uppercase;
+    margin-bottom: 46px; }
+  .tarif__page .designer .custom__btn-form {
+    padding: 39px 26px; }
+
 .footer {
   background: #f2f2f2;
   padding: 56px 0 60px 0; }
@@ -1737,3 +1815,21 @@ input.error + label {
       color: #084067;
       text-decoration: underline;
       margin-left: 3px; }
+
+@media only screen and (max-width: 1614px) {
+  /**/
+  .service__title {
+    font-size: 29px;
+    margin-top: 0; }
+  .service__item {
+    padding: 8px 0 6px 24px; }
+  .service__description {
+    font-size: 15px; }
+  .designer__builder-wrap {
+    padding: 29px 20px 42px 31px; }
+  .designer__builder-form_wrap {
+    padding: 16px 0 20px 31px; }
+  .designer .slider.slider-horizontal {
+    width: 500px; }
+  .designer .slider-tick-label-container .slider-tick-label:not(:last-child):after {
+    width: 117px; } }

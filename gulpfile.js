@@ -49,7 +49,6 @@ gulp.task("scripts-libs", function () {
    return gulp.src([
       "app/libs/jquery/dist/jquery.min.js",
       "app/libs/jquery-equalheights/jquery.equalheights.min.js",
-
        "app/libs/bootstrap/dist/js/bootstrap.js",
       "app/libs/owl.carousel/dist/owl.carousel.min.js",
       "app/libs/magnific-popup/dist/jquery.magnific-popup.min.js",
@@ -132,6 +131,7 @@ gulp.task("pages", function() {
         "app/pages/indexB/indexB.pug",
         "app/pages/news/news.pug",
         "app/pages/tv/tv.pug",
+        "app/pages/tarif/tarif.pug",
     ])
         .pipe(pug({pretty: true}))  //с переносом pretty: true
         .on('error', notify.onError(function (error) {

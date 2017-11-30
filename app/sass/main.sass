@@ -828,4 +828,75 @@
     background-color: #cef200
   .owl-theme .owl-nav.disabled+.owl-dots
     margin-top: -7px
+
+
+//секция доп услули
+
+.add-services
+
+  background-color: #f2f2f2
+  &__wrap
+    padding: 41px 40px 60px 46px
+  &__title
+    display: inline-block
+    width: 150px
+    font-size: 16px
+    font-family: $ESemiBold
+    color: #4e4e4e
+    text-transform: uppercase
+  &__tarif-wrap
+    margin-top: 5px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: center
+  &__item
+    margin-top: 40px
+    color: #4e4e4e
+    width: 460px
+
+  &__ic
+    display: flex
+  &__name
+    text-transform: uppercase
+    font-family: $ESemiBold
+    font-size: 16px
+    margin-left: 7px
+    color: #084067
+    line-height: 29px
+  &__description
+    font-family: $LMedium
+    font-size: 16px
+    margin-top: 9px
+    line-height: 20px
+    line-height: 20px
+  &__price
+    font-size: 36px
+    color: #bedf00
+    font-family: $EBold
+    margin: 0 0 0 10px
+    &:after
+      content: "\f158"
+      font-family: "FontAwesome"
+
+//секция конструктор тарифов страница тарифов
+.tarif__page
+  .designer
+    padding: 46px 0 60px 0
+    background-color: #fff
+    &__wrap
+      padding: 0 0 0 46px
+    &__prev
+      font-size: 16px
+      font-family: $ESemiBold
+      color: #4e4e4e
+      text-transform: uppercase
+      margin-bottom: 46px
+
+    .custom__btn-form
+      padding: 39px 26px
+
+
 @import "footer"
+@import "media"
