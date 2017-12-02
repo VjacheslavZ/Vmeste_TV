@@ -1,6 +1,6 @@
 .footer
   background: $bgColorFooter
-  padding: 56px 0 60px 0
+  padding: 47px 0 60px 0
   &__main
     display: flex
     justify-content: space-between
@@ -21,7 +21,13 @@
       color: #084067
       font-size: 13px
       font-family: $EMedium
-      text-decoration: underline
+      //text-decoration: underline.
+      border-bottom: 1px solid #084067
+      transition: border-bottom .3s
+      &:hover
+        border-bottom: 1px solid transparent
+
+
     ul
       position: relative
     li
@@ -66,11 +72,13 @@
     width: 20px
     height: 20px
     outline: none
+    border-radius: 0
     .fa-search
       position: absolute
       top: 1px
       right: 2px
   &__social
+    padding-top: 13px
     display: flex
     justify-content: flex-end
     flex-direction: column
@@ -83,6 +91,7 @@
       &:before
         content: ""
         display: block
+
   &__mail
     &:before
       @include sprite($mail-ic)
@@ -96,13 +105,15 @@
       @include sprite($vk-ic)
 
   &__made
+    font-size: 12px
     color: #313131
-    font-size: $ERegular
+    font-family: $ERegular
     span
       position: absolute
       bottom: -124px
       left: 0
       right: 0
+      padding-bottom: 10px
     a
       color: $text_accent_color
       text-decoration: underline

@@ -1,6 +1,10 @@
 @media only screen and (max-width : 1614px)
   /**/
   //Секция сервис
+  .header__button
+    padding: 15px 15px
+  .header__cabinet
+    margin-left: 5px
   .service
     &__name
       font-size: 31px
@@ -8,15 +12,20 @@
       font-size: 29px
       margin-top: 0
     &__item
-      padding: 6px 0 6px 24px
+      padding: 25px 0 21px 90px
       &:hover
+
+        //  .service__item-arrow
+        //    height: 70px
+        //    padding: 17px 6px
+        //    top: -8px
         .service__item-arrow
-          height: 70px
-          padding: 17px 6px
-          top: -8px
+          top: -25px
     &__description
       font-size: 15px
 
+  .service__slider
+    margin-top: 68px
 
   //секция конструктор тарифов
   .designer
@@ -26,17 +35,23 @@
       padding: 16px 0 20px 31px
     &__title
       line-height: 30px
+      padding-left: 0
     &__info
       line-height: 20px
+      padding-left: 0
+      padding-top: 18px
     &__price-txt
       font-size: 14px
       line-height: 21px
     &__price-finish
       font-size: 47px
+      &:after
+        font-size: 47px
     .custom__btn-form
       padding: 20px 10px
       bottom: 68px
-
+      font-size: 29px
+      
   .designer .slider.slider-horizontal
     width: 500px
   .designer .slider-tick-label-container .slider-tick-label:not(:last-child):after
@@ -88,9 +103,9 @@
       width: 100%
       justify-content: space-between
     .custom__btn-form
-      font-size: 27px
+      font-size: 26px
       width: 100%
-      padding: 34px 40px
+      padding: 29px 34px
 
 
   //слайдер акции
@@ -100,45 +115,152 @@
     .customNextBtn
       right: 10%
 
-@media only screen and (max-width : 1200px)
-  .container
-    padding: 0 10px
+@media only screen and (max-width : 1199px)
+
+  .header__cabinet
+    img
+      display: none
   .header
     &__logo
       img
         width: 100%
         height: auto
-    &__nav
+    //&__nav
       padding-top: 0
     &__items
       text-align: center
-    &__items li
+    //&__items li
       font-size: 12px
     &__button
       font-size: 11px
-
+      padding: 21px 15px
+  //Секция сервис
+  .service__item
+   //&:hover .service__item-arrow
+     display: none
+  .service__title
+    margin-left: 20px
+  .service__item:before
+   left: 9px
+  .service__item
+   padding: 25px 0 21px 67px
+  .service__description
+    font-size: 12px
   .service__item:hover .service__item-arrow
-    display: none
+    height: 95px
+  .service__price-builder
+    padding: 43px 80px 0 0
+  .service__price-builder li
+    min-width: 170px
+
+  //блок новости
+  .news__name
+    font-size: 16px
+
+  //страница для юр лиц
+  .idex_page_business
+    .service__name
+      font-size: 24px
+
+
 
   .footer__nav-links + .footer__nav-links
-    margin-left: 20px
+     margin-left: 20px
   .footer__made span
-    right: 20px
+     right: 20px
 
   .form-full .callback__form-contacts input:last-child
-    width: 100%
+     width: 100%
 
 
   .slider-shares .item .custom__btn-form
-    bottom: 20px
-    font-size: 12px
+     bottom: 20px
+     font-size: 12px
 
+  .slider-shares .customPrevBtn
+    left: 15%
+  .slider-shares .customNextBtn
+    right: 15%
 
   .add-services__item
-    width: 415px
+     width: 415px
 
 
   .designer__builder-wrap
-    margin-top: 20px
+     margin-top: 20px
   .tarif__page .designer__wrap
-    padding: 0
+     padding: 0
+
+
+  .slider-shares .slick-active
+    transform: scale(1)
+  .slider-shares .customNextBtn
+    right: -12px
+  .slider-shares .customPrevBtn
+    left: -12px
+
+
+@media only screen and (max-width : 991px)
+  /***/
+  .hamburger
+    display: block
+    position: absolute
+    right: 15px
+    top: 21px
+
+  .header__nav
+    display: none
+
+  .header__mob-menu
+    display: block
+  //Секция сервис
+  .service__price-builder
+    justify-content: space-around
+  .designer__builder-form_wrap
+    padding: 52px 0 20px 31px
+  .designer__finish-price
+    margin-left: 0
+  .designer__price-txt
+    font-size: 12px
+  .designer__price-finish
+    font-size: 34px
+    margin-left: 6px
+  .designer__price-finish:after
+    font-size: 34px
+    right: -26px
+  .designer .custom__btn-form
+    padding: 10px 10px
+    bottom: 98px
+  .designer__builder-form
+    width: 670px
+
+
+  //Страница новости
+  .full-news__name
+    font-size: 45px
+
+  .default-section__main-content h1
+    font-size: 45px
+
+  //страница кабельное телевидение
+  .tv-list__channels-list
+    font-size: 16px
+  .tv-list__list-all span
+    font-size: 13px
+  .form-full .custom__btn-form
+    font-size: 25px
+  .form-full .tab-content .designer__item label
+    font-size: 12px
+  .form-full .tab-content .radio:not(checked) + label
+    padding: 0 0 0 16px
+
+  //стр тариф
+  .slider-shares
+    padding: 40px 0px
+  .add-services__wrap
+    padding: 41px 10px 60px 10px
+  .add-services__item
+    width: 320px
+  .tarif__page .designer .custom__btn-form
+    padding: 10px 10px
+    bottom: 98px

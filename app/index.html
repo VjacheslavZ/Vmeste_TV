@@ -72,10 +72,10 @@
       <header class="header">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-5">
               <div class="header__logo"><a href="index.html"><img src="img/logo.png"></a></div>
             </div>
-            <div class="col-lg-7 col-md-7 col-sm-7">
+            <div class="col-lg-7 col-md-8 col-sm-9">
               <div class="header__nav">
                 <ul class="header__items">
                   <li class="header__nav-active"><a href="#">Интернет для дома</a></li>
@@ -85,8 +85,17 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col-lg-6 col-md-5 col-sm-4 col-xs-7">
               <div class="header__personal"><a class="header__button" href="#callBack">подключиться!</a><a class="header__cabinet" href="#"><img src="img/personal_ic.png"><span>Личный<br>кабинет</span></a></div>
+            </div><a class="hamburger hamburger--collapse" href="#"><span class="hamburger-box"><span class="hamburger-inner"></span></span></a>
+            <div class="header__mob-menu">
+              <ul role="tablist">
+                <li><a class="active" href="#">Интернет для дома</a></li>
+                <li><a href="#">Интернет для бизнеса</a></li>
+                <li><a href="#">Облачное видеонаблюдение</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Наши контакты</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -96,19 +105,28 @@
         <section class="service">
           <div class="container">
             <div class="row">
-              <div class="col-lg-5 col-md-6">
+              <div class="col-lg-5 col-md-6 col-sm-6 col-xs-16">
                 <h1 class="service__title">Интернет для дома</h1>
                 <ul class="service__items-swich">
                   <li class="service__item"><a class="service__item-content" href="#">
-                      <div class="service__img"><img class="service__img_default" src="img/world-ic.png"><img class="service__img_hover" src="img/world-ic-hover.png"></div>
+                      <!--div.service__img
+                      img(src="img/world-ic.png").service__img_default
+                      img(src="img/world-ic-hover.png").service__img_hover
+                      -->
                       <div><span class="service__name">интернет</span><span class="service__description">надежный и быстрый, до 100 Мбит/с</span></div>
                       <div class="service__item-arrow"></div></a></li>
                   <li class="active service__item"><a class="service__item-content" href="#">
-                      <div class="service__img"><img class="service__img_default" src="img/tc_ic.png"><img class="service__img_hover" src="img/tc_ic-hover.png"></div>
+                      <!--div.service__img
+                      img(src="img/tc_ic.png").service__img_default
+                      img(src="img/tc_ic-hover.png").service__img_hover
+                      -->
                       <div><span class="service__name">телевидение</span><span class="service__description">все самое интересное на 115 (49 hd) каналах</span></div>
                       <div class="service__item-arrow"></div></a></li>
                   <li class="service__item"><a class="service__item-content" href="#">
-                      <div class="service__img"><img class="service__img_default" src="img/phone_ic.png"><img class="service__img_hover" src="img/phone_ic-hover.png"></div>
+                      <!--div.service__img
+                      img(src="img/phone_ic.png").service__img_default
+                      img(src="img/phone_ic-hover.png").service__img_hover
+                      -->
                       <div><span class="service__name">телефония</span><span class="service__description">безлимитный домашний телефон</span></div>
                       <div class="service__item-arrow"></div></a></li>
                   <!--табы-->
@@ -118,7 +136,7 @@
                   </ul>
                 </ul>
               </div>
-              <div class="col-lg-11 col-md-10">
+              <div class="col-lg-11 col-md-10 col-sm-10 col-xs-16">
                 <div class="owl-carousel owl-theme service__slider" id="service__slider">
                   <div><img src="img/slider_baner.jpg"></div>
                   <div><img src="img/slider_baner.jpg"></div>
@@ -136,16 +154,16 @@
                 <!--табы-->
                 <div class="tab-pane active" id="1">
                   <div class="designer__wrap">
-                    <div class="col-lg-5 col-md-4">
+                    <div class="col-lg-5 col-md-4 col-xs-16">
                       <p class="designer__title">конструктор тарифов</p>
                       <p class="designer__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
                     </div>
-                    <div class="col-lg-11 col-md-12">
-                      <div class="designer__builder-wrap">
+                    <div class="col-lg-11 col-md-12 col-xs-16">
+                      <div class="designer__builder-wrap"><span class="designer__set-speed-title">Скорость</span>
                         <div class="designer__set-speed">
                           <input id="designer__set_speed" type="text" data-slider-value="50"><span id="ex6CurrentSliderValLabel">Current Slider Value:<span id="ex6SliderVal">3</span></span>
                         </div>
-                        <div class="designer__finish-price"><span class="designer__price-txt">и того в месяц</span><span class="designer__price-finish"></span></div>
+                        <div class="designer__finish-price"><span class="designer__price-txt">и того<br>в месяц</span><span class="designer__price-finish"></span></div>
                       </div>
                       <div class="designer__builder-form_wrap">
                         <form class="designer__builder-form" name="Физическое лицо">
@@ -205,25 +223,25 @@
           <div class="container">
             <!-- заинклудить-->
             <div class="row">
-              <div class="col-lg-16">
+              <div class="col-lg-16 col-xs-16">
                 <p class="news__title">новости</p><a class="news__all-news" href="#">Архив новостей</a>
               </div>
             </div>
             <div class="news__wrap">
               <div class="row">
-                <div class="col-sm-4"><a class="news__link" href="#">
+                <div class="col-sm-4 col-xs-8"><a class="news__link" href="#">
                     <div class="news__photo"><img src="img/news_1.jpg"><span class="news__date">18 августа 2017</span></div>
                     <p class="news__name">Заголовок новости номер раз</p>
                     <p class="news__description">Подзаголовок, отражающий суть новости в двух-трех предложениях</p></a></div>
-                <div class="col-sm-4"><a class="news__link" href="#">
+                <div class="col-sm-4 col-xs-8"><a class="news__link" href="#">
                     <div class="news__photo"><img src="img/news_2.jpg"><span class="news__date">9 августа 2017</span></div>
                     <p class="news__name">Или два... мне просто нужно было посмотреть...</p>
                     <p class="news__description">Подзаголовок, отражающий суть новости в двух-трех предложениях</p></a></div>
-                <div class="col-sm-4"><a class="news__link" href="#">
+                <div class="col-sm-4 col-xs-8"><a class="news__link" href="#">
                     <div class="news__photo"><img src="img/news_3.jpg"><span class="news__date">8 августа 2017</span></div>
                     <p class="news__name">Как оно будет выглядеть в несколько строк</p>
                     <p class="news__description">Подзаголовок, отражающий суть новости в двух-трех предложениях</p></a></div>
-                <div class="col-sm-4"><a class="news__link" href="#">
+                <div class="col-sm-4 col-xs-8"><a class="news__link" href="#">
                     <div class="news__photo"><img src="img/news_4.jpg"><span class="news__date">8 августа 2017</span></div>
                     <p class="news__name">Или два... мне просто нужно было посмотреть...</p>
                     <p class="news__description">Подзаголовок, отражающий суть новости в двух-трех предложениях</p></a></div>
@@ -236,7 +254,7 @@
         <div class="container">
           <div class="row">
             <div class="footer__wrap clearfix">
-              <div class="col-sm-8">
+              <div class="col-sm-8 col-xs-11">
                 <div class="footer__main footer__info">
                   <div class="footer__logo"><a href="#"><img src="img/logo-footer.png"></a><span class="footer__copyRight">© «Вместе» 2017</span></div>
                   <div class="footer__nav">
@@ -256,14 +274,14 @@
                           <li><a href="#">Бизнеса</a></li>
                         </ul></span>
                       <div class="footer__searc">
-                        <input type="search" name="searc" placeholder="найти" id="footer_search">
+                        <input type="search" name="searc" placeholder="Найти" id="footer_search">
                         <button class="footer__search-btn"><i class="fa fa-search"></i></button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-8">
+              <div class="col-sm-8 col-xs-5">
                 <div class="footer__social footer__info">
                   <div class="footer__social-networks"><a class="footer__mail" href="#" target="_blank"></a><a class="footer__tw" href="#" target="_blank"></a><a class="footer__vk" href="#" target="_blank"></a></div>
                   <div class="footer__made"><span>Сделано в<a href="#">Деловом мире</a></span></div>

@@ -9,12 +9,12 @@ block title
             section.tarif.default-section
                 .container
                     .row
-                        .col-sm-3
+                        .col-sm-3.col-xs-16
                             .default-section__wrap
                                 .default-section__info
                                     span интернет для дома
 
-                        .col-sm-10.default-section__title
+                        .col-sm-10.col-xs-16.default-section__title
                             .default-section__top
                                 ul.default-section__type
                                     li.active
@@ -32,7 +32,7 @@ block title
             section.default-section__article
                 .container
                     .row
-                        .col-md-offset-3.col-md-10
+                        .col-md-offset-3.col-md-10.col-xs-16
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.m quaera voluptatem.
 
 
@@ -40,7 +40,7 @@ block title
 
             section.slider-shares
                 .container
-                    .col-md-16
+                    .col-md-16.col-xs-16
                         a(href="#").slider-shares__show-all Акции
                         .slider-shares__wrap(data-slick='{"slidesToShow": 1, "slidesToScroll": 1}')
                             .item
@@ -59,21 +59,6 @@ block title
                                 .slider-shares__baner-wrap
                                     img(src="img/slider_share.png")
                                 a(href="#callBack").custom__btn-form подключить!
-
-                            //.item
-                            //    a(href="#") подробнее
-                            //    img(src="img/slider_share.png")
-                            //    a(href="#callBack").custom__btn-form подключить!
-                            //
-                            //.item
-                            //    a(href="#") подробнее
-                            //    img(src="img/slider_share.png")
-                            //    a(href="#callBack").custom__btn-form подключить!
-                            //
-                            //.item
-                            //    a(href="#") подробнее
-                            //    img(src="img/slider_share.png")
-                            //    a(href="#callBack").custom__btn-form подключить!
                         .customNextBtn.customBtn
                         .customPrevBtn.customBtn
 
@@ -89,7 +74,18 @@ block title
                                 a(href="#") архив тарифов
                     .row
                         #standart-tarifs__slider.owl-carousel.owl-theme.standart-tarifs__slider-wrap.clearfix
-                            .col-md-4
+                            .col-md-4.col-sm-6
+                                .item
+                                    p.standart-tarifs__name Название тарифного плана
+                                    span.standart-tarifs__description Краткое описание. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed o eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        a(href="#") Подробнее
+                                    ul.standart-tarifs__info
+                                        li Скорость интернет-соединения до 60 Мбит/сек.
+                                        li ТВ 115 (45 hd) каналов
+                                    p.standart-tarifs__price 450
+                                    span /месяц
+                                    a(href="#callBack").custom__btn-form то, что нужно!
+                            .col-md-4.col-sm-6
                                 .item
                                     p.standart-tarifs__name Название тарифного плана
                                     span.standart-tarifs__description Краткое описание. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed o eiusmod tempor incididunt ut labore et dolore magna aliqua. Подробнее
@@ -99,7 +95,7 @@ block title
                                     p.standart-tarifs__price 450
                                     span /месяц
                                     a(href="#callBack").custom__btn-form то, что нужно!
-                            .col-md-4
+                            .col-md-4.col-sm-6
                                 .item
                                     p.standart-tarifs__name Название тарифного плана
                                     span.standart-tarifs__description Краткое описание. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed o eiusmod tempor incididunt ut labore et dolore magna aliqua. Подробнее
@@ -109,7 +105,7 @@ block title
                                     p.standart-tarifs__price 450
                                     span /месяц
                                     a(href="#callBack").custom__btn-form то, что нужно!
-                            .col-md-4
+                            .col-md-4.col-sm-6
                                 .item
                                     p.standart-tarifs__name Название тарифного плана
                                     span.standart-tarifs__description Краткое описание. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed o eiusmod tempor incididunt ut labore et dolore magna aliqua. Подробнее
@@ -119,7 +115,7 @@ block title
                                     p.standart-tarifs__price 450
                                     span /месяц
                                     a(href="#callBack").custom__btn-form то, что нужно!
-                            .col-md-4
+                            .col-md-4.col-sm-6
                                 .item
                                     p.standart-tarifs__name Название тарифного плана
                                     span.standart-tarifs__description Краткое описание. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed o eiusmod tempor incididunt ut labore et dolore magna aliqua. Подробнее
@@ -129,17 +125,7 @@ block title
                                     p.standart-tarifs__price 450
                                     span /месяц
                                     a(href="#callBack").custom__btn-form то, что нужно!
-                            .col-md-4
-                                .item
-                                    p.standart-tarifs__name Название тарифного плана
-                                    span.standart-tarifs__description Краткое описание. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed o eiusmod tempor incididunt ut labore et dolore magna aliqua. Подробнее
-                                    ul.standart-tarifs__info
-                                        li Скорость интернет-соединения до 60 Мбит/сек.
-                                        li ТВ 115 (45 hd) каналов
-                                    p.standart-tarifs__price 450
-                                    span /месяц
-                                    a(href="#callBack").custom__btn-form то, что нужно!
-                            .col-md-4
+                            .col-md-4.col-sm-6
                                 .item
                                     p.standart-tarifs__name Название тарифного плана
                                     span.standart-tarifs__description Краткое описание. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed o eiusmod tempor incididunt ut labore et dolore magna aliqua. Подробнее
@@ -226,13 +212,16 @@ block title
 
                                 .col-lg-11.col-md-12
                                     .designer__builder-wrap
+                                        span.designer__set-speed-title Скорость
                                         .designer__set-speed
                                             input#designer__set_speed(type='text', data-slider-value='50')
                                             span#ex6CurrentSliderValLabel
                                                 | Current Slider Value:
                                                 span#ex6SliderVal 3
                                         .designer__finish-price
-                                            span.designer__price-txt и того в месяц
+                                            span.designer__price-txt и того
+                                                br
+                                                | в месяц
                                             span.designer__price-finish
 
                                     .designer__builder-form_wrap

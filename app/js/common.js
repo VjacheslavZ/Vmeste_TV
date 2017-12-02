@@ -95,6 +95,9 @@ $(document).ready(function () {
             992: {
                 items: 2
             },
+            0: {
+                items: 1
+            },
         }
     });
 
@@ -176,17 +179,59 @@ $(document).ready(function () {
     $('.slider-shares__wrap').slick({
         // infinite: false,
         centerMode: true,
+
         centerPadding: '290px',
         slidesToShow: 1,
         prevArrow: $('.slider-shares .customPrevBtn'),
         nextArrow: $('.slider-shares .customNextBtn'),
         responsive:[{
+
             breakpoint: 1600,
             settings:{
                 centerPadding: '200px',
-            }
+            },
+
+            breakpoint: 1200,
+            settings:{
+                centerPadding: '30px',
+                centerMode: false,
+            },
+
         }]
     });
+
+
+    // (function($) {
+    //
+    //     $.fn.equalHeights = function() {
+    //         var maxHeight = 0,
+    //             $this = $(this);
+    //
+    //         $this.each( function() {
+    //             var height = $(this).innerHeight();
+    //
+    //             if ( height > maxHeight ) { maxHeight = height; }
+    //         });
+    //
+    //         return $this.css('height', maxHeight);
+    //     };
+    //
+    //     // auto-initialize plugin
+    //     $('[data-equal]').each(function(){
+    //         var $this = $(this),
+    //             target = $this.data('equal');
+    //         $this.find(target).equalHeights();
+    //     });
+    //
+    // })(jQuery);
+
+
+    // $(".news__name").equalHeights();
+
+    $(".hamburger").on("click", function () {
+        $( ".header__mob-menu" ).toggleClass( "active" );
+        $( ".hamburger.hamburger--collapse" ).toggleClass( "is-active" );
+    })
 
 });
 
@@ -196,8 +241,6 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-
-
     //hide preloader
     $(".loader_inner").fadeOut("slow");
     $(".loader").fadeOut("slow");

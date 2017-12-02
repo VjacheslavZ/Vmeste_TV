@@ -9,12 +9,12 @@ block main
         section.tv.default-section
             .container
                 .row
-                    .col-sm-3
+                    .col-sm-3.col-xs-16
                         .default-section__wrap
                             .default-section__info
                                 span кабельное телевидение
 
-                    .col-sm-10.default-section__title
+                    .col-sm-10.default-section__title.col-xs-16
                         .default-section__top
                             ul.default-section__type
                                 li.active
@@ -28,16 +28,16 @@ block main
         section.default-section__article
             .container
                 .row
-                    .col-md-offset-3.col-md-10
+                    .col-md-offset-3.col-md-10.col-xs-16
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.m quaera voluptatem.
 
         //секция список каналов
         section.tv-list
             .container
                 .row
-                    .col-md-3.col-sm-3
+                    .col-md-3.col-sm-3.col-xs-16
                         span.tv-list__title пакеты каналов
-                    .col-md-4.col-sm-5
+                    .col-md-4.col-sm-5.col-xs-6
                         ul.nav.nav-tabs.tv-list__type-toggle
 
                             li.active
@@ -83,7 +83,7 @@ block main
                                         li
                                             a(href="#list_categoty_sport", data-toggle='tab') Спортивные
 
-                    .col-md-6
+                    .col-md-6.col-sm-8.col-xs-10
                         p.tv-list__selected-package пакет
                             span «HD»
                         span.tv-list__list-chanels /список каналов:
@@ -193,7 +193,7 @@ block main
                                         li
                                             a(href="#")
                                                 img(src="img/logo_tv.png")
-                                                span Общедоступные
+                                                span Каналы для взрослых
                                         li
                                             a(href="#")
                                                 img(src="img/logo_tv.png")
@@ -256,9 +256,9 @@ block main
         section.form-full
             .container
                 .row
-                    .col-md-3.col-sm-5
+                    .col-md-3.col-sm-5.col-xs-5
                         span.form-full__title подключение
-                    .col-md-4.col-sm-5
+                    .col-md-4.col-sm-5.col-xs-6
                         ul.nav.nav-tabs.tv-list__type-toggle
 
                             li.active
@@ -270,7 +270,7 @@ block main
                     .tab-content
                         form#form_tv_cable(name="Кабельное").tab-pane.active
 
-                            .col-md-offset-3.col-md-4.col-sm-5
+                            .col-md-offset-3.col-md-4.col-sm-5.col-xs-5
 
                                 span Выберите нужное количество ТВ-каналов
 
@@ -287,7 +287,7 @@ block main
                                     input(type="text" name="fullName" placeholder="ФИО" required='')
 
 
-                            .col-md-3.col-sm-5
+                            .col-md-3.col-sm-5.col-xs-5
                                 .form-full__adress
                                     span Количество ТВ-приемников
 
@@ -307,7 +307,7 @@ block main
                                     input(type="text" name="flat" placeholder="Кв." required='')
                                     input(type="text" name="phone" placeholder="Тел." required='')
 
-                            .col-md-4.col-sm-6
+                            .col-md-4.col-sm-6.col-xs-6
 
                                 .form-full__equipment
                                     span Оборудование для подключения
@@ -327,7 +327,8 @@ block main
 
 
                         form#form_ip_tv.tab-pane(name="ip_tv")
-                            .col-md-offset-3.col-md-4.col-sm-5
+
+                            .col-md-offset-3.col-md-4.col-sm-5.col-xs-5
 
                                 span Выберите нужное количество ТВ-каналов
 
@@ -341,7 +342,7 @@ block main
                                     input(type="text" name="fullName" placeholder="ФИО" required='')
 
 
-                            .col-md-3.col-sm-5
+                            .col-md-3.col-sm-5.col-xs-5
                                 .form-full__adress
                                     span Количество ТВ-приемников
 
@@ -361,7 +362,7 @@ block main
                                     input(type="text" name="flat" placeholder="Кв." required='')
                                     input(type="text" name="phone" placeholder="Тел." required='')
 
-                            .col-md-4.col-sm-6
+                            .col-md-4.col-sm-6.col-xs-6
 
                                 .form-full__equipment
                                     span Оборудование для подключения

@@ -13,6 +13,7 @@
       font-size: 16px
       line-height: 20px
       text-transform: uppercase
+      //width: 150px
       a
         transition: all .3s ease
         border-bottom: 1px solid transparent
@@ -20,6 +21,8 @@
         &:hover
           border-bottom: 1px solid $text-green_color
           color: $text-green_color
+    //li + li
+      margin-left: 70px
     li.header__nav-active
       font-family: $EExtraBold
       a
@@ -52,9 +55,14 @@
     justify-content: flex-end
   &__cabinet
     margin-left: 32px
+    position: relative
     span
       display: inline-block
       vertical-align: middle
-      //width: 70px
-      margin-left: 20px
+      margin-left: 8px
       line-height: 19px
+      transition: all .3s
+      border-bottom: 1px solid transparent
+      padding-left: 1px
+      &:hover
+        border-bottom: 1px solid #4e4e4e

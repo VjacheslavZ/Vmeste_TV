@@ -297,12 +297,17 @@ hr {
 .container {
   margin-right: auto;
   margin-left: auto;
-  /*padding-left: 15px;*/
-  /*padding-right: 15px;*/
+  padding-left: 15px;
+  padding-right: 15px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .container {
-    width: 1170px;
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
   }
 }
 @media (min-width: 1200px) {
@@ -535,7 +540,7 @@ hr {
 .col-xs-offset-0 {
   margin-left: 0%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15, .col-sm-16 {
     float: left;
   }

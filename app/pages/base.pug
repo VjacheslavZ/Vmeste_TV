@@ -54,11 +54,12 @@ html(class="no-js" lang='en')
             header.header
                 .container
                     .row
-                        .col-lg-3.col-md-3.col-sm-3
+                        .col-lg-3.col-md-3.col-sm-3.col-xs-5
                             .header__logo
                                 a(href="index.html")
                                     img(src="img/logo.png")
-                        .col-lg-7.col-md-7.col-sm-7
+
+                        .col-lg-7.col-md-8.col-sm-9
                             .header__nav
                                 ul.header__items
                                     li.header__nav-active
@@ -69,7 +70,8 @@ html(class="no-js" lang='en')
                                         a(href="#") Облачное видеонаблюдение
                                     li
                                         a(href="#") Наши контакты
-                        .col-lg-6.col-md-6.col-sm-6
+
+                        .col-lg-6.col-md-5.col-sm-4.col-xs-7
                             .header__personal
                                 a(href="#callBack").header__button подключиться!
                                 a(href="#").header__cabinet
@@ -77,7 +79,22 @@ html(class="no-js" lang='en')
                                     span Личный
                                         br
                                         | кабинет
+                        a(href="#").hamburger.hamburger--collapse
+                            span.hamburger-box
+                                span.hamburger-inner
 
+                        .header__mob-menu
+                            ul(role="tablist")
+                                li
+                                    a.active(href="#") Интернет для дома
+                                li
+                                    a(href="#") Интернет для бизнеса
+                                li
+                                    a(href="#") Облачное видеонаблюдение
+                                li
+                                    a(href="#") О нас
+                                li
+                                    a(href="#") Наши контакты
 
             block main
 
@@ -86,7 +103,7 @@ html(class="no-js" lang='en')
                     .row
                         .footer__wrap.clearfix
 
-                            .col-sm-8
+                            .col-sm-8.col-xs-11
                                 .footer__main.footer__info
                                     .footer__logo
                                         a(href="#")
@@ -117,11 +134,11 @@ html(class="no-js" lang='en')
                                                     li
                                                         a(href="#") Бизнеса
                                             .footer__searc
-                                                input(type="search" name="searc" placeholder="найти")#footer_search
+                                                input(type="search" name="searc" placeholder="Найти")#footer_search
                                                 button.footer__search-btn
                                                     i.fa.fa-search
 
-                            .col-sm-8
+                            .col-sm-8.col-xs-5
                                 .footer__social.footer__info
                                     .footer__social-networks
                                         a(href="#" target="_blank").footer__mail

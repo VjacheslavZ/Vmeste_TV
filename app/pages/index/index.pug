@@ -10,13 +10,13 @@ block main
             .container
                 .row
 
-                    .col-lg-5.col-md-6
+                    .col-lg-5.col-md-6.col-sm-6.col-xs-16
                         h1.service__title Интернет для дома
 
                         ul.service__items-swich
                             li.service__item
                                 a(href='#').service__item-content
-                                    div.service__img
+                                    //div.service__img
                                         img(src="img/world-ic.png").service__img_default
                                         img(src="img/world-ic-hover.png").service__img_hover
                                     div
@@ -25,7 +25,7 @@ block main
                                     .service__item-arrow
                             li.active.service__item
                                 a(href='#').service__item-content
-                                    div.service__img
+                                    //div.service__img
                                         img(src="img/tc_ic.png").service__img_default
                                         img(src="img/tc_ic-hover.png").service__img_hover
                                     div
@@ -34,7 +34,7 @@ block main
                                     .service__item-arrow
                             li.service__item
                                 a(href='#').service__item-content
-                                    div.service__img
+                                    //div.service__img
                                         img(src="img/phone_ic.png").service__img_default
                                         img(src="img/phone_ic-hover.png").service__img_hover
                                     div
@@ -49,7 +49,7 @@ block main
                                 li
                                     a(href='#2', data-toggle='tab') посмотреть готовые тарифы
 
-                    .col-lg-11.col-md-10
+                    .col-lg-11.col-md-10.col-sm-10.col-xs-16
                         #service__slider.owl-carousel.owl-theme.service__slider
                             div
                                 img(src="img/slider_baner.jpg")
@@ -67,19 +67,23 @@ block main
                         #1.tab-pane.active
                             .designer__wrap
 
-                                .col-lg-5.col-md-4
+                                .col-lg-5.col-md-4.col-xs-16
                                     p.designer__title конструктор тарифов
                                     p.designer__info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
 
-                                .col-lg-11.col-md-12
+                                .col-lg-11.col-md-12.col-xs-16
                                     .designer__builder-wrap
+                                        span.designer__set-speed-title Скорость
                                         .designer__set-speed
+
                                             input#designer__set_speed(type='text', data-slider-value='50')
                                             span#ex6CurrentSliderValLabel
                                                 | Current Slider Value:
                                                 span#ex6SliderVal 3
                                         .designer__finish-price
-                                            span.designer__price-txt и того в месяц
+                                            span.designer__price-txt и того
+                                                br
+                                                | в месяц
                                             span.designer__price-finish
                                     .designer__builder-form_wrap
                                         form(name="Физическое лицо").designer__builder-form
@@ -124,33 +128,33 @@ block main
             .container
                 // заинклудить
                 .row
-                    .col-lg-16
+                    .col-lg-16.col-xs-16
                         p.news__title новости
                         a(href="#").news__all-news Архив новостей
                 .news__wrap
                     .row
-                        .col-sm-4
+                        .col-sm-4.col-xs-8
                             a(href="#").news__link
                                 .news__photo
                                     img(src="img/news_1.jpg")
                                     span.news__date 18 августа 2017
                                 p.news__name Заголовок новости номер раз
                                 p.news__description Подзаголовок, отражающий суть новости в двух-трех предложениях
-                        .col-sm-4
+                        .col-sm-4.col-xs-8
                             a(href="#").news__link
                                 .news__photo
                                     img(src="img/news_2.jpg")
                                     span.news__date 9 августа 2017
                                 p.news__name Или два... мне просто нужно было посмотреть...
                                 p.news__description Подзаголовок, отражающий суть новости в двух-трех предложениях
-                        .col-sm-4
+                        .col-sm-4.col-xs-8
                             a(href="#").news__link
                                 .news__photo
                                     img(src="img/news_3.jpg")
                                     span.news__date 8 августа 2017
                                 p.news__name Как оно будет выглядеть в несколько строк
                                 p.news__description Подзаголовок, отражающий суть новости в двух-трех предложениях
-                        .col-sm-4
+                        .col-sm-4.col-xs-8
                             a(href="#").news__link
                                 .news__photo
                                     img(src="img/news_4.jpg")

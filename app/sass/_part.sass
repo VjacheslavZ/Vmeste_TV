@@ -9,7 +9,10 @@
     right: 16px
     font-size: 14px
     color: #35be70
-
+.hamburger
+  display: none
+.header__mob-menu
+  display: none
 
 //PopUp
 .mfp-close-btn-in .mfp-close
@@ -109,9 +112,10 @@
     font-family: $ERegular
     border-bottom: 1px solid transparent
     transition: border-bottom .3s ease
+    border-bottom: 1px solid #8b8b8b
     &:hover
       color: #8b8b8b
-      border-bottom: 1px solid #8b8b8b
+      border-bottom: 1px solid transparent
   &__wrap
     padding-top: 30px
   &__link
@@ -141,9 +145,48 @@
     font-family: $ESemiBold
     color: $text_accent_color
     text-decoration: underline
+    line-height: 31px
+    transition: all .3s
+    &:hover
+      text-decoration: inherit
   &__description
     color: $text_greyLight_color
     font-size: 16px
     font-family: $ERegular
     line-height: 20px
+
+.header__mob-menu
+  height: 0
+  visibility: hidden
+  position: absolute
+  left: 0
+  right: 0
+  top: 97px
+  //transform: translateY(-560px)
+  height: 0
+  transition: all .3s ease
+  background-color: #efefef
+  opacity: 0
+  //padding-top: 100px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  z-index: 9
+  padding: 20px
+  font-family: $ERegular
+  font-size: 16px
+  .active
+    font-family: Exo2-ExtraBold
+    font-size: 16px
+    color: $text_accent_color
+  ul
+    text-align: center
+  li + li
+    margin-top: 20px
+  &.active
+    height: auto
+    visibility: visible
+    //height: calc(100vh - 60px)
+    //transform: translateY(-0px)
+    opacity: 1
 

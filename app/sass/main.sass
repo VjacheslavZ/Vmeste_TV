@@ -8,6 +8,27 @@
 
 //Секция сервис
 .service
+  &__items-swich
+    .service__item:nth-child(1)
+      &:before
+        @include sprite($world-ic)
+      &:hover
+        &:before
+          @include sprite($world-ic-hover)
+    .service__item:nth-child(2)
+      &:before
+        top: 29px
+        @include sprite($tc-ic)
+      &:hover
+        &:before
+          @include sprite($tc_ic_hover)
+    .service__item:nth-child(3)
+      &:before
+        top: 28px
+        @include sprite($phone-ic)
+      &:hover
+        &:before
+          @include sprite($phone-ic-hover)
   &__title
     color: $tect_title_color
     font-size: 34px
@@ -15,10 +36,17 @@
     margin-top: 38px
     font-weight: 300
     margin-left: 40px
+    margin-bottom: 22px
   &__item
     background-color: $text_green_color
-    padding: 25px 0 19px 24px
+    padding: 24px 0 21px 90px
     position: relative
+    &:before
+      content: ""
+      display: block
+      position: absolute
+      top: 22px
+      left: 25px
     &:hover
       background-color: $btn_color
       .service__name, .service__description
@@ -36,10 +64,10 @@
         display: block
         position: absolute
         width: 40px
-        top: -25px
+        top: -24px
         bottom: 0
-        right: -20px
-        height: 101px
+        right: -27px
+        height: 100px
         z-index: 9
         background-color: $btn_color
         padding: 31px 6px
@@ -65,7 +93,7 @@
     font-size: 36px
     text-transform: uppercase
     font-family: $EBold
-    line-height: 32px
+    line-height: 30px
     transition: color .3s ease
   &__description
     color: $text_white_color
@@ -108,27 +136,38 @@
     right: 18px
     bottom: -9px
   &__price-builder
-    padding: 10px 80px 0 45px
+    padding: 43px 80px 0 45px
     display: flex
     li
-      min-width: 180px
+      min-width: 179px
+      line-height: 21px
+    li + li
+      a
+        border-bottom: 1px solid #4e4e4e
     a
       font-size: 16px
       text-transform: uppercase
       font-family: $ERegular
       //font-weight: 900px
       color: $text_accent_color
-      &:hover
-        border-bottom: 1px solid #8899a9
+      transition: border-bottom .3s linear
+      //border-bottom: 1px solid #8899a9
+      //&:hover
+        border-bottom: 1px solid transparent
     .active
       a
         color: $text_grey_color
         font-family: $ESemiBold
+        transition: border-bottom .3s linear
+        //border-bottom: 1px solid transparent
+        //&:hover
+          border-bottom: 1px solid #8899a9
+
 
 //секция конструктор тарифов
 .designer
   &__wrap
-    padding-top: 60px
+    padding-top: 61px
   &__title
     color: $text_green_color
     font-family: $EBold
@@ -136,18 +175,28 @@
     text-transform: uppercase
     letter-spacing: 1px
     line-height: 51px
+    padding-left: 45px
   &__info
     color: $text_grey_color
     font-family: $LMedium
     font-size: 16px
-    line-height: 22px
+    line-height: 19px
+    padding-left: 45px
+    padding-top: 5px
   &__set-speed
     position: relative
-    margin-top: 21px
-
+    margin-top: 40px
+  &__set-speed-title
+    position: absolute
+    top: 17px
+    left: 49px
+    color: $text_accent_color
+    font-size: 16px
+    font-family: $ESemiBold
+    text-transform: uppercase
   &__builder-wrap
     display: flex
-    padding: 29px 20px 42px 50px
+    padding: 8px 20px 40px 50px
     background-color: #f6f6f6
     position: relative
     &:before
@@ -161,6 +210,8 @@
       left: 0
 
   //calculator
+  .tooltip
+    box-shadow: 2px 2px 0 #898989, 0 0 0px #898989
   .slider.slider-horizontal
     width: 705px
   .slider .tooltip.top
@@ -238,7 +289,9 @@
   .slider-handle.min-slider-handle.round
     width: 16px
     height: 16px
-    background-color: #aecb06
+    z-index: 9
+    //background-color: #aecb06
+    background-image: linear-gradient(180deg, #b7d700 0, #cef200)
     box-shadow: inset  0 -1px 4px black, 0 0 5px #cef200
   .slider-handle
     background-image: none
@@ -248,6 +301,8 @@
     text-align: center
     font-family: $LBold
     font-size: 31px
+    color: #000
+    background-image: linear-gradient(180deg, #b7d700 0, #cef200)
   .slider .tooltip.top
     top: -40px
     width: 56px
@@ -263,7 +318,20 @@
       height: 0
       border-left: 10px solid transparent
       border-right: 10px solid transparent
-      border-top: 11px solid #b7d700
+      border-top: 11px solid #c8ec00
+    &:after
+      content: ""
+      position: absolute
+      width: 16px
+      height: 17px
+      z-index: -1
+      background: #999
+      -webkit-transform: rotate(45deg)
+      -ms-transform: rotate(45deg)
+      transform: rotate(45deg)
+      top: 47px
+      left: 23px
+      box-shadow: -1px -1px 0px -2px #898989
   .slider.slider-horizontal .slider-tick-label-container
     margin-top: 0
   //.slider .tooltip-inner
@@ -272,11 +340,13 @@
     position: absolute
     font-family: $LRegular
     font-size: 11px
-    bottom: 1px
+    bottom: 0px
     left: 0
     right: 0
     text-align: center
     font-weight: 800
+    color: #000
+    background-color: #c8ec00
   #ex6CurrentSliderValLabel
     display: none
   &__finish-price
@@ -291,17 +361,22 @@
     font-size: 16px
     line-height: 24px
     text-transform: uppercase
+    text-align: right
+    padding-top: 15px
   &__price-finish
     color: $text_accent_color
     font-size: 60px
-    font-family: $EExtraBold
+    font-family: $EBold
     line-height: 26px
     margin-left: 10px
+    position: relative
     &:after
       content: "\f158"
       font-family: "FontAwesome"
       font-size: 52px
-
+      right: -47px
+      position: absolute
+      top: 6px
   &__builder-form_wrap
     padding: 16px 0 20px 50px
     background-color: #e4e4e4
@@ -344,6 +419,7 @@
     position: absolute
     right: 18px
     bottom: 20px
+    font-family: $EBold
 
 
 
@@ -351,8 +427,37 @@
 
 //------------page business
 
-#idex_page_business .service__title
-  margin-top: 0
+.idex_page_business
+  .service
+    &__title
+      margin-top: 0
+    &__items-swich
+      .service__item:nth-child(1)
+        &:before
+          @include sprite($search-ic)
+        &:hover
+          &:before
+            @include sprite($search-ic-hover)
+      .service__item:nth-child(2)
+        &:before
+          @include sprite($computer_ic)
+        &:hover
+          &:before
+            @include sprite($computer_ic-hover)
+      .service__item:nth-child(3)
+        &:before
+          @include sprite($shopping_cart_ic)
+        &:hover
+          &:before
+            @include sprite($shopping_cart_ic-hover)
+
+      .service__item:nth-child(4)
+        &:before
+          @include sprite($safebox_ic)
+        &:hover
+          &:before
+            @include sprite($safebox_ic_hover)
+
 
 
 //------------page news
@@ -369,7 +474,7 @@
     bottom: 0
     right: 0
     left: 0
-    background-color: rgba(0,0,0, .5)
+    background-color: rgba(0,0,0, .7)
   &__wrap
     display: flex
     justify-content: space-between
@@ -421,6 +526,7 @@
     font-size: 12px
     span
       margin-left: 12px
+      text-transform: uppercase
   &__name
     font-size: 60px
     font-family: $EExtraBold
@@ -447,6 +553,7 @@
   &__text
     font-size: 18px
     line-height: 25px
+    color: #454545
   &__quote
     padding: 57px 100px
     font-size: 20px
@@ -661,9 +768,11 @@
     display: block
   .tv-list__type-toggle li.active a
     background-color: #cef200
+    font-family: $ESemiBold
   .tv-list__type-toggle li a
     background-color: #1c7699
-    color: #fefefe
+    color: #fefefe8f
+    font-family: $ERegular
   .tab-content
     span
       font-family: $ESemiBold
@@ -689,6 +798,8 @@
     font-family: $ELight
     font-size: 18px
     border-radius: 0
+    padding-bottom: 5px
+    padding-top: 5px
     border: 1px solid transparent
   .tab-content
     input.error
@@ -698,6 +809,7 @@
   &__name
     input
       width: 100%
+      padding-top: 5px
     input + input
       margin-top: 19px
 
@@ -709,9 +821,12 @@
   &__adress
     padding-left: 50px
   .custom__btn-form
-    padding: 29px 40px
+    color: #000
+    padding: 26px 40px
     display: block
     width: 100%
+    font-family: $EBold
+
   &__equipment
     padding-left: 30px
 
@@ -775,11 +890,15 @@
     margin-top: 11px
     display: block
     line-height: 20px
+    a
+      text-decoration: underline
+      margin-left: 5px
+      color: #454545
   &__info
     padding: 17px 0 22px 17px
     line-height: 21px
-    border-top: 1px solid #454545
-    border-bottom: 1px solid #454545
+    border-top: 1px solid #bfbfbf
+    border-bottom: 1px solid #bfbfbf
     font-family: $LMedium
     margin-top: 22px
     li
@@ -802,6 +921,7 @@
     display: inline-block
     line-height: 52px
     &:after
+      font-size: 39px
       content: "\f158"
       font-family: "FontAwesome"
   .custom__btn-form
@@ -811,13 +931,16 @@
     padding: 15px 40px
     display: block
     margin-top: 15px
+    background-color: #bedf00
     &:hover
       color: #000
   .customBtn
     position: absolute
     top: 50%
   .customNextBtn
-    right: 0
+    right: 10px
+  .customPrevBtn
+    left: 10px
 
   .owl-stage
     padding: 35px 0 35px 0
@@ -833,7 +956,6 @@
 //секция доп услули
 
 .add-services
-
   background-color: #f2f2f2
   &__wrap
     padding: 41px 40px 60px 46px
@@ -855,7 +977,6 @@
     margin-top: 40px
     color: #4e4e4e
     width: 460px
-
   &__ic
     display: flex
   &__name
@@ -877,6 +998,7 @@
     font-family: $EBold
     margin: 0 0 0 10px
     &:after
+      font-size: 32px
       content: "\f158"
       font-family: "FontAwesome"
 
@@ -886,14 +1008,17 @@
     padding: 46px 0 60px 0
     background-color: #fff
     &__wrap
-      padding: 0 0 0 46px
+      padding: 0 0 0 30px
+    .designer__title
+      padding-left: 0
+    .designer__info
+      padding-left: 0
     &__prev
       font-size: 16px
       font-family: $ESemiBold
       color: #4e4e4e
       text-transform: uppercase
       margin-bottom: 46px
-
     .custom__btn-form
       padding: 39px 26px
 
@@ -935,9 +1060,9 @@
     position: absolute
     top: calc(50% - 17px)
   .customNextBtn
-    right: 14%
+    right: 11%
   .customPrevBtn
-    left: 14%
+    left: 11%
   .item
     position: relative
     &:focus
@@ -956,9 +1081,10 @@
       bottom: 45px
       text-decoration: none
       font-family: $ESemiBold
-      font-size: 19px
+      font-size: 17px
       color: #000
-      padding: 12px 22px
+      padding: 11px 14px
+      letter-spacing: 1px
 
   .slick-track
     padding: 40px 0
