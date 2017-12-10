@@ -78,6 +78,7 @@
           @include sprite($arrow_right)
     & + .service__item
       margin-top: 2px
+
   &__img
     margin-right: 15px
   &__img_hover
@@ -136,7 +137,7 @@
     right: 18px
     bottom: -9px
   &__price-builder
-    padding: 43px 80px 0 45px
+    padding: 43px 109px 0 45px
     display: flex
     li
       min-width: 179px
@@ -144,6 +145,8 @@
     li + li
       a
         border-bottom: 1px solid #4e4e4e
+        &:hover
+          border-bottom: 1px solid transparent
     a
       font-size: 16px
       text-transform: uppercase
@@ -175,13 +178,13 @@
     text-transform: uppercase
     letter-spacing: 1px
     line-height: 51px
-    padding-left: 45px
+    padding-left: 29px
   &__info
     color: $text_grey_color
     font-family: $LMedium
     font-size: 16px
     line-height: 19px
-    padding-left: 45px
+    padding-left: 29px
     padding-top: 5px
   &__set-speed
     position: relative
@@ -197,8 +200,9 @@
   &__builder-wrap
     display: flex
     padding: 8px 20px 40px 50px
-    background-color: #f6f6f6
+    //background-color: #f6f6f6
     position: relative
+    background-image: linear-gradient(180deg, #f4f4f4 0, #f8f8f8)
     &:before
       content: ""
       width: 0
@@ -230,6 +234,8 @@
     width: 46px
     line-height: 1
     font-size: 12px
+  .slider.slider-horizontal .slider-handle
+    margin-left: -8px
   .slider-tick-label
     position: relative
     &:before
@@ -290,14 +296,14 @@
     width: 16px
     height: 16px
     z-index: 9
-    //background-color: #aecb06
     background-image: linear-gradient(180deg, #b7d700 0, #cef200)
     box-shadow: inset  0 -1px 4px black, 0 0 5px #cef200
+    &:hover
+      cursor: pointer
   .slider-handle
     background-image: none
   .slider .tooltip-inner
     white-space: normal
-    // width: 50px
     text-align: center
     font-family: $LBold
     font-size: 31px
@@ -334,8 +340,6 @@
       box-shadow: -1px -1px 0px -2px #898989
   .slider.slider-horizontal .slider-tick-label-container
     margin-top: 0
-  //.slider .tooltip-inner
-    width: inherit
   &__current-speed_text
     position: absolute
     font-family: $LRegular
@@ -350,7 +354,7 @@
   #ex6CurrentSliderValLabel
     display: none
   &__finish-price
-    margin-left: 60px
+    margin-left: 15px
     display: flex
     justify-content: space-between
     align-items: center
@@ -368,7 +372,7 @@
     font-size: 60px
     font-family: $EBold
     line-height: 26px
-    margin-left: 10px
+    margin-left: 15px
     position: relative
     &:after
       content: "\f158"
@@ -379,8 +383,9 @@
       top: 6px
   &__builder-form_wrap
     padding: 16px 0 20px 50px
-    background-color: #e4e4e4
+    //background-color: #e4e4e4
     position: relative
+    background-image: linear-gradient(360deg, #f2f2f2 0, #dedede)
     &:before
       content: ""
       width: 0
@@ -420,6 +425,9 @@
     right: 18px
     bottom: 20px
     font-family: $EBold
+    padding: 39px 14px
+    &:hover
+      box-shadow: 0 2px 17px transparent, 0 0 88.9px 4.1px transparent
 
 
 
@@ -464,7 +472,7 @@
 .full-news
   position: relative
   padding: 43px 0 40px 0
-  background: url("../img/article_bg.jpg") no-repeat
+  background: url("../img/article_bg.jpg") no-repeat center center
   background-size: cover
   height: calc(100vh - 96px)
   &:before
@@ -492,11 +500,12 @@
     color: #8b8b8b
     font-size: 12px
     font-family: $ERegular
-    border-bottom: 1px solid transparent
     transition: border-bottom .3s ease
+    border-bottom: 1px solid #8b8b8b
     &:hover
       color: #8b8b8b
-      border-bottom: 1px solid #8b8b8b
+      border-bottom: 1px solid transparent
+
   &__detals
     display: flex
     //justify-content: space-around
@@ -513,13 +522,19 @@
         color: #aecb06
         font-family: $ERegular
         font-size: 12px
+        border-bottom: 1px solid #aecb06
+        &:hover
+          border-bottom: 1px solid transparent
     li + li
       margin-left: 10px
     a
-      text-decoration: underline
+      transition: border .3s
       color: $text_white_color
       font-family: $ERegular
       font-size: 12px
+      border-bottom: 1px solid $text_white_color
+      &:hover
+        border-bottom: 1px solid transparent
   &__autor
     margin-left: 40px
     color: #fff
@@ -527,6 +542,11 @@
     span
       margin-left: 12px
       text-transform: uppercase
+      border-bottom: 1px solid #fff
+      transition: border-bottom .3s
+
+      &:hover
+        border-bottom: 1px solid transparent
   &__name
     font-size: 60px
     font-family: $EExtraBold
@@ -617,7 +637,7 @@
     text-decoration: underline
     line-height: 30px
     &:hover
-      text-decoration: underline
+      text-decoration: none
       color: $text_accent_color
 
   &__more-info
@@ -634,7 +654,7 @@
   position: relative
   height: 440px
   .video__bg
-    background: url("../img/video_bg.jpg") no-repeat center
+    background: url("../img/video_bg.jpg") no-repeat center center
     background-size: cover
     position: absolute
     top: 0
@@ -663,11 +683,12 @@
 //--------страница TV
 
 .tv
-  background: url("../img/tv_bg.jpg") no-repeat center
+  background: url("../img/tv_bg.jpg") no-repeat center center
+  background-size: cover
 
 
 .tv-list
-  background: url("../img/tv_list_bg.jpg") no-repeat center
+  background: url("../img/tv_list_bg.jpg") no-repeat center center
   max-height: 840px
   padding: 61px 0 100px 0
   background-size: cover
@@ -767,6 +788,7 @@
     text-align: center
     display: block
   .tv-list__type-toggle li.active a
+    color: #000
     background-color: #cef200
     font-family: $ESemiBold
   .tv-list__type-toggle li a
@@ -826,18 +848,21 @@
     display: block
     width: 100%
     font-family: $EBold
+    transition: box-shadow .3s
+    &:hover
+      box-shadow: 0 2px 17px transparent, 0 0 88.9px 4.1px transparent
 
   &__equipment
     padding-left: 30px
 
 .tarif
-  background: url("../img/tarif_bg.jpg") no-repeat center
+  background: url("../img/tarif_bg.jpg") no-repeat center center
   background-size: cover
 
 
 //секция готовые тарифы
 .standart-tarifs
-  background: url("../img/standart_tarifs_bg.jpg") no-repeat center
+  background: url("../img/standart_tarifs_bg.jpg") no-repeat center center
   background-size: cover
   padding: 40px 0 44px 0
   .container
@@ -859,8 +884,11 @@
       font-family: $ERegular
       font-size: 11px
       color: #0088e7
-      text-decoration: underline
       text-transform: uppercase
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+
   &__slider-wrap
     margin-top: 33px
     padding: 0 45px
@@ -894,6 +922,9 @@
       text-decoration: underline
       margin-left: 5px
       color: #454545
+      &:hover
+        text-decoration: none
+
   &__info
     padding: 17px 0 22px 17px
     line-height: 21px
@@ -932,6 +963,8 @@
     display: block
     margin-top: 15px
     background-color: #bedf00
+    box-shadow: 0 2px 17px transparent, 0 0 88.9px 4.1px transparent
+
     &:hover
       color: #000
   .customBtn
@@ -948,6 +981,7 @@
     border-radius: 0
     background-color: #094062
   .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+    transition: background-color .3s
     background-color: #cef200
   .owl-theme .owl-nav.disabled+.owl-dots
     margin-top: -7px
@@ -1019,8 +1053,14 @@
       color: #4e4e4e
       text-transform: uppercase
       margin-bottom: 46px
+    &__price-finish:after
+      right: -40px
     .custom__btn-form
-      padding: 39px 26px
+      padding: 39px 20px
+      font-size: 27px
+      transition: box-shadow .3s
+
+
 
 //slider
 .slider-shares
@@ -1036,8 +1076,12 @@
     font-family: $ESemiBold
     cursor: pointer
     z-index: 11
+    border-bottom: 1px solid transparent
+    transition: border .3s
     &:hover
       color: #cef200
+      border-bottom: 1px solid #cef200
+
   &__baner-wrap
     position: relative
     &:before
@@ -1072,10 +1116,15 @@
       font-family: $ERegular
       font-size: 14px
       color: #fff
-      text-decoration: underline
       top: 20px
       right: 40px
       z-index: 10
+      line-height: 16px
+      transition: border-bottom .3s
+      border-bottom: 1px solid #fff
+      &:hover
+        border-bottom: 1px solid transparent
+
     .custom__btn-form
       top: initial
       bottom: 45px
@@ -1085,6 +1134,11 @@
       color: #000
       padding: 11px 14px
       letter-spacing: 1px
+      border-bottom: 1px solid transparent
+      box-shadow: 0 2px 17px transparent, 0 0 88.9px 4.1px transparent
+      transition: box-shadow .3s
+      &:hover
+        box-shadow: 0 2px 17px rgba(7, 78, 31, 0.51), 0 0 88.9px 4.1px rgba(206, 242, 0, 0.55)
 
   .slick-track
     padding: 40px 0
@@ -1116,3 +1170,5 @@
 
 @import "footer"
 @import "media"
+
+

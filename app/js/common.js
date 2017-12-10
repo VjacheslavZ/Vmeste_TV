@@ -79,12 +79,11 @@ $(document).ready(function () {
         items: 4,
         nav: false,
         dots: true,
-        margin: 30,
+        margin: 0,
         // autoplay: true,
         response: true,
         navText: ["<i class=\"fa fa-angle-left slider__btn\"></i>","<i class=\"fa fa-angle-right slider__btn\"></i>"],
         autoplayTimeout: 4000,
-
         responsive: {
             1615: {
                 items: 4

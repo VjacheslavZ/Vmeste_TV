@@ -189,6 +189,8 @@ a:focus, a:hover {
     opacity: .22; }
 
 .custom__btn-form {
+  -webkit-border-radius: 0;
+          border-radius: 0;
   display: inline-block;
   border: none;
   background-color: #cef201;
@@ -201,14 +203,11 @@ a:focus, a:hover {
   position: relative;
   outline: none;
   font-weight: 700;
-  -webkit-box-shadow: 0 2px 17px rgba(7, 78, 31, 0), 0 0 88.9px 4.1px rgba(206, 242, 0, 0);
-          box-shadow: 0 2px 17px rgba(7, 78, 31, 0), 0 0 88.9px 4.1px rgba(206, 242, 0, 0);
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
-  transition: all .5s ease; }
-  .custom__btn-form:hover {
-    -webkit-box-shadow: 0 2px 17px rgba(7, 78, 31, 0.51), 0 0 88.9px 4.1px rgba(206, 242, 0, 0.55);
-            box-shadow: 0 2px 17px rgba(7, 78, 31, 0.51), 0 0 88.9px 4.1px rgba(206, 242, 0, 0.55); }
+  transition: all .5s ease;
+  -webkit-box-shadow: 0 2px 17px rgba(7, 78, 31, 0.51), 0 0 88.9px 4.1px rgba(206, 242, 0, 0.55);
+          box-shadow: 0 2px 17px rgba(7, 78, 31, 0.51), 0 0 88.9px 4.1px rgba(206, 242, 0, 0.55); }
   .custom__btn-form:focus {
     outline: none; }
 
@@ -313,9 +312,9 @@ input.error + label {
 .default-section {
   position: relative;
   padding: 43px 0 65px 0;
+  height: 550px;
   -webkit-background-size: cover;
-          background-size: cover;
-  height: 550px; }
+          background-size: cover; }
   .default-section .container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -365,15 +364,23 @@ input.error + label {
   .default-section__top li.active a {
     color: #aecb06;
     font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 12px; }
+    font-size: 12px;
+    border-bottom: 1px solid #aecb06; }
+    .default-section__top li.active a:hover {
+      border-bottom: 1px solid transparent; }
   .default-section__top li + li {
     margin-left: 10px; }
   .default-section__top a {
-    text-decoration: underline;
     color: #fff;
     font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 12px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .default-section__top a:hover {
+      border-bottom: 1px solid transparent; }
   .default-section__main-content h1 {
     font-size: 60px;
     font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -409,6 +416,10 @@ input.error + label {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg); }
+
+.custom_paddind {
+  padding-left: 1px;
+  padding-right: 1px; }
 
 .input_wrap {
   position: relative;
@@ -652,7 +663,8 @@ input.error + label {
       font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-size: 16px;
       line-height: 20px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      width: 170px; }
       .header__items li a {
         -webkit-transition: all .3s ease;
         -o-transition: all .3s ease;
@@ -662,6 +674,10 @@ input.error + label {
         .header__items li a:hover {
           border-bottom: 1px solid #b7d700;
           color: #b7d700; }
+    .header__items li:last-child {
+      width: 130px; }
+    .header__items li + li {
+      margin-left: 10px; }
     .header__items li.header__nav-active {
       font-family: "Exo2-ExtraBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
       .header__items li.header__nav-active a {
@@ -710,6 +726,7 @@ input.error + label {
             justify-content: flex-end; }
   .header__cabinet {
     margin-left: 32px;
+    margin-right: 2px;
     position: relative; }
     .header__cabinet span {
       display: inline-block;
@@ -900,7 +917,7 @@ input.error + label {
   bottom: -9px; }
 
 .service__price-builder {
-  padding: 43px 80px 0 45px;
+  padding: 43px 109px 0 45px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -910,6 +927,8 @@ input.error + label {
     line-height: 21px; }
   .service__price-builder li + li a {
     border-bottom: 1px solid #4e4e4e; }
+    .service__price-builder li + li a:hover {
+      border-bottom: 1px solid transparent; }
   .service__price-builder a {
     font-size: 16px;
     text-transform: uppercase;
@@ -935,14 +954,14 @@ input.error + label {
   text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 51px;
-  padding-left: 45px; }
+  padding-left: 29px; }
 
 .designer__info {
   color: #4e4e4e;
   font-family: "Lato-Medium", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 19px;
-  padding-left: 45px;
+  padding-left: 29px;
   padding-top: 5px; }
 
 .designer__set-speed {
@@ -964,8 +983,11 @@ input.error + label {
   display: -ms-flexbox;
   display: flex;
   padding: 8px 20px 40px 50px;
-  background-color: #f6f6f6;
-  position: relative; }
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f4f4f4), to(#f8f8f8));
+  background-image: -webkit-linear-gradient(top, #f4f4f4 0, #f8f8f8);
+  background-image: -o-linear-gradient(top, #f4f4f4 0, #f8f8f8);
+  background-image: linear-gradient(180deg, #f4f4f4 0, #f8f8f8); }
   .designer__builder-wrap:before {
     content: "";
     width: 0;
@@ -1003,6 +1025,9 @@ input.error + label {
   width: 46px;
   line-height: 1;
   font-size: 12px; }
+
+.designer .slider.slider-horizontal .slider-handle {
+  margin-left: -8px; }
 
 .designer .slider-tick-label {
   position: relative; }
@@ -1066,6 +1091,8 @@ input.error + label {
   background-image: linear-gradient(180deg, #b7d700 0, #cef200);
   -webkit-box-shadow: inset  0 -1px 4px black, 0 0 5px #cef200;
           box-shadow: inset  0 -1px 4px black, 0 0 5px #cef200; }
+  .designer .slider-handle.min-slider-handle.round:hover {
+    cursor: pointer; }
 
 .designer .slider-handle {
   background-image: none; }
@@ -1132,7 +1159,7 @@ input.error + label {
   display: none; }
 
 .designer__finish-price {
-  margin-left: 60px;
+  margin-left: 15px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1161,7 +1188,7 @@ input.error + label {
   font-size: 60px;
   font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 26px;
-  margin-left: 10px;
+  margin-left: 15px;
   position: relative; }
   .designer__price-finish:after {
     content: "\f158";
@@ -1173,8 +1200,11 @@ input.error + label {
 
 .designer__builder-form_wrap {
   padding: 16px 0 20px 50px;
-  background-color: #e4e4e4;
-  position: relative; }
+  position: relative;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f2f2f2), to(#dedede));
+  background-image: -webkit-linear-gradient(bottom, #f2f2f2 0, #dedede);
+  background-image: -o-linear-gradient(bottom, #f2f2f2 0, #dedede);
+  background-image: linear-gradient(360deg, #f2f2f2 0, #dedede); }
   .designer__builder-form_wrap:before {
     content: "";
     width: 0;
@@ -1237,7 +1267,11 @@ input.error + label {
   position: absolute;
   right: 18px;
   bottom: 20px;
-  font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding: 39px 14px; }
+  .designer .custom__btn-form:hover {
+    -webkit-box-shadow: 0 2px 17px transparent, 0 0 88.9px 4.1px transparent;
+            box-shadow: 0 2px 17px transparent, 0 0 88.9px 4.1px transparent; }
 
 .idex_page_business .service__title {
   margin-top: 0; }
@@ -1293,7 +1327,7 @@ input.error + label {
 .full-news {
   position: relative;
   padding: 43px 0 40px 0;
-  background: url("../img/article_bg.jpg") no-repeat;
+  background: url("../img/article_bg.jpg") no-repeat center center;
   -webkit-background-size: cover;
           background-size: cover;
   height: -webkit-calc(100vh - 96px);
@@ -1329,13 +1363,13 @@ input.error + label {
     color: #8b8b8b;
     font-size: 12px;
     font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    border-bottom: 1px solid transparent;
     -webkit-transition: border-bottom .3s ease;
     -o-transition: border-bottom .3s ease;
-    transition: border-bottom .3s ease; }
+    transition: border-bottom .3s ease;
+    border-bottom: 1px solid #8b8b8b; }
     .full-news__old-news:hover {
       color: #8b8b8b;
-      border-bottom: 1px solid #8b8b8b; }
+      border-bottom: 1px solid transparent; }
   .full-news__detals {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1355,21 +1389,35 @@ input.error + label {
     .full-news__type .active a {
       color: #aecb06;
       font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 12px; }
+      font-size: 12px;
+      border-bottom: 1px solid #aecb06; }
+      .full-news__type .active a:hover {
+        border-bottom: 1px solid transparent; }
     .full-news__type li + li {
       margin-left: 10px; }
     .full-news__type a {
-      text-decoration: underline;
+      -webkit-transition: border .3s;
+      -o-transition: border .3s;
+      transition: border .3s;
       color: #fff;
       font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 12px; }
+      font-size: 12px;
+      border-bottom: 1px solid #fff; }
+      .full-news__type a:hover {
+        border-bottom: 1px solid transparent; }
   .full-news__autor {
     margin-left: 40px;
     color: #fff;
     font-size: 12px; }
     .full-news__autor span {
       margin-left: 12px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      border-bottom: 1px solid #fff;
+      -webkit-transition: border-bottom .3s;
+      -o-transition: border-bottom .3s;
+      transition: border-bottom .3s; }
+      .full-news__autor span:hover {
+        border-bottom: 1px solid transparent; }
   .full-news__name {
     font-size: 60px;
     font-family: "Exo2-ExtraBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -1462,7 +1510,7 @@ input.error + label {
     text-decoration: underline;
     line-height: 30px; }
     .full-news__more-link:hover {
-      text-decoration: underline;
+      text-decoration: none;
       color: #084067; }
   .full-news__more-info {
     color: #454545;
@@ -1482,7 +1530,7 @@ input.error + label {
   position: relative;
   height: 440px; }
   .video .video__bg {
-    background: url("../img/video_bg.jpg") no-repeat center;
+    background: url("../img/video_bg.jpg") no-repeat center center;
     -webkit-background-size: cover;
             background-size: cover;
     position: absolute;
@@ -1517,10 +1565,12 @@ input.error + label {
     cursor: pointer; }
 
 .tv {
-  background: url("../img/tv_bg.jpg") no-repeat center; }
+  background: url("../img/tv_bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
 
 .tv-list {
-  background: url("../img/tv_list_bg.jpg") no-repeat center;
+  background: url("../img/tv_list_bg.jpg") no-repeat center center;
   max-height: 840px;
   padding: 61px 0 100px 0;
   -webkit-background-size: cover;
@@ -1632,6 +1682,7 @@ input.error + label {
     text-align: center;
     display: block; }
   .form-full .tv-list__type-toggle li.active a {
+    color: #000;
     background-color: #cef200;
     font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
   .form-full .tv-list__type-toggle li a {
@@ -1686,17 +1737,25 @@ input.error + label {
     padding: 26px 40px;
     display: block;
     width: 100%;
-    font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-transition: -webkit-box-shadow .3s;
+    transition: -webkit-box-shadow .3s;
+    -o-transition: box-shadow .3s;
+    transition: box-shadow .3s;
+    transition: box-shadow .3s, -webkit-box-shadow .3s; }
+    .form-full .custom__btn-form:hover {
+      -webkit-box-shadow: 0 2px 17px transparent, 0 0 88.9px 4.1px transparent;
+              box-shadow: 0 2px 17px transparent, 0 0 88.9px 4.1px transparent; }
   .form-full__equipment {
     padding-left: 30px; }
 
 .tarif {
-  background: url("../img/tarif_bg.jpg") no-repeat center;
+  background: url("../img/tarif_bg.jpg") no-repeat center center;
   -webkit-background-size: cover;
           background-size: cover; }
 
 .standart-tarifs {
-  background: url("../img/standart_tarifs_bg.jpg") no-repeat center;
+  background: url("../img/standart_tarifs_bg.jpg") no-repeat center center;
   -webkit-background-size: cover;
           background-size: cover;
   padding: 40px 0 44px 0; }
@@ -1725,8 +1784,10 @@ input.error + label {
       font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-size: 11px;
       color: #0088e7;
-      text-decoration: underline;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-decoration: underline; }
+      .standart-tarifs__title a:hover {
+        text-decoration: none; }
   .standart-tarifs__slider-wrap {
     margin-top: 33px;
     padding: 0 45px;
@@ -1766,6 +1827,8 @@ input.error + label {
       text-decoration: underline;
       margin-left: 5px;
       color: #454545; }
+      .standart-tarifs__description a:hover {
+        text-decoration: none; }
   .standart-tarifs__info {
     padding: 17px 0 22px 17px;
     line-height: 21px;
@@ -1804,7 +1867,9 @@ input.error + label {
     padding: 15px 40px;
     display: block;
     margin-top: 15px;
-    background-color: #bedf00; }
+    background-color: #bedf00;
+    -webkit-box-shadow: 0 2px 17px transparent, 0 0 88.9px 4.1px transparent;
+            box-shadow: 0 2px 17px transparent, 0 0 88.9px 4.1px transparent; }
     .standart-tarifs .custom__btn-form:hover {
       color: #000; }
   .standart-tarifs .customBtn {
@@ -1821,6 +1886,9 @@ input.error + label {
             border-radius: 0;
     background-color: #094062; }
   .standart-tarifs .owl-theme .owl-dots .owl-dot.active span, .standart-tarifs .owl-theme .owl-dots .owl-dot:hover span {
+    -webkit-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    transition: background-color .3s;
     background-color: #cef200; }
   .standart-tarifs .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: -7px; }
@@ -1905,8 +1973,16 @@ input.error + label {
     color: #4e4e4e;
     text-transform: uppercase;
     margin-bottom: 46px; }
+  .tarif__page .designer__price-finish:after {
+    right: -40px; }
   .tarif__page .designer .custom__btn-form {
-    padding: 39px 26px; }
+    padding: 39px 20px;
+    font-size: 27px;
+    -webkit-transition: -webkit-box-shadow .3s;
+    transition: -webkit-box-shadow .3s;
+    -o-transition: box-shadow .3s;
+    transition: box-shadow .3s;
+    transition: box-shadow .3s, -webkit-box-shadow .3s; }
 
 .slider-shares {
   position: relative;
@@ -1920,9 +1996,14 @@ input.error + label {
     font-size: 16px;
     font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     cursor: pointer;
-    z-index: 11; }
+    z-index: 11;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border .3s;
+    -o-transition: border .3s;
+    transition: border .3s; }
     .slider-shares__show-all:hover {
-      color: #cef200; }
+      color: #cef200;
+      border-bottom: 1px solid #cef200; }
   .slider-shares__baner-wrap {
     position: relative; }
     .slider-shares__baner-wrap:before {
@@ -1960,10 +2041,16 @@ input.error + label {
       font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-size: 14px;
       color: #fff;
-      text-decoration: underline;
       top: 20px;
       right: 40px;
-      z-index: 10; }
+      z-index: 10;
+      line-height: 16px;
+      -webkit-transition: border-bottom .3s;
+      -o-transition: border-bottom .3s;
+      transition: border-bottom .3s;
+      border-bottom: 1px solid #fff; }
+      .slider-shares .item a:hover {
+        border-bottom: 1px solid transparent; }
     .slider-shares .item .custom__btn-form {
       top: initial;
       bottom: 45px;
@@ -1972,7 +2059,18 @@ input.error + label {
       font-size: 17px;
       color: #000;
       padding: 11px 14px;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      border-bottom: 1px solid transparent;
+      -webkit-box-shadow: 0 2px 17px transparent, 0 0 88.9px 4.1px transparent;
+              box-shadow: 0 2px 17px transparent, 0 0 88.9px 4.1px transparent;
+      -webkit-transition: -webkit-box-shadow .3s;
+      transition: -webkit-box-shadow .3s;
+      -o-transition: box-shadow .3s;
+      transition: box-shadow .3s;
+      transition: box-shadow .3s, -webkit-box-shadow .3s; }
+      .slider-shares .item .custom__btn-form:hover {
+        -webkit-box-shadow: 0 2px 17px rgba(7, 78, 31, 0.51), 0 0 88.9px 4.1px rgba(206, 242, 0, 0.55);
+                box-shadow: 0 2px 17px rgba(7, 78, 31, 0.51), 0 0 88.9px 4.1px rgba(206, 242, 0, 0.55); }
   .slider-shares .slick-track {
     padding: 40px 0; }
   .slider-shares .slick-slide {
@@ -2151,14 +2249,16 @@ input.error + label {
       position: absolute;
       bottom: -124px;
       left: 0;
-      right: 0;
+      right: 18px;
       padding-bottom: 10px; }
     .footer__made a {
       color: #084067;
       text-decoration: underline;
       margin-left: 3px; }
+      .footer__made a:hover {
+        text-decoration: none; }
 
-@media only screen and (max-width: 1614px) {
+@media only screen and (max-width: 1599px) {
   /**/
   .header__button {
     padding: 15px 15px; }
@@ -2175,18 +2275,18 @@ input.error + label {
       top: -25px; }
   .service__description {
     font-size: 15px; }
-  .service__slider {
-    margin-top: 68px; }
   .designer__builder-wrap {
     padding: 29px 20px 42px 31px; }
   .designer__builder-form_wrap {
     padding: 16px 0 20px 31px; }
+  .designer__builder-form {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
   .designer__title {
-    line-height: 30px;
-    padding-left: 0; }
+    line-height: 30px; }
   .designer__info {
     line-height: 20px;
-    padding-left: 0;
     padding-top: 18px; }
   .designer__price-txt {
     font-size: 14px;
@@ -2195,14 +2295,22 @@ input.error + label {
     font-size: 47px; }
     .designer__price-finish:after {
       font-size: 47px; }
-  .designer .custom__btn-form {
-    padding: 20px 10px;
-    bottom: 68px;
-    font-size: 29px; }
   .designer .slider.slider-horizontal {
     width: 500px; }
   .designer .slider-tick-label-container .slider-tick-label:not(:last-child):after {
     width: 117px; }
+  .designer__finish-price {
+    width: 100%;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .designer__price-finish {
+    padding-right: 43px; }
+  .designer__price-finish:after {
+    right: 0; }
+  .tarif__page .designer__price-finish:after {
+    right: 0; }
   .news__name {
     font-size: 20px;
     line-height: 24px; }
@@ -2214,11 +2322,6 @@ input.error + label {
     padding: 8px 0 22px 8px; }
   .tarif__page__wrap {
     padding: 0 0 0 33px; }
-  .tarif__page .designer .custom__btn-form {
-    padding: 20px 10px;
-    bottom: 68px;
-    font-size: 26px;
-    right: 7px; }
   .form-full__adress {
     padding-left: 0; }
   .form-full__equipment {
@@ -2243,9 +2346,38 @@ input.error + label {
   .slider-shares .customPrevBtn {
     left: 10%; }
   .slider-shares .customNextBtn {
-    right: 10%; } }
+    right: 10%; }
+  .form-full .callback__form-contacts input:last-child {
+    width: 100%; }
+  .tarif__page .designer .custom__btn-form {
+    font-size: 24px; }
+  .add-services__item {
+    width: 413px; } }
+
+@media only screen and (max-width: 1400px) {
+  /**/
+  .service__description {
+    font-size: 13px; }
+  .service__item {
+    padding: 25px 0 21px 74px; }
+    .service__item:before {
+      left: 11px; }
+    .service__item:hover .service__item-arrow {
+      height: 96px; }
+  .designer__builder-form {
+    width: 530px; }
+  .idex_page_business .service__slider {
+    margin-top: 68px; }
+  .idex_page_business .service__name {
+    font-size: 27px; }
+  .add-services__item {
+    width: 330px; } }
 
 @media only screen and (max-width: 1199px) {
+  .idex_page .service__item {
+    padding: 21px 0 14px 70px; }
+  .idex_page_business .service__slider {
+    margin-top: 58px; }
   .header__cabinet img {
     display: none; }
   .header__logo img {
@@ -2256,6 +2388,8 @@ input.error + label {
   .header__button {
     font-size: 11px;
     padding: 21px 15px; }
+  .designer__builder-form {
+    width: 625px; }
   .service__title {
     margin-left: 20px; }
   .service__item:before {
@@ -2270,10 +2404,14 @@ input.error + label {
     padding: 43px 80px 0 0; }
   .service__price-builder li {
     min-width: 170px; }
+  .idex_page .service__item:hover .service__item-arrow {
+    height: 84px;
+    top: -21px;
+    padding: 25px 6px; }
   .news__name {
     font-size: 16px; }
   .idex_page_business .service__name {
-    font-size: 24px; }
+    font-size: 23px; }
   .footer__nav-links + .footer__nav-links {
     margin-left: 20px; }
   .footer__made span {
@@ -2287,8 +2425,6 @@ input.error + label {
     left: 15%; }
   .slider-shares .customNextBtn {
     right: 15%; }
-  .add-services__item {
-    width: 415px; }
   .designer__builder-wrap {
     margin-top: 20px; }
   .tarif__page .designer__wrap {
@@ -2300,7 +2436,21 @@ input.error + label {
   .slider-shares .customNextBtn {
     right: -12px; }
   .slider-shares .customPrevBtn {
-    left: -12px; } }
+    left: -12px; }
+  .idex_page_business .service__item:hover .service__item-arrow {
+    top: -25px;
+    right: -39px;
+    height: 93px; }
+  .idex_page_business .service__title {
+    font-size: 23px; }
+  .idex_page_business .service__description {
+    font-size: 11px; } }
+
+@media only screen and (max-width: 1140px) {
+  .idex_page .service__description {
+    font-size: 11px; }
+  .idex_page .service__item:hover .service__item-arrow {
+    height: 82px; } }
 
 @media only screen and (max-width: 991px) {
   /***/
@@ -2325,15 +2475,13 @@ input.error + label {
     font-size: 12px; }
   .designer__price-finish {
     font-size: 34px;
-    margin-left: 6px; }
+    margin-left: 6px;
+    padding-right: 30px; }
   .designer__price-finish:after {
     font-size: 34px;
-    right: -26px; }
-  .designer .custom__btn-form {
-    padding: 10px 10px;
-    bottom: 98px; }
+    top: 4px; }
   .designer__builder-form {
-    width: 670px; }
+    width: 427px; }
   .full-news__name {
     font-size: 45px; }
   .default-section__main-content h1 {
@@ -2352,8 +2500,12 @@ input.error + label {
     padding: 40px 0px; }
   .add-services__wrap {
     padding: 41px 10px 60px 10px; }
-  .add-services__item {
-    width: 320px; }
-  .tarif__page .designer .custom__btn-form {
-    padding: 10px 10px;
-    bottom: 98px; } }
+  .custom_paddind {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .idex_page_business .service__item:hover .service__item-arrow {
+    right: 0px; } }
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 770px; } }

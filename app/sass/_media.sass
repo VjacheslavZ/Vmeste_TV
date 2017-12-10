@@ -1,5 +1,10 @@
-@media only screen and (max-width : 1614px)
+
+//.container
+//  width: 99%
+//  margin: 0 auto
+@media only screen and (max-width : 1599px)
   /**/
+
   //Секция сервис
   .header__button
     padding: 15px 15px
@@ -24,7 +29,7 @@
     &__description
       font-size: 15px
 
-  .service__slider
+  //.service__slider
     margin-top: 68px
 
   //секция конструктор тарифов
@@ -33,12 +38,15 @@
       padding: 29px 20px 42px 31px
     &__builder-form_wrap
       padding: 16px 0 20px 31px
+    &__builder-form
+      //width: 530px
+      flex-wrap: wrap
     &__title
       line-height: 30px
-      padding-left: 0
+      //padding-left: 0
     &__info
       line-height: 20px
-      padding-left: 0
+      //padding-left: 0
       padding-top: 18px
     &__price-txt
       font-size: 14px
@@ -47,16 +55,19 @@
       font-size: 47px
       &:after
         font-size: 47px
-    .custom__btn-form
-      padding: 20px 10px
-      bottom: 68px
-      font-size: 29px
-      
   .designer .slider.slider-horizontal
     width: 500px
   .designer .slider-tick-label-container .slider-tick-label:not(:last-child):after
     width: 117px
-
+  .designer__finish-price
+    width: 100%
+    justify-content: flex-end
+  .designer__price-finish
+    padding-right: 43px
+  .designer__price-finish:after
+    right: 0
+  .tarif__page .designer__price-finish:after
+    right: 0
 
   //секция новости
   .news
@@ -75,15 +86,16 @@
       font-size: 19px
     &__info
       padding: 8px 0 22px 8px
-
+    //.customNextBtn
+      right: 0
   .tarif__page
     &__wrap
       padding: 0 0 0 33px
     .designer .custom__btn-form
-      padding: 20px 10px
-      bottom: 68px
-      font-size: 26px
-      right: 7px
+      //padding: 20px 10px
+      //bottom: 68px
+      //font-size: 23px
+      //right: 7px
 
   //страница TV
   .form-full
@@ -115,7 +127,59 @@
     .customNextBtn
       right: 10%
 
+  .form-full .callback__form-contacts input:last-child
+    width: 100%
+
+  .tarif__page .designer .custom__btn-form
+    font-size: 24px
+  .add-services__item
+    width: 413px
+@media only screen and (max-width : 1400px)
+  /**/
+  //.idex_page
+  .service__description
+    font-size: 13px
+  .service__item
+    padding: 25px 0 21px 74px
+    &:before
+      left: 11px
+    &:hover
+      .service__item-arrow
+        height: 96px
+
+  .designer
+    &__builder-form
+      width: 530px
+
+  .idex_page_business .service__slider
+    margin-top:  68px
+
+  .idex_page_business
+    //.service__title
+      font-size: inherit
+    .service__name
+      font-size: 27px
+    //.service__item
+    //  padding: 19px 0 19px 90px
+    //.service__item:hover .service__item-arrow
+    //  padding: 29px 6px
+    //  top: -19px
+    //  height: 92px
+
+  .add-services__item
+    width: 330px
 @media only screen and (max-width : 1199px)
+  //.container
+  //  width: 99%
+  //  margin: 0 auto
+  .idex_page
+    .service__item
+      padding: 21px 0 14px 70px
+
+  .idex_page_business .service__slider
+    margin-top: 58px
+
+
 
   .header__cabinet
     img
@@ -125,15 +189,15 @@
       img
         width: 100%
         height: auto
-    //&__nav
-      padding-top: 0
     &__items
       text-align: center
-    //&__items li
-      font-size: 12px
     &__button
       font-size: 11px
       padding: 21px 15px
+
+  .designer__builder-form
+    width: 625px
+
   //Секция сервис
   .service__item
    //&:hover .service__item-arrow
@@ -153,6 +217,14 @@
   .service__price-builder li
     min-width: 170px
 
+
+  .idex_page .service__item:hover .service__item-arrow
+    height: 84px
+    top: -21px
+    padding: 25px 6px
+
+
+
   //блок новости
   .news__name
     font-size: 16px
@@ -160,10 +232,7 @@
   //страница для юр лиц
   .idex_page_business
     .service__name
-      font-size: 24px
-
-
-
+      font-size: 23px
   .footer__nav-links + .footer__nav-links
      margin-left: 20px
   .footer__made span
@@ -182,7 +251,7 @@
   .slider-shares .customNextBtn
     right: 15%
 
-  .add-services__item
+  //.add-services__item
      width: 415px
 
 
@@ -190,8 +259,6 @@
      margin-top: 20px
   .tarif__page .designer__wrap
      padding: 0
-
-
   .slider-shares .slick-active
     transform: scale(1)
   .slider-shares .customNextBtn
@@ -199,6 +266,26 @@
   .slider-shares .customPrevBtn
     left: -12px
 
+
+  .idex_page_business
+    .service__item:hover .service__item-arrow
+      top: -25px
+      right: -39px
+      height: 93px
+    .service__title
+      font-size: 23px
+    .service__description
+      font-size: 11px
+
+  //.idex_page_business .service__item:hover .service__item-arrow
+    top: -25px
+    height: 95px
+@media only screen and (max-width : 1140px)
+
+  .idex_page .service__description
+    font-size: 11px
+  .idex_page .service__item:hover .service__item-arrow
+    height: 82px
 
 @media only screen and (max-width : 991px)
   /***/
@@ -225,15 +312,20 @@
   .designer__price-finish
     font-size: 34px
     margin-left: 6px
+    padding-right: 30px
   .designer__price-finish:after
     font-size: 34px
-    right: -26px
-  .designer .custom__btn-form
-    padding: 10px 10px
-    bottom: 98px
+    top: 4px
+    //right: -26px
+  //.designer .custom__btn-form
+  //  padding: 10px 10px
+  //  bottom: 98px
+  //.designer__builder-form
+  //  width: 670px
   .designer__builder-form
-    width: 670px
-
+    width: 427px
+  //.designer .custom__btn-form
+    padding: 28px 20px
 
   //Страница новости
   .full-news__name
@@ -259,8 +351,20 @@
     padding: 40px 0px
   .add-services__wrap
     padding: 41px 10px 60px 10px
-  .add-services__item
+  //.add-services__item
     width: 320px
-  .tarif__page .designer .custom__btn-form
+  //.tarif__page .designer .custom__btn-form
     padding: 10px 10px
     bottom: 98px
+
+  .custom_paddind
+    padding-left: 15px
+    padding-right: 15px
+
+
+  .idex_page_business .service__item:hover .service__item-arrow
+    right: 0px
+
+@media only screen and (max-width : 800px)
+  .container
+    width: 770px

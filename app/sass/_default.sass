@@ -78,6 +78,7 @@ a:focus, a:hover
       opacity: .22
 
 .custom__btn-form
+  border-radius: 0
   display: inline-block
   border: none
   background-color: $text_greenActive_color
@@ -91,10 +92,10 @@ a:focus, a:hover
   outline: none
   //position: absolute
   font-weight: 700
-  box-shadow: 0 2px 17px rgba(7, 78, 31, 0), 0 0 88.9px 4.1px rgba(206, 242, 0, 0)
+  //box-shadow: 0 2px 17px rgba(7, 78, 31, 0), 0 0 88.9px 4.1px rgba(206, 242, 0, 0)
   transition: all .5s ease
-  &:hover
-    box-shadow: 0 2px 17px rgba(7, 78, 31, 0.51), 0 0 88.9px 4.1px rgba(206, 242, 0, 0.55)
+  box-shadow: 0 2px 17px rgba(7, 78, 31, 0.51), 0 0 88.9px 4.1px rgba(206, 242, 0, 0.55)
+  //&:hover
   &:focus
     outline: none
 
@@ -189,8 +190,8 @@ input.error
 .default-section
   position: relative
   padding: 43px 0 65px 0
-  background-size: cover
   height: 550px
+  background-size: cover
   .container
     display: flex
     height: 100%
@@ -228,14 +229,22 @@ input.error
         color: #aecb06
         font-family: $ERegular
         font-size: 12px
+        border-bottom: 1px solid #aecb06
+        &:hover
+          border-bottom: 1px solid transparent
     li + li
       margin-left: 10px
     a
-      text-decoration: underline
       color: $text_white_color
       font-family: $ERegular
       font-size: 12px
       text-transform: uppercase
+      border-bottom:
+      border-bottom: 1px solid $text_white_color
+      transition: all .3s
+      &:hover
+        border-bottom: 1px solid transparent
+
   &__main-content
     h1
       font-size: 60px
@@ -267,3 +276,7 @@ input.error
 .customNextBtn
   &:before
     transform: rotate(180deg)
+
+.custom_paddind
+  padding-left: 1px
+  padding-right: 1px
