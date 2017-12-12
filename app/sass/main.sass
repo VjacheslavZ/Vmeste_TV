@@ -1168,6 +1168,226 @@
       opacity: 1
 
 
+//страница специальное предложение
+.specials__page
+  .default-section__info
+    span
+      display: block
+      line-height: 21px
+  .full-news__type
+    margin-left: 0
+  .full-news__old-news
+    font-family: $ESemiBold
+    text-transform: none
+    letter-spacing: 1px
+    font-size: 11px
+  .full-news__description
+    font-family: $LSemiboldIt
+  .full-news__name
+    position: relative
+    margin-top: 2px
+    span
+      font-size: 9px
+    &:after
+      content: "*"
+      font-size: 9px
+      top: 59px
+      position: absolute
+
+  .form-full
+    padding: 85px 0 113px 0
+    background: #fff url("../img/standart_tarifs_bg.jpg") no-repeat center center
+    background-size: cover
+    &__title
+      letter-spacing: 1px
+    &__surname
+      width: 331px
+    &__name-company
+      width: 302px
+    &__now
+      color: #fff
+      font-size: 22px
+      font-family: $ESemiBold
+      text-align: left
+      margin-bottom: 41px
+      text-transform: uppercase
+      line-height: 28px
+  .form-full__name
+    width: 100%
+    display: flex
+    justify-content: space-between
+    input + input
+      margin-top: 0
+  .callback__form-contacts
+    margin-top: 19px
+    display: flex
+    justify-content: space-between
+    width: 100%
+    input
+      width: 203px
+  .form-full .callback__form-contacts input:last-child
+    margin-top: 0
+    
+
+
+.specials
+  height: calc(100vh - 96px)
+  background: url("../img/specials_bg.jpg") no-repeat center center
+  background-size: cover
+  padding: 39px 0 65px 0
+  position: relative
+  &:before
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    background-color: rgba(0, 0, 0, 0.7)
+  .full-news__type
+    text-transform: uppercase
+    li + li
+      margin-left: 13px
+
+.specials-office
+  padding: 26px 0 86px 0
+  background-color: #ffffff
+  position: relative
+  &__sub
+    position: absolute
+    top: -80px
+    left: 15px
+    color: #fefefe
+    font-size: 11px
+    line-height: 15px
+    span
+      display: block
+      font-family: $LRegular
+    span + span
+      margin-left: 8px
+
+  &__title
+    font-size: 60px
+    color: #084067
+    font-family: $EExtraBold
+    margin: 0
+  &__descripton
+    color: #454545
+    font-size: 18px
+    margin-top: 15px
+    line-height: 25px
+  &__advantages
+    margin-top: 54px
+    li
+      padding-left: 86px
+      position: relative
+      &:before
+        position: absolute
+        left: 0
+        top: 10px
+        content: ''
+        display: block
+    li + li
+      margin-top: 59px
+    li:nth-child(1)
+      &:before
+        @include sprite($filter_ic)
+    li:nth-child(2)
+      &:before
+        @include sprite($static_ic)
+    li:nth-child(3)
+      &:before
+        @include sprite($wifi_ic)
+  &__advantages-name
+    font-family: $EBold
+    font-size: 34px
+    color: #000
+    display: block
+    padding-right: 180px
+    line-height: 41px
+  &__advantages-profit
+    color: #454545
+    font-size: 18px
+    line-height: 24px
+    margin-top: 8px
+    display: block
+    position: relative
+    z-index: 1
+    font-family: $LRegular
+
+  .full-news__more
+    margin-top: 25px
+    margin-bottom: 54px
+  .full-news__more-info
+    margin-top: 10px
+    padding-right: 10px
+    line-height: 18px
+    margin-bottom: 30px
+
+.bonus
+  padding: 56px 0 107px 0
+  position: relative
+  background: #fff url("../img/bonus_bg.jpg") no-repeat center center
+  background-size: cover
+  &__title
+    font-size: 40px
+    color: $text_accent_color
+    font-family: $EExtraBold
+    margin: 0
+
+
+  .specials-office__advantages
+    margin-top: 42px
+    li:nth-child(1):before
+      @include sprite($ip_ic)
+    li:nth-child(2):before
+      @include sprite($video_ic)
+    li:nth-child(3):before
+      @include sprite($tc_ic-green)
+    li + li
+      margin-top: 40px
+
+.slogan
+  position: relative
+  padding: 88px 0 86px 0
+  background: #fff url("../img/buinding_bg.png") no-repeat right 75%
+
+  &:after
+    content: ""
+    display: block
+    position: absolute
+    top: -137px
+    right: 125px
+    z-index: 0
+    background: url("../img/accent-note.png") no-repeat
+    width: 655px
+    height: 447px
+    background-color: transparent
+  &__title
+    color: $text_accent_color
+    font-size: 40px
+    font-family: $EExtraBold
+    margin: 0 0 26px 0
+    line-height: 40px
+    z-index: 1
+    position: relative
+  &__name
+    font-size: 18px
+    color: #454545
+    line-height: 26px
+    position: relative
+    z-index: 1
+    font-family: $LRegular
+    & + .slogan__name
+      margin-top: 20px
+  &__problem
+    margin: 64px 0 14px 0
+    line-height: 36px
+    font-size: 30px
+    font-family: $EExtraBold
+    color: $text_accent_color
+    padding-right: 150px
+
 @import "footer"
 @import "media"
 

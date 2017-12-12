@@ -134,6 +134,33 @@
     font-size: 24px
   .add-services__item
     width: 413px
+
+  //Страница Специальное предложение
+  .specials-office__sub
+    top: -131px
+    span
+      display: inline-block
+
+  .slogan
+    background: none
+    //background-position: 155% 75%
+    //display: none
+    &:after
+      display: none
+      top: -167px
+      right: 0px
+  .specials__page
+    .form-full__now
+      font-size: 21px
+    .form-full .callback__form-contacts input:last-child
+      width: 203px
+    .form-full__surname
+      width: 290px
+    .form-full__name-company
+      width: 260px
+    .callback__form-contacts input
+      width: 165px
+
 @media only screen and (max-width : 1400px)
   /**/
   //.idex_page
@@ -159,15 +186,26 @@
       font-size: inherit
     .service__name
       font-size: 27px
-    //.service__item
-    //  padding: 19px 0 19px 90px
-    //.service__item:hover .service__item-arrow
-    //  padding: 29px 6px
-    //  top: -19px
-    //  height: 92px
 
   .add-services__item
     width: 330px
+
+  //Страница Специальное предложение
+  .specials-office__advantages-name
+    padding-right: 0
+
+  .specials__page
+    .form-full__now
+      font-size: 18px
+    .form-full .callback__form-contacts input:last-child
+      width: 190px
+    .form-full__surname
+      width: 245px
+    .form-full__name-company
+      width: 225px
+    .callback__form-contacts input
+      width: 135px
+
 @media only screen and (max-width : 1199px)
   //.container
   //  width: 99%
@@ -277,15 +315,32 @@
     .service__description
       font-size: 11px
 
-  //.idex_page_business .service__item:hover .service__item-arrow
-    top: -25px
-    height: 95px
+  //Страница Специальное предложение
+  .specials-office__advantages-name
+    font-size: 25px
+  .specials__page
+    .form-full .custom__btn-form
+      font-size: 25px
+
+
 @media only screen and (max-width : 1140px)
 
   .idex_page .service__description
     font-size: 11px
   .idex_page .service__item:hover .service__item-arrow
     height: 82px
+
+  .specials__page .callback__form-contacts
+    margin-top: 18px
+  .specials__page .form-full__surname
+    width: 225px
+  .specials__page .form-full__name-company
+    width: 205px
+  .specials__page .form-full .callback__form-contacts input:last-child
+    width: 135px
+  .specials__page .form-full .custom__btn-form
+    font-size: 18px
+    padding: 35px 34px
 
 @media only screen and (max-width : 991px)
   /***/
@@ -363,7 +418,13 @@
 
 
   .idex_page_business .service__item:hover .service__item-arrow
-    right: 0px
+    right: 0
+
+  //Страница Специальное предложение
+  .specials__page .full-news__name:after
+    top: 62px
+  .specials-office__sub span + span
+    margin-left: 0
 
 @media only screen and (max-width : 800px)
   .container

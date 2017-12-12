@@ -134,6 +134,7 @@ gulp.task("pages", function() {
         "app/pages/news/news.pug",
         "app/pages/tv/tv.pug",
         "app/pages/tarif/tarif.pug",
+        "app/pages/specials/specials.pug",
     ])
         .pipe(pug({pretty: true}))  //с переносом pretty: true
         .on('error', notify.onError(function (error) {

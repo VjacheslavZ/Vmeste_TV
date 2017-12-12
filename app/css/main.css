@@ -408,7 +408,7 @@ input.error + label {
     content: "";
     display: block;
     background-image: url(../img/sprite.png);
-    background-position: -302px -102px;
+    background-position: -114px -258px;
     width: 18px;
     height: 34px; }
 
@@ -743,39 +743,39 @@ input.error + label {
 
 .service__items-swich .service__item:nth-child(1):before {
   background-image: url(../img/sprite.png);
-  background-position: 0px -139px;
+  background-position: -295px -62px;
   width: 51px;
   height: 50px; }
 
 .service__items-swich .service__item:nth-child(1):hover:before {
   background-image: url(../img/sprite.png);
-  background-position: -61px -139px;
+  background-position: -295px -122px;
   width: 51px;
   height: 50px; }
 
 .service__items-swich .service__item:nth-child(2):before {
   top: 29px;
   background-image: url(../img/sprite.png);
-  background-position: -62px -199px;
+  background-position: -136px -146px;
   width: 52px;
   height: 37px; }
 
 .service__items-swich .service__item:nth-child(2):hover:before {
   background-image: url(../img/sprite.png);
-  background-position: 0px -199px;
+  background-position: -179px -201px;
   width: 52px;
   height: 37px; }
 
 .service__items-swich .service__item:nth-child(3):before {
   top: 28px;
   background-image: url(../img/sprite.png);
-  background-position: -273px 0px;
+  background-position: 0px -258px;
   width: 47px;
   height: 41px; }
 
 .service__items-swich .service__item:nth-child(3):hover:before {
   background-image: url(../img/sprite.png);
-  background-position: -273px -51px;
+  background-position: -57px -258px;
   width: 47px;
   height: 41px; }
 
@@ -829,7 +829,7 @@ input.error + label {
         display: block;
         position: absolute;
         background-image: url(../img/sprite.png);
-        background-position: -273px -102px;
+        background-position: -198px -146px;
         width: 19px;
         height: 36px; }
   .service__item + .service__item {
@@ -1278,49 +1278,49 @@ input.error + label {
 
 .idex_page_business .service__items-swich .service__item:nth-child(1):before {
   background-image: url(../img/sprite.png);
-  background-position: -153px 0px;
+  background-position: -295px 0px;
   width: 52px;
   height: 52px; }
 
 .idex_page_business .service__items-swich .service__item:nth-child(1):hover:before {
   background-image: url(../img/sprite.png);
-  background-position: -153px -62px;
+  background-position: -231px -128px;
   width: 52px;
   height: 52px; }
 
 .idex_page_business .service__items-swich .service__item:nth-child(2):before {
   background-image: url(../img/sprite.png);
-  background-position: -64px -75px;
+  background-position: -231px 0px;
   width: 54px;
   height: 54px; }
 
 .idex_page_business .service__items-swich .service__item:nth-child(2):hover:before {
   background-image: url(../img/sprite.png);
-  background-position: 0px -75px;
+  background-position: -231px -64px;
   width: 54px;
   height: 54px; }
 
 .idex_page_business .service__items-swich .service__item:nth-child(3):before {
   background-image: url(../img/sprite.png);
-  background-position: -122px -139px;
+  background-position: -78px -146px;
   width: 48px;
   height: 44px; }
 
 .idex_page_business .service__items-swich .service__item:nth-child(3):hover:before {
   background-image: url(../img/sprite.png);
-  background-position: -215px 0px;
+  background-position: -295px -182px;
   width: 48px;
   height: 44px; }
 
 .idex_page_business .service__items-swich .service__item:nth-child(4):before {
   background-image: url(../img/sprite.png);
-  background-position: -215px -54px;
+  background-position: -71px -201px;
   width: 44px;
   height: 45px; }
 
 .idex_page_business .service__items-swich .service__item:nth-child(4):hover:before {
   background-image: url(../img/sprite.png);
-  background-position: -215px -109px;
+  background-position: -125px -201px;
   width: 44px;
   height: 45px; }
 
@@ -1558,7 +1558,7 @@ input.error + label {
     left: calc(50% - 30px);
     background: transparent;
     background-image: url(../img/sprite.png);
-    background-position: -82px 0px;
+    background-position: 0px -75px;
     width: 61px;
     height: 61px;
     display: inline-block;
@@ -2104,6 +2104,254 @@ input.error + label {
     .slider-shares .slick-active a {
       opacity: 1; }
 
+.specials__page .default-section__info span {
+  display: block;
+  line-height: 21px; }
+
+.specials__page .full-news__type {
+  margin-left: 0; }
+
+.specials__page .full-news__old-news {
+  font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-transform: none;
+  letter-spacing: 1px;
+  font-size: 11px; }
+
+.specials__page .full-news__description {
+  font-family: "Lato-SemiboldItalic", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+.specials__page .full-news__name {
+  position: relative;
+  margin-top: 2px; }
+  .specials__page .full-news__name span {
+    font-size: 9px; }
+  .specials__page .full-news__name:after {
+    content: "*";
+    font-size: 9px;
+    top: 59px;
+    position: absolute; }
+
+.specials__page .form-full {
+  padding: 85px 0 113px 0;
+  background: #fff url("../img/standart_tarifs_bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .specials__page .form-full__title {
+    letter-spacing: 1px; }
+  .specials__page .form-full__surname {
+    width: 331px; }
+  .specials__page .form-full__name-company {
+    width: 302px; }
+  .specials__page .form-full__now {
+    color: #fff;
+    font-size: 22px;
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-align: left;
+    margin-bottom: 41px;
+    text-transform: uppercase;
+    line-height: 28px; }
+
+.specials__page .form-full__name {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .specials__page .form-full__name input + input {
+    margin-top: 0; }
+
+.specials__page .callback__form-contacts {
+  margin-top: 19px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%; }
+  .specials__page .callback__form-contacts input {
+    width: 203px; }
+
+.specials__page .form-full .callback__form-contacts input:last-child {
+  margin-top: 0; }
+
+.specials {
+  height: -webkit-calc(100vh - 96px);
+  height: calc(100vh - 96px);
+  background: url("../img/specials_bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding: 39px 0 65px 0;
+  position: relative; }
+  .specials:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); }
+  .specials .full-news__type {
+    text-transform: uppercase; }
+    .specials .full-news__type li + li {
+      margin-left: 13px; }
+
+.specials-office {
+  padding: 26px 0 86px 0;
+  background-color: #ffffff;
+  position: relative; }
+  .specials-office__sub {
+    position: absolute;
+    top: -80px;
+    left: 15px;
+    color: #fefefe;
+    font-size: 11px;
+    line-height: 15px; }
+    .specials-office__sub span {
+      display: block;
+      font-family: "Lato-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .specials-office__sub span + span {
+      margin-left: 8px; }
+  .specials-office__title {
+    font-size: 60px;
+    color: #084067;
+    font-family: "Exo2-ExtraBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0; }
+  .specials-office__descripton {
+    color: #454545;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 25px; }
+  .specials-office__advantages {
+    margin-top: 54px; }
+    .specials-office__advantages li {
+      padding-left: 86px;
+      position: relative; }
+      .specials-office__advantages li:before {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        content: '';
+        display: block; }
+    .specials-office__advantages li + li {
+      margin-top: 59px; }
+    .specials-office__advantages li:nth-child(1):before {
+      background-image: url(../img/sprite.png);
+      background-position: -154px -59px;
+      width: 56px;
+      height: 58px; }
+    .specials-office__advantages li:nth-child(2):before {
+      background-image: url(../img/sprite.png);
+      background-position: 0px -146px;
+      width: 68px;
+      height: 45px; }
+    .specials-office__advantages li:nth-child(3):before {
+      background-image: url(../img/sprite.png);
+      background-position: 0px -201px;
+      width: 61px;
+      height: 47px; }
+  .specials-office__advantages-name {
+    font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 34px;
+    color: #000;
+    display: block;
+    padding-right: 180px;
+    line-height: 41px; }
+  .specials-office__advantages-profit {
+    color: #454545;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 8px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    font-family: "Lato-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .specials-office .full-news__more {
+    margin-top: 25px;
+    margin-bottom: 54px; }
+  .specials-office .full-news__more-info {
+    margin-top: 10px;
+    padding-right: 10px;
+    line-height: 18px;
+    margin-bottom: 30px; }
+
+.bonus {
+  padding: 56px 0 107px 0;
+  position: relative;
+  background: #fff url("../img/bonus_bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .bonus__title {
+    font-size: 40px;
+    color: #084067;
+    font-family: "Exo2-ExtraBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0; }
+  .bonus .specials-office__advantages {
+    margin-top: 42px; }
+    .bonus .specials-office__advantages li:nth-child(1):before {
+      background-image: url(../img/sprite.png);
+      background-position: -82px 0px;
+      width: 62px;
+      height: 62px; }
+    .bonus .specials-office__advantages li:nth-child(2):before {
+      background-image: url(../img/sprite.png);
+      background-position: -71px -75px;
+      width: 67px;
+      height: 50px; }
+    .bonus .specials-office__advantages li:nth-child(3):before {
+      background-image: url(../img/sprite.png);
+      background-position: -154px 0px;
+      width: 67px;
+      height: 49px; }
+    .bonus .specials-office__advantages li + li {
+      margin-top: 40px; }
+
+.slogan {
+  position: relative;
+  padding: 88px 0 86px 0;
+  background: #fff url("../img/buinding_bg.png") no-repeat right 75%; }
+  .slogan:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -137px;
+    right: 125px;
+    z-index: 0;
+    background: url("../img/accent-note.png") no-repeat;
+    width: 655px;
+    height: 447px;
+    background-color: transparent; }
+  .slogan__title {
+    color: #084067;
+    font-size: 40px;
+    font-family: "Exo2-ExtraBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0 0 26px 0;
+    line-height: 40px;
+    z-index: 1;
+    position: relative; }
+  .slogan__name {
+    font-size: 18px;
+    color: #454545;
+    line-height: 26px;
+    position: relative;
+    z-index: 1;
+    font-family: "Lato-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .slogan__name + .slogan__name {
+      margin-top: 20px; }
+  .slogan__problem {
+    margin: 64px 0 14px 0;
+    line-height: 36px;
+    font-size: 30px;
+    font-family: "Exo2-ExtraBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #084067;
+    padding-right: 150px; }
+
 .footer {
   background: #f2f2f2;
   padding: 47px 0 60px 0; }
@@ -2228,17 +2476,17 @@ input.error + label {
       display: block; }
   .footer__mail:before {
     background-image: url(../img/sprite.png);
-    background-position: -273px -179px;
+    background-position: -172px -258px;
     width: 20px;
     height: 20px; }
   .footer__tw:before {
     background-image: url(../img/sprite.png);
-    background-position: -215px -164px;
+    background-position: -202px -258px;
     width: 20px;
     height: 20px; }
   .footer__vk:before {
     background-image: url(../img/sprite.png);
-    background-position: -273px -209px;
+    background-position: -142px -258px;
     width: 20px;
     height: 20px; }
   .footer__made {
@@ -2352,7 +2600,27 @@ input.error + label {
   .tarif__page .designer .custom__btn-form {
     font-size: 24px; }
   .add-services__item {
-    width: 413px; } }
+    width: 413px; }
+  .specials-office__sub {
+    top: -131px; }
+    .specials-office__sub span {
+      display: inline-block; }
+  .slogan {
+    background: none; }
+    .slogan:after {
+      display: none;
+      top: -167px;
+      right: 0px; }
+  .specials__page .form-full__now {
+    font-size: 21px; }
+  .specials__page .form-full .callback__form-contacts input:last-child {
+    width: 203px; }
+  .specials__page .form-full__surname {
+    width: 290px; }
+  .specials__page .form-full__name-company {
+    width: 260px; }
+  .specials__page .callback__form-contacts input {
+    width: 165px; } }
 
 @media only screen and (max-width: 1400px) {
   /**/
@@ -2371,7 +2639,19 @@ input.error + label {
   .idex_page_business .service__name {
     font-size: 27px; }
   .add-services__item {
-    width: 330px; } }
+    width: 330px; }
+  .specials-office__advantages-name {
+    padding-right: 0; }
+  .specials__page .form-full__now {
+    font-size: 18px; }
+  .specials__page .form-full .callback__form-contacts input:last-child {
+    width: 190px; }
+  .specials__page .form-full__surname {
+    width: 245px; }
+  .specials__page .form-full__name-company {
+    width: 225px; }
+  .specials__page .callback__form-contacts input {
+    width: 135px; } }
 
 @media only screen and (max-width: 1199px) {
   .idex_page .service__item {
@@ -2444,13 +2724,28 @@ input.error + label {
   .idex_page_business .service__title {
     font-size: 23px; }
   .idex_page_business .service__description {
-    font-size: 11px; } }
+    font-size: 11px; }
+  .specials-office__advantages-name {
+    font-size: 25px; }
+  .specials__page .form-full .custom__btn-form {
+    font-size: 25px; } }
 
 @media only screen and (max-width: 1140px) {
   .idex_page .service__description {
     font-size: 11px; }
   .idex_page .service__item:hover .service__item-arrow {
-    height: 82px; } }
+    height: 82px; }
+  .specials__page .callback__form-contacts {
+    margin-top: 18px; }
+  .specials__page .form-full__surname {
+    width: 225px; }
+  .specials__page .form-full__name-company {
+    width: 205px; }
+  .specials__page .form-full .callback__form-contacts input:last-child {
+    width: 135px; }
+  .specials__page .form-full .custom__btn-form {
+    font-size: 18px;
+    padding: 35px 34px; } }
 
 @media only screen and (max-width: 991px) {
   /***/
@@ -2504,7 +2799,11 @@ input.error + label {
     padding-left: 15px;
     padding-right: 15px; }
   .idex_page_business .service__item:hover .service__item-arrow {
-    right: 0px; } }
+    right: 0; }
+  .specials__page .full-news__name:after {
+    top: 62px; }
+  .specials-office__sub span + span {
+    margin-left: 0; } }
 
 @media only screen and (max-width: 800px) {
   .container {
