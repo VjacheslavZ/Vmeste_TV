@@ -743,13 +743,13 @@ input.error + label {
 
 .service__items-swich .service__item:nth-child(1):before {
   background-image: url(../img/sprite.png);
-  background-position: -295px -62px;
+  background-position: -295px -122px;
   width: 51px;
   height: 50px; }
 
 .service__items-swich .service__item:nth-child(1):hover:before {
   background-image: url(../img/sprite.png);
-  background-position: -295px -122px;
+  background-position: -295px -62px;
   width: 51px;
   height: 50px; }
 
@@ -1278,13 +1278,13 @@ input.error + label {
 
 .idex_page_business .service__items-swich .service__item:nth-child(1):before {
   background-image: url(../img/sprite.png);
-  background-position: -295px 0px;
+  background-position: -231px -128px;
   width: 52px;
   height: 52px; }
 
 .idex_page_business .service__items-swich .service__item:nth-child(1):hover:before {
   background-image: url(../img/sprite.png);
-  background-position: -231px -128px;
+  background-position: -295px 0px;
   width: 52px;
   height: 52px; }
 
@@ -1314,13 +1314,13 @@ input.error + label {
 
 .idex_page_business .service__items-swich .service__item:nth-child(4):before {
   background-image: url(../img/sprite.png);
-  background-position: -71px -201px;
+  background-position: -125px -201px;
   width: 44px;
   height: 45px; }
 
 .idex_page_business .service__items-swich .service__item:nth-child(4):hover:before {
   background-image: url(../img/sprite.png);
-  background-position: -125px -201px;
+  background-position: -71px -201px;
   width: 44px;
   height: 45px; }
 
@@ -2351,6 +2351,95 @@ input.error + label {
     font-family: "Exo2-ExtraBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: #084067;
     padding-right: 150px; }
+
+.contacts {
+  padding: 41px 0 45px 0;
+  background: #fff url("../img/contacts_bg.png") no-repeat center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .contacts__title {
+    color: #084067;
+    font-size: 22px;
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .contacts__main {
+    margin-top: 45px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .contacts__main + .contacts__main {
+      margin-top: 34px; }
+    .contacts__main li:first-child {
+      font-size: 22px;
+      font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #000; }
+    .contacts__main li:last-child a {
+      border-bottom: 1px solid #4e4e4e; }
+      .contacts__main li:last-child a:hover {
+        border-bottom: 1px solid transparent; }
+    .contacts__main li + li {
+      margin-top: 1px; }
+    .contacts__main li {
+      position: relative; }
+      .contacts__main li:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 2px;
+        top: 9px; }
+      .contacts__main li a {
+        font-size: 18px;
+        color: #4e4e4e;
+        font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        padding-left: 25px; }
+  .contacts__ofice li:nth-child(2):before {
+    background-image: url(../img/sprite.png);
+    background-position: -257px -258px;
+    width: 11px;
+    height: 15px; }
+  .contacts__ofice li:nth-child(3):before {
+    background-image: url(../img/sprite.png);
+    background-position: -232px -258px;
+    width: 15px;
+    height: 15px; }
+  .contacts__ofice li:nth-child(4):before {
+    background-image: url(../img/sprite.png);
+    background-position: -295px -236px;
+    width: 15px;
+    height: 11px; }
+  .contacts__support li:nth-child(2):before {
+    background-image: url(../img/sprite.png);
+    background-position: -232px -258px;
+    width: 15px;
+    height: 15px; }
+  .contacts__support li:nth-child(3):before {
+    background-image: url(../img/sprite.png);
+    background-position: -295px -236px;
+    width: 15px;
+    height: 11px; }
+  .contacts__schedule-title {
+    font-size: 18px;
+    font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #000;
+    display: block;
+    margin-bottom: 3px; }
+  .contacts__schedule {
+    color: #4e4e4e;
+    font-size: 18px;
+    font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .contacts__schedule td + td {
+      padding-left: 22px; }
+  .contacts .footer__social-networks {
+    margin-top: 32px; }
+
+#map {
+  height: 955px; }
 
 .footer {
   background: #f2f2f2;

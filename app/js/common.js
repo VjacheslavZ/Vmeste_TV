@@ -225,7 +225,7 @@ $(document).ready(function () {
     // })(jQuery);
 
 
-    // $(".news__name").equalHeights();
+    $(".contacts__main-height").equalHeights();
 
     $(".hamburger").on("click", function () {
         $( ".header__mob-menu" ).toggleClass( "active" );

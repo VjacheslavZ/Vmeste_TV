@@ -1388,6 +1388,80 @@
     color: $text_accent_color
     padding-right: 150px
 
+//страница контактов
+
+.contacts
+  padding: 41px 0 45px 0
+  background: #fff url("../img/contacts_bg.png") no-repeat center center
+  background-size: cover
+  &__title
+    color: $text_accent_color
+    font-size: 22px
+    font-family: $ESemiBold
+    text-transform: uppercase
+    letter-spacing: 2px
+  &__main
+    margin-top: 45px
+    display: flex
+    justify-content: space-between
+    & + .contacts__main
+      margin-top: 34px
+    li:first-child
+      font-size: 22px
+      font-family: $EBold
+      color: #000
+    li:last-child
+      a
+        border-bottom: 1px solid #4e4e4e
+        &:hover
+          border-bottom: 1px solid transparent
+    li + li
+      margin-top: 1px
+    li
+      position: relative
+      &:before
+        content: ""
+        display: block
+        position: absolute
+        left: 2px
+        top: 9px
+      a
+        font-size: 18px
+        color: #4e4e4e
+        font-family: $ERegular
+        padding-left: 25px
+  &__ofice
+    li:nth-child(2):before
+      @include sprite($marker_ic)
+    li:nth-child(3):before
+      @include sprite($phone_ic_small)
+    li:nth-child(4):before
+      @include sprite($mail_ic_small)
+
+  &__support
+    li:nth-child(2):before
+      @include sprite($phone_ic_small)
+    li:nth-child(3):before
+      @include sprite($mail_ic_small)
+
+  &__schedule-title
+    font-size: 18px
+    font-family: $EBold
+    color: #000
+    display: block
+    margin-bottom: 3px
+  &__schedule
+    color: #4e4e4e
+    font-size: 18px
+    font-family: $ERegular
+    td + td
+      padding-left: 22px
+
+  .footer__social-networks
+    margin-top: 32px
+
+#map
+  height: 955px
 @import "footer"
 @import "media"
 
