@@ -6,7 +6,6 @@
   &__items
     display: flex
     flex-direction: row
-    //justify-content: space-between
     li
       display: block
       font-family: $ERegular
@@ -21,8 +20,12 @@
         &:hover
           border-bottom: 1px solid $text-green_color
           color: $text-green_color
+    //li:nth-child(1), li:nth-child(2)
+      padding-right: 55px
     li:last-child
       width: 130px
+      padding-left: 47px
+      //margin-left: 45px
     li + li
       margin-left: 10px
     li.header__nav-active

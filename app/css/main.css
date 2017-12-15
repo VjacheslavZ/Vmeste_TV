@@ -418,7 +418,7 @@ input.error + label {
           transform: rotate(180deg); }
 
 .custom_paddind {
-  padding-left: 1px;
+  padding-left: 0;
   padding-right: 1px; }
 
 .input_wrap {
@@ -675,7 +675,8 @@ input.error + label {
           border-bottom: 1px solid #b7d700;
           color: #b7d700; }
     .header__items li:last-child {
-      width: 130px; }
+      width: 130px;
+      padding-left: 47px; }
     .header__items li + li {
       margin-left: 10px; }
     .header__items li.header__nav-active {
@@ -917,7 +918,7 @@ input.error + label {
   bottom: -9px; }
 
 .service__price-builder {
-  padding: 43px 109px 0 45px;
+  padding: 20px 109px 23px 45px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -925,10 +926,12 @@ input.error + label {
   .service__price-builder li {
     min-width: 179px;
     line-height: 21px; }
-  .service__price-builder li + li a {
-    border-bottom: 1px solid #4e4e4e; }
-    .service__price-builder li + li a:hover {
-      border-bottom: 1px solid transparent; }
+  .service__price-builder li + li {
+    padding-right: 10px; }
+    .service__price-builder li + li a {
+      border-bottom: 1px solid #4e4e4e; }
+      .service__price-builder li + li a:hover {
+        border-bottom: 1px solid transparent; }
   .service__price-builder a {
     font-size: 16px;
     text-transform: uppercase;
@@ -1278,13 +1281,13 @@ input.error + label {
 
 .idex_page_business .service__items-swich .service__item:nth-child(1):before {
   background-image: url(../img/sprite.png);
-  background-position: -231px -128px;
+  background-position: -295px 0px;
   width: 52px;
   height: 52px; }
 
 .idex_page_business .service__items-swich .service__item:nth-child(1):hover:before {
   background-image: url(../img/sprite.png);
-  background-position: -295px 0px;
+  background-position: -231px -128px;
   width: 52px;
   height: 52px; }
 
@@ -1314,13 +1317,13 @@ input.error + label {
 
 .idex_page_business .service__items-swich .service__item:nth-child(4):before {
   background-image: url(../img/sprite.png);
-  background-position: -125px -201px;
+  background-position: -71px -201px;
   width: 44px;
   height: 45px; }
 
 .idex_page_business .service__items-swich .service__item:nth-child(4):hover:before {
   background-image: url(../img/sprite.png);
-  background-position: -71px -201px;
+  background-position: -125px -201px;
   width: 44px;
   height: 45px; }
 
@@ -1518,6 +1521,9 @@ input.error + label {
     margin-bottom: 26px;
     display: block;
     line-height: 22px; }
+
+.page_full_news .full-news__type li a {
+  text-transform: uppercase; }
 
 .video {
   margin: 50px 0 35px 0;
@@ -1958,6 +1964,9 @@ input.error + label {
       content: "\f158";
       font-family: "FontAwesome"; }
 
+.tarif__page .default-section__info {
+  width: 182px; }
+
 .tarif__page .designer {
   padding: 46px 0 60px 0;
   background-color: #fff; }
@@ -2353,13 +2362,13 @@ input.error + label {
     padding-right: 150px; }
 
 .contacts {
-  padding: 41px 0 45px 0;
+  padding: 41px 0 115px 0;
   background: #fff url("../img/contacts_bg.png") no-repeat center center;
   -webkit-background-size: cover;
           background-size: cover; }
   .contacts__title {
     color: #084067;
-    font-size: 22px;
+    font-size: 21px;
     font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px; }
@@ -2397,15 +2406,15 @@ input.error + label {
         font-size: 18px;
         color: #4e4e4e;
         font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        padding-left: 25px; }
+        margin-left: 25px; }
   .contacts__ofice li:nth-child(2):before {
     background-image: url(../img/sprite.png);
-    background-position: -257px -258px;
+    background-position: 0px -309px;
     width: 11px;
     height: 15px; }
   .contacts__ofice li:nth-child(3):before {
     background-image: url(../img/sprite.png);
-    background-position: -232px -258px;
+    background-position: -322px -258px;
     width: 15px;
     height: 15px; }
   .contacts__ofice li:nth-child(4):before {
@@ -2415,7 +2424,7 @@ input.error + label {
     height: 11px; }
   .contacts__support li:nth-child(2):before {
     background-image: url(../img/sprite.png);
-    background-position: -232px -258px;
+    background-position: -322px -258px;
     width: 15px;
     height: 15px; }
   .contacts__support li:nth-child(3):before {
@@ -2439,7 +2448,57 @@ input.error + label {
     margin-top: 32px; }
 
 #map {
-  height: 955px; }
+  height: 846px; }
+
+.actions__page .default-section__info span {
+  display: block; }
+
+.actions__page .full-news__old-news {
+  font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-transform: none; }
+
+.actions__page .full-news__old-news {
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  letter-spacing: 0; }
+  .actions__page .full-news__old-news:hover {
+    border-bottom: 1px solid transparent; }
+
+.actions__page .specials {
+  background: transparent url("../img/actions_bg.png") no-repeat center center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: relative;
+  z-index: 0; }
+  .actions__page .specials:before {
+    display: none; }
+
+.action-description {
+  padding: 66px 0 50px 0;
+  background: #fff url("../img/action-description__bg.png") no-repeat center bottom; }
+  .action-description__main {
+    color: #084067;
+    font-size: 60px;
+    font-family: "Exo2-ExtraBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 71px;
+    text-transform: uppercase;
+    padding-right: 31%; }
+  .action-description__rules {
+    color: #000000;
+    font-size: 20px;
+    font-family: "Lato-SemiboldItalic", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 24px;
+    margin-top: 71px;
+    margin-bottom: 58px;
+    padding-right: 31%; }
+  .action-description__more-info {
+    color: #454545;
+    font-family: "Lato-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px; }
+  .action-description__sponsor {
+    margin-top: 78px;
+    margin-bottom: 115px; }
 
 .footer {
   background: #f2f2f2;
@@ -2539,7 +2598,7 @@ input.error + label {
     .footer__search-btn .fa-search {
       position: absolute;
       top: 1px;
-      right: 2px; }
+      right: 3px; }
   .footer__social {
     padding-top: 13px;
     display: -webkit-box;
@@ -2565,17 +2624,32 @@ input.error + label {
       display: block; }
   .footer__mail:before {
     background-image: url(../img/sprite.png);
-    background-position: -172px -258px;
+    background-position: -142px -258px;
+    width: 20px;
+    height: 20px; }
+  .footer__mail:hover:before {
+    background-image: url(../img/sprite.png);
+    background-position: -292px -258px;
     width: 20px;
     height: 20px; }
   .footer__tw:before {
     background-image: url(../img/sprite.png);
-    background-position: -202px -258px;
+    background-position: -232px -258px;
+    width: 20px;
+    height: 20px; }
+  .footer__tw:hover:before {
+    background-image: url(../img/sprite.png);
+    background-position: -262px -258px;
     width: 20px;
     height: 20px; }
   .footer__vk:before {
     background-image: url(../img/sprite.png);
-    background-position: -142px -258px;
+    background-position: -202px -258px;
+    width: 20px;
+    height: 20px; }
+  .footer__vk:hover:before {
+    background-image: url(../img/sprite.png);
+    background-position: -172px -258px;
     width: 20px;
     height: 20px; }
   .footer__made {
@@ -2694,12 +2768,9 @@ input.error + label {
     top: -131px; }
     .specials-office__sub span {
       display: inline-block; }
-  .slogan {
-    background: none; }
-    .slogan:after {
-      display: none;
-      top: -167px;
-      right: 0px; }
+  .slogan:after {
+    top: -167px;
+    right: 0px; }
   .specials__page .form-full__now {
     font-size: 21px; }
   .specials__page .form-full .callback__form-contacts input:last-child {
@@ -2709,10 +2780,16 @@ input.error + label {
   .specials__page .form-full__name-company {
     width: 260px; }
   .specials__page .callback__form-contacts input {
-    width: 165px; } }
+    width: 165px; }
+  .action-description__main {
+    padding-right: 0%; } }
 
 @media only screen and (max-width: 1400px) {
   /**/
+  .custom_paddind {
+    padding-left: 1px; }
+  .header__items li:last-child {
+    padding-left: 23px; }
   .service__description {
     font-size: 13px; }
   .service__item {
@@ -2721,6 +2798,8 @@ input.error + label {
       left: 11px; }
     .service__item:hover .service__item-arrow {
       height: 96px; }
+  .service__price-builder {
+    padding: 17px 109px 23px 45px; }
   .designer__builder-form {
     width: 530px; }
   .idex_page_business .service__slider {
@@ -2770,7 +2849,7 @@ input.error + label {
   .service__item:hover .service__item-arrow {
     height: 95px; }
   .service__price-builder {
-    padding: 43px 80px 0 0; }
+    padding: 17px 109px 23px 15px; }
   .service__price-builder li {
     min-width: 170px; }
   .idex_page .service__item:hover .service__item-arrow {
@@ -2817,7 +2896,11 @@ input.error + label {
   .specials-office__advantages-name {
     font-size: 25px; }
   .specials__page .form-full .custom__btn-form {
-    font-size: 25px; } }
+    font-size: 25px; }
+  .slogan {
+    background: none; }
+    .slogan:after {
+      display: none; } }
 
 @media only screen and (max-width: 1140px) {
   .idex_page .service__description {

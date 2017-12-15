@@ -230,7 +230,9 @@ $(document).ready(function () {
     $(".hamburger").on("click", function () {
         $( ".header__mob-menu" ).toggleClass( "active" );
         $( ".hamburger.hamburger--collapse" ).toggleClass( "is-active" );
-    })
+    });
+
+
 
 });
 
@@ -245,6 +247,47 @@ $(document).ready(function () {
     $(".loader").fadeOut("slow");
 
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var map = document.getElementById("map");
+
+    if(map){
+        ymaps.ready(init);
+
+        var myMap,
+            myPlacemark
+        ;
+
+        function init(){
+            myMap = new ymaps.Map ("map", {
+                center: [57.11798757, 65.61958700],
+                zoom: 16
+            });
+
+
+            myPin = new ymaps.GeoObjectCollection({}, {
+                iconImageHref: 'img/marker_ic.png',
+                iconImageSize: [30, 42],
+                iconImageOffset: [-3, -42]
+            });
+
+
+            myPlacemark = new ymaps.Placemark([57.11798757, 65.61958700], {
+                content: 'Москва!',
+                balloonContent: 'Столица России'
+            });
+
+            myPin.add(myPlacemark);
+            myMap.geoObjects.add(myPin);
+
+        }
+    }
+});
+
+
+
+
 
 
 

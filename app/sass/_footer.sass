@@ -74,7 +74,7 @@
     .fa-search
       position: absolute
       top: 1px
-      right: 2px
+      right: 3px
   &__social
     padding-top: 13px
     display: flex
@@ -93,14 +93,23 @@
   &__mail
     &:before
       @include sprite($mail-ic)
+    &:hover
+      &:before
+        @include sprite($mail-ic-hover)
 
   &__tw
     &:before
       @include sprite($instagramm-ic)
+    &:hover
+      &:before
+        @include sprite($instagramm-ic-hover)
 
   &__vk
     &:before
       @include sprite($vk-ic)
+    &:hover
+      &:before
+        @include sprite($vk-ic-hover)
 
   &__made
     font-size: 12px

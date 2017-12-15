@@ -5,84 +5,6 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Контакты
-      <main class="contacts-page" id="contacts">
-        <section class="contacts">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-16"><a class="contacts__title" href="#">Контакты</a></div>
-            </div>
-            <div class="row">
-              <div class="col-lg-offset-3 col-lg-4 col-md-offset-2 col-md-9 col-sm-12 col-xs-16">
-                <div class="contacts__main contacts__main-height">
-                  <ul class="contacts__ofice">
-                    <li>Офис продаж</li>
-                    <li><a href="#">г. Тюмень, ул. Республики, д. 243 корп. 1</a></li>
-                    <li><a href="tel:3452500020">(3452) 500-020</a></li>
-                    <li><a href="mailto:info@vmeste72.ru">info@vmeste72.ru</a></li>
-                  </ul>
-                </div>
-                <div class="contacts__main">
-                  <div class="contacts__schedule-wrap"><span class="contacts__schedule-title">Режим работы:</span>
-                    <table class="contacts__schedule">
-                      <tr>
-                        <td>пн-чт:</td>
-                        <td>09:00 — 18:00</td>
-                      </tr>
-                      <tr>
-                        <td>пт:</td>
-                        <td>09:00 — 17:00</td>
-                      </tr>
-                      <tr>
-                        <td>сб-вс:</td>
-                        <td>Выходной</td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-offset-1 col-md-9 col-sm-12 col-xs-16">
-                <div class="contacts__main contacts__main-height">
-                  <ul class="contacts__support">
-                    <li>Техническая поддержка</li>
-                    <li><a href="tel:3452500020">(3452) 500-020</a></li>
-                    <li><a href="mailto:support@vmeste72.ru">support@vmeste72.ru</a></li>
-                  </ul>
-                </div>
-                <div class="contacts__main">
-                  <div class="contacts__schedule-wrap"><span class="contacts__schedule-title">Режим работы:</span>
-                    <table class="contacts__schedule">
-                      <td>пн-вс:</td>
-                      <td>09:00 — 22:00</td>
-                    </table>
-                    <div class="footer__social-networks"><a class="footer__tw" href="#" target="_blank"></a><a class="footer__vk" href="#" target="_blank"></a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="map">
-          <div class="div" id="map">
-            <!--AIzaSyCSRXQn0dP78R_l53ALKwKVWqcogBFGnl0-->
-            <script type="text/javascript">
-              var moscow_map,
-                  piter_map;
-              ymaps.ready(function () {
-                  moscow_map = new ymaps.Map("first_map", {
-                      center: [55.76, 37.64],
-                      zoom: 10
-                  });
-                  piter_map = new ymaps.Map(document.getElementsByTagName('p')[2], {
-                      center: [59.94, 30.32],
-                      zoom: 9
-                  });
-              });
-              
-            </script>
-            <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU" type="text/javascript"></script>
-          </div>
-        </section>
-      </main>
     </title>
     <style type="text/css">
       html .loader {
@@ -111,9 +33,10 @@
           position: absolute
       }
       
+      
     </style>
-    <script src="js/libs.min.js"></script>
-    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <div>
@@ -156,8 +79,8 @@
             <div class="col-lg-7 col-md-8 col-sm-9">
               <div class="header__nav">
                 <ul class="header__items">
-                  <li class="header__nav-active"><a href="#">Интернет для дома</a></li>
-                  <li><a href="#">Интернет для бизнеса</a></li>
+                  <li class="header__nav-active"><a href="#">Интернет</a><br>для дома</li>
+                  <li><a href="#">Интернет<br>для бизнеса</a></li>
                   <li><a href="#">Облачное видеонаблюдение</a></li>
                   <li><a href="#">Наши контакты</a></li>
                 </ul>
@@ -178,6 +101,7 @@
           </div>
         </div>
       </header>
+      <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU" type="text/javascript"></script>
       <main class="contacts-page" id="contacts">
         <section class="contacts">
           <div class="container">
@@ -185,7 +109,7 @@
               <div class="col-xs-16"><a class="contacts__title" href="#">Контакты</a></div>
             </div>
             <div class="row">
-              <div class="col-lg-offset-3 col-lg-4 col-md-offset-2 col-md-9 col-sm-12 col-xs-16">
+              <div class="col-lg-offset-3 col-lg-4 col-sm-offset-2 col-md-6 col-sm-7 col-xs-9">
                 <div class="contacts__main contacts__main-height">
                   <ul class="contacts__ofice">
                     <li>Офис продаж</li>
@@ -213,7 +137,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-offset-1 col-md-9 col-sm-12 col-xs-16">
+              <div class="col-lg-4 col-md-offset-1 col-md-6 col-sm-6 col-xs-7">
                 <div class="contacts__main contacts__main-height">
                   <ul class="contacts__support">
                     <li>Техническая поддержка</li>
@@ -235,25 +159,7 @@
           </div>
         </section>
         <section class="map">
-          <div class="div" id="map">
-            <!--AIzaSyCSRXQn0dP78R_l53ALKwKVWqcogBFGnl0-->
-            <script type="text/javascript">
-              var moscow_map,
-                  piter_map;
-              ymaps.ready(function () {
-                  moscow_map = new ymaps.Map("first_map", {
-                      center: [55.76, 37.64],
-                      zoom: 10
-                  });
-                  piter_map = new ymaps.Map(document.getElementsByTagName('p')[2], {
-                      center: [59.94, 30.32],
-                      zoom: 9
-                  });
-              });
-              
-            </script>
-            <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU" type="text/javascript"></script>
-          </div>
+          <div id="map"></div>
         </section>
       </main>
       <footer class="footer">
@@ -298,7 +204,7 @@
         </div>
       </footer>
     </div>
-    <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
   </body>
 </html>
