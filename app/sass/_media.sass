@@ -70,10 +70,9 @@
     right: 0
 
   //секция новости
-  .news
-    &__name
-      font-size: 20px
-      line-height: 24px
+  .news__link p:nth-child(2)
+    font-size: 20px
+    line-height: 24px
 
   //страница новости
   .full-news
@@ -162,8 +161,9 @@
       width: 165px
 
   //страница акции
-  .action-description__main
-    padding-right: 0%
+  .action-description
+    h1
+      padding-right: 0%
 
 
 @media only screen and (max-width : 1400px)
@@ -204,8 +204,10 @@
     width: 330px
 
   //Страница Специальное предложение
-  .specials-office__advantages-name
-    padding-right: 0
+  .specials-office__advantages
+    li
+      span:nth-child(1)
+        padding-right: 0
 
   .specials__page
     .form-full__now
@@ -277,7 +279,7 @@
 
 
   //блок новости
-  .news__name
+  .news__link p:nth-child(2)
     font-size: 16px
 
   //страница для юр лиц
@@ -342,7 +344,6 @@
 
 
 @media only screen and (max-width : 1140px)
-
   .idex_page .service__description
     font-size: 11px
   .idex_page .service__item:hover .service__item-arrow
@@ -389,20 +390,15 @@
   .designer__price-finish:after
     font-size: 34px
     top: 4px
-    //right: -26px
-  //.designer .custom__btn-form
-  //  padding: 10px 10px
-  //  bottom: 98px
-  //.designer__builder-form
-  //  width: 670px
+
   .designer__builder-form
     width: 427px
-  //.designer .custom__btn-form
-    padding: 28px 20px
+
 
   //Страница новости
   .full-news__name
-    font-size: 45px
+    h1
+      font-size: 45px
 
   .default-section__main-content h1
     font-size: 45px

@@ -544,43 +544,49 @@
       text-transform: uppercase
       border-bottom: 1px solid #fff
       transition: border-bottom .3s
-
       &:hover
         border-bottom: 1px solid transparent
   &__name
-    font-size: 60px
-    font-family: $EExtraBold
-    color: $text_white_color
-    text-transform: uppercase
-    margin-top: 29px
-    letter-spacing: 1px
-    line-height: 73px
-  &__description
-    margin-top: 4px
-    font-family: $ESemiBoldItalic
-    font-size: 20px
-    color: #fff
-    line-height: 26px
-  &__sub
-    position: absolute
-    top: -115px
-    left: 15px
-    color: #fff
-    font-size: 13px
+    h1
+      font-size: 60px
+      font-family: $EExtraBold
+      color: $text_white_color
+      text-transform: uppercase
+      margin-top: 29px
+      letter-spacing: 1px
+      line-height: 73px
+    p
+      margin-top: 4px
+      font-family: $ESemiBoldItalic
+      font-size: 20px
+      color: #fff
+      line-height: 26px
+
   &__main-content
     position: relative
     padding: 50px 0 80px 0
   &__text
-    font-size: 18px
-    line-height: 25px
-    color: #454545
-  &__quote
+    span
+      position: absolute
+      top: -115px
+      left: 15px
+      color: #fff
+      font-size: 13px
+    p
+      font-size: 18px
+      line-height: 25px
+      color: #454545
+      & + p
+        margin-top: 20px
+  &__quote span
+    position: relative
+    display: block
     padding: 57px 100px
     font-size: 20px
     font-family: $LSemiboldIt
     color: $text_accent_color
-    position: relative
     line-height: 25px
+    top: 0
     &:before
       content: ''
       position: absolute
@@ -588,15 +594,17 @@
       left: 0
       display: block
       @include sprite($quotes-ic)
+
   &__list
     padding: 54px 50px 50px 102px
-    ul + ul
-      padding-top: 62px
     li
       font-size: 18px
       color: #454545
       line-height: 31px
-    li.marker
+  &__list-markers
+    ul
+      margin-left: 14px
+    li
       position: relative
       &:before
         content: ""
@@ -608,15 +616,54 @@
         height: 8px
         background-color: #454545
         border-radius: 50%
-  &__list-markers
-    margin-left: 14px
+    & + .full-news__list-markers
+      margin-top: 62px
+    & + .full-news__list-markers_iside
+      margin-top: 62px
+
   &__list-markers_iside
-    li.marker
-      margin-left: 50px
+    ul
+      li
+        ul
+          margin-left: 50px
+          li
+            position: relative
+            &:before
+              content: ""
+              display: block
+              position: absolute
+              left: -14px
+              top: 11px
+              width: 8px
+              height: 8px
+              background-color: #454545
+              border-radius: 50%
+    & + .full-news__list-markers_iside
+      margin-top: 62px
   &__more_wrap
     + .full-news__more_wrap
       border-top: 1px solid $text_greyLight_color
       padding-top: 25px
+    span
+      font-size: 12px
+      font-family: $ERegular
+      color: $text_greyLight_color
+      display: block
+    a
+      color: $text_accent_color
+      font-size: 24px
+      font-family: $ESemiBold
+      text-decoration: underline
+      line-height: 30px
+      &:hover
+        text-decoration: none
+        color: $text_accent_color
+    p
+      color: $text_greyLight_color
+      font-size: 16px
+      margin-bottom: 26px
+      display: block
+      line-height: 22px
   &__more
     font-family: $ESemiBold
     font-size: 22px
@@ -625,27 +672,10 @@
     display: block
     margin-bottom: 37px
     letter-spacing: 2px
-  &__more-date
-    font-size: 12px
-    font-family: $ERegular
-    color: $text_greyLight_color
-    display: block
-  &__more-link
-    color: $text_accent_color
-    font-size: 24px
-    font-family: $ESemiBold
-    text-decoration: underline
-    line-height: 30px
-    &:hover
-      text-decoration: none
-      color: $text_accent_color
 
-  &__more-info
-    color: $text_greyLight_color
-    font-size: 16px
-    margin-bottom: 26px
-    display: block
-    line-height: 22px
+
+
+
 .page_full_news
   .full-news__type li a
     text-transform: uppercase
@@ -735,10 +765,9 @@
       transition: color .3s ease
       &:hover
         color: #cef200
-    .active-list
+    li.active
       a
         color: $text_accent_color
-        //cursor: default
         text-decoration: none
         font-size: 22px
         font-family: $EExtraBold
@@ -1014,21 +1043,20 @@
     margin-top: 40px
     color: #4e4e4e
     width: 460px
+    p
+      font-family: $LMedium
+      font-size: 16px
+      margin-top: 9px
+      line-height: 20px
   &__ic
     display: flex
-  &__name
-    text-transform: uppercase
-    font-family: $ESemiBold
-    font-size: 16px
-    margin-left: 7px
-    color: #084067
-    line-height: 29px
-  &__description
-    font-family: $LMedium
-    font-size: 16px
-    margin-top: 9px
-    line-height: 20px
-    line-height: 20px
+    span
+      text-transform: uppercase
+      font-family: $ESemiBold
+      font-size: 16px
+      margin-left: 7px
+      color: #084067
+      line-height: 29px
   &__price
     font-size: 36px
     color: #bedf00
@@ -1272,15 +1300,16 @@
       margin-left: 8px
 
   &__title
-    font-size: 60px
-    color: #084067
-    font-family: $EExtraBold
-    margin: 0
-  &__descripton
-    color: #454545
-    font-size: 18px
-    margin-top: 15px
-    line-height: 25px
+    h2
+      font-size: 60px
+      color: #084067
+      font-family: $EExtraBold
+      margin: 0
+    p
+      color: #454545
+      font-size: 18px
+      margin-top: 15px
+      line-height: 25px
   &__advantages
     margin-top: 54px
     li
@@ -1303,44 +1332,45 @@
     li:nth-child(3)
       &:before
         @include sprite($wifi_ic)
-  &__advantages-name
-    font-family: $EBold
-    font-size: 34px
-    color: #000
-    display: block
-    padding-right: 180px
-    line-height: 41px
-  &__advantages-profit
-    color: #454545
-    font-size: 18px
-    line-height: 24px
-    margin-top: 8px
-    display: block
-    position: relative
-    z-index: 1
-    font-family: $LRegular
-
+    li
+      span:nth-child(1)
+        font-family: $EBold
+        font-size: 34px
+        color: #000
+        display: block
+        padding-right: 180px
+        line-height: 41px
+      span:nth-child(2)
+        color: #454545
+        font-size: 18px
+        line-height: 24px
+        margin-top: 8px
+        display: block
+        position: relative
+        z-index: 1
+        font-family: $LRegular
   .full-news__more
     margin-top: 25px
     margin-bottom: 54px
-  .full-news__more-info
+  p
     margin-top: 10px
     padding-right: 10px
     line-height: 18px
     margin-bottom: 30px
+    & + p
+      margin-top: 20px
+
 
 .bonus
   padding: 56px 0 107px 0
   position: relative
   background: #fff url("../img/bonus_bg.jpg") no-repeat center center
   background-size: cover
-  &__title
+  h2
     font-size: 40px
     color: $text_accent_color
     font-family: $EExtraBold
     margin: 0
-
-
   .specials-office__advantages
     margin-top: 42px
     li:nth-child(1):before
@@ -1356,7 +1386,6 @@
   position: relative
   padding: 88px 0 86px 0
   background: #fff url("../img/buinding_bg.png") no-repeat right 75%
-
   &:after
     content: ""
     display: block
@@ -1368,7 +1397,7 @@
     width: 655px
     height: 447px
     background-color: transparent
-  &__title
+  h2
     color: $text_accent_color
     font-size: 40px
     font-family: $EExtraBold
@@ -1376,16 +1405,16 @@
     line-height: 40px
     z-index: 1
     position: relative
-  &__name
+  p
     font-size: 18px
     color: #454545
     line-height: 26px
     position: relative
     z-index: 1
     font-family: $LRegular
-    & + .slogan__name
+    & + p
       margin-top: 20px
-  &__problem
+  h3
     margin: 64px 0 14px 0
     line-height: 36px
     font-size: 30px
@@ -1495,21 +1524,15 @@
   padding: 66px 0 50px 0
   background: #fff url("../img/action-description__bg.png") no-repeat center bottom
 
-  //position: relative
-  &__wrap
-    //position: absolute
-    //bottom: 0
-    //left: 0
-    //right: 0
-    //width: 100%
-  &__main
+  h1
     color: $text_accent_color
     font-size: 60px
     font-family: $EExtraBold
     line-height: 71px
     text-transform: uppercase
     padding-right: 31%
-  &__rules
+  span
+    display: block
     color: #000000
     font-size: 20px
     font-family: $LSemiboldIt
@@ -1517,12 +1540,14 @@
     margin-top: 71px
     margin-bottom: 58px
     padding-right: 31%
-
-  &__more-info
+  p
     color: #454545
     font-family: $LRegular
     font-size: 18px
     line-height: 24px
+    & + p
+      margin-top: 20px
+
   &__sponsor
     margin-top: 78px
     margin-bottom: 115px

@@ -45,6 +45,7 @@ $(document).ready(function () {
                     required: true,
                 },
             },
+
             messages:{
                 router: {
                     required: false
@@ -60,7 +61,6 @@ $(document).ready(function () {
     });
 });
 
-//modal
 $(document).ready(function () {
     $("#service__slider").owlCarousel({
         loop: true,
@@ -107,6 +107,7 @@ $(document).ready(function () {
     CustomNextBtn.click(function() {
         $("#standart-tarifs__slider").trigger('next.owl.carousel', [700]);
     });
+
     CustomPrevBtn.click(function() {
         $("#standart-tarifs__slider").trigger('prev.owl.carousel', [700]);
     });
@@ -138,15 +139,11 @@ $(document).ready(function () {
         mbit.addClass("designer__current-speed_text")
     })();
 
-
-
     //попап
     $("a[href='#callBack']").magnificPopup({
         removalDelay: 300,
         mainClass: 'mfp-fade'
     });
-
-
 
     //video
     let playButton = $("#play-pause"),
@@ -165,6 +162,7 @@ $(document).ready(function () {
 
         }
     });
+
     video.click(function() {
         if(this.play()){
             this.pause();
@@ -172,8 +170,6 @@ $(document).ready(function () {
             videoBg.css({"opacity":"1"});
         }
     });
-
-
 
     $('.slider-shares__wrap').slick({
         // infinite: false,
@@ -199,32 +195,6 @@ $(document).ready(function () {
         }]
     });
 
-
-    // (function($) {
-    //
-    //     $.fn.equalHeights = function() {
-    //         var maxHeight = 0,
-    //             $this = $(this);
-    //
-    //         $this.each( function() {
-    //             var height = $(this).innerHeight();
-    //
-    //             if ( height > maxHeight ) { maxHeight = height; }
-    //         });
-    //
-    //         return $this.css('height', maxHeight);
-    //     };
-    //
-    //     // auto-initialize plugin
-    //     $('[data-equal]').each(function(){
-    //         var $this = $(this),
-    //             target = $this.data('equal');
-    //         $this.find(target).equalHeights();
-    //     });
-    //
-    // })(jQuery);
-
-
     $(".contacts__main-height").equalHeights();
 
     $(".hamburger").on("click", function () {
@@ -232,26 +202,14 @@ $(document).ready(function () {
         $( ".hamburger.hamburger--collapse" ).toggleClass( "is-active" );
     });
 
-
-
 });
-
-
-
-
-
-
 $(document).ready(function () {
-    //hide preloader
     $(".loader_inner").fadeOut("slow");
     $(".loader").fadeOut("slow");
-
 });
-
 
 document.addEventListener("DOMContentLoaded", function () {
     var map = document.getElementById("map");
-
     if(map){
         ymaps.ready(init);
 
@@ -286,5 +244,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+;(function () {
+
+    var swichCategotyCanalsBtn = document.querySelectorAll(".tv-list .tv-list__type-toggle a"),
+        tvList = document.querySelector(".tv-list__list.tab-content");
+
+    for(var i = 0, max = swichCategotyCanalsBtn.length; i < max;i++){
+       swichCategotyCanalsBtn[i].addEventListener("click",swichCategoryCanals);
+    }
+
+    function swichCategoryCanals() {
+
+        var self = this,
+            selectedType = self.getAttribute("data-herf"),
+            childrenEl = tvList.children,
+            selecterEl = document.getElementById(selectedType);
+
+        for(var i = 0, max = childrenEl.length; i < max; i++){
+
+            if(childrenEl[i].classList.contains("active")){
+                childrenEl[i].classList.remove("active")
+            }
+        }
+        selecterEl.classList.add("active")
+    };
+
+})();
 
 

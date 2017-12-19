@@ -142,15 +142,15 @@
               <div class="col-md-3 col-sm-3 col-xs-16"><span class="tv-list__title">пакеты каналов</span></div>
               <div class="col-md-4 col-sm-5 col-xs-6">
                 <ul class="nav nav-tabs tv-list__type-toggle">
-                  <li class="active"><a href="#1_list_channels_type" data-toggle="tab">кабельное</a></li>
-                  <li><a href="#2_list_channels_type" data-toggle="tab">ip-tv</a></li>
+                  <li class="active"><a href="#1_list_channels_type" data-herf="1_list_channels_type1" data-toggle="tab">кабельное</a></li>
+                  <li><a href="#2_list_channels_type" data-herf="2_list_channels_type2" data-toggle="tab">ip-tv</a></li>
                 </ul>
                 <div class="tab-content">
                   <div class="tv-list__channels-list">
                     <div class="tab-pane active" id="1_list_channels_type">
                       <ul class="nav nav-tabs">
                         <li class="active"><a href="#list_categoty_public" data-toggle="tab">Общедоступные</a></li>
-                        <li class="active-list"><a href="#list_categoty_hd" data-toggle="tab">HD</a></li>
+                        <li><a href="#list_categoty_hd" data-toggle="tab">HD</a></li>
                         <li><a href="#list_categoty_fun" data-toggle="tab">Развлекательные</a></li>
                         <li><a href="#list_categoty_learn" data-toggle="tab">Познавательные</a></li>
                         <li><a href="#list_categoty_sport" data-toggle="tab">Спортивные</a></li>
@@ -163,11 +163,11 @@
                     </div>
                     <div class="tab-pane" id="2_list_channels_type">
                       <ul class="nav nav-tabs">
-                        <li><a href="#list_categoty_public" data-toggle="tab">Общедоступные</a></li>
-                        <li class="active-list"><a href="#list_categoty_hd" data-toggle="tab">HD</a></li>
-                        <li><a href="#list_categoty_fun" data-toggle="tab">Развлекательные</a></li>
-                        <li><a href="#list_categoty_learn" data-toggle="tab">Познавательные</a></li>
-                        <li><a href="#list_categoty_sport" data-toggle="tab">Спортивные</a></li>
+                        <li class="active"><a href="#list_ip_categoty_public" data-toggle="tab">Общедоступные</a></li>
+                        <li><a href="#list_ip_categoty_hd" data-toggle="tab">HD</a></li>
+                        <li><a href="#list_ip_categoty_fun" data-toggle="tab">Развлекательные</a></li>
+                        <li><a href="#list_ip_categoty_learn" data-toggle="tab">Познавательные</a></li>
+                        <li><a href="#list_ip_categoty_sport" data-toggle="tab">Спортивные</a></li>
                       </ul>
                     </div>
                   </div>
@@ -175,54 +175,122 @@
               </div>
               <div class="col-md-6 col-sm-8 col-xs-10">
                 <p class="tv-list__selected-package">пакет<span>«HD»</span></p><span class="tv-list__list-chanels">/список каналов:</span>
-                <!--табы с списком каналов-->
-                <div class="tab-content">
-                  <div class="tv-list__list-all">
-                    <div class="tab-pane active" id="list_categoty_public">
-                      <ul>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные.</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                      </ul>
+                <div class="tab-content tv-list__list">
+                  <div class="tab-pane active" id="1_list_channels_type1">
+                    <div class="tab-content">
+                      <div class="tv-list__list-all">
+                        <div class="tab-pane active" id="list_categoty_public">
+                          <ul>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane" id="list_categoty_hd">
+                          <ul>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>HD</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>HD</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>HD</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane" id="list_categoty_fun">
+                          <ul>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Развлекательные</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Развлекательные</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Развлекательные</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane" id="list_categoty_learn">
+                          <ul>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Познавательные</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Познавательные</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Познавательные</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane" id="list_categoty_sport">
+                          <ul>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Спортивные</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Спортивные</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Спортивные</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane" id="list_categoty_children">
+                          <ul>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Детские</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Детские</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Детские</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane" id="list_categoty_film">
+                          <ul>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Фильмовые</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Фильмовые</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Фильмовые</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane" id="list_categoty_news">
+                          <ul>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Новостные</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Новостные</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Новостные</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane" id="list_categoty_music">
+                          <ul>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Музыкальные</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Музыкальные</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Музыкальные</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane" id="list_categoty_adult">
+                          <ul>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Каналы для взрослых</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Каналы для взрослых</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Каналы для взрослых</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
-                    <div class="tab-pane" id="list_categoty_hd">
-                      <ul>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Каналы для взрослых</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                        <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные</span></a></li>
-                      </ul>
+                  </div>
+                  <div class="tab-pane" id="2_list_channels_type2">
+                    <div class="tab-content">
+                      <div class="tv-list__list-all">
+                        <div class="tab-pane active" id="list_ip_categoty_public">
+                          <ul>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные IP</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные IP</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Общедоступные IP</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane" id="list_ip_categoty_hd">
+                          <ul>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>HD IP</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>HD IP</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>HD IP</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane" id="list_ip_categoty_fun">
+                          <ul>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Развлекательные IP</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Развлекательные IP</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Развлекательные IP</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane" id="list_ip_categoty_learn">
+                          <ul>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Познавательные IP</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Познавательные IP</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Познавательные IP</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane" id="list_ip_categoty_sport">
+                          <ul>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Спортивные IP</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Спортивные IP</span></a></li>
+                            <li><a href="#"><img src="img/logo_tv.png"><span>Спортивные IP</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

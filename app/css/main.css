@@ -400,6 +400,8 @@ input.error + label {
       font-size: 18px;
       color: #454545;
       line-height: 24px; }
+      .default-section__article p + p {
+        margin-top: 20px; }
 
 .customBtn {
   z-index: 999;
@@ -560,6 +562,25 @@ input.error + label {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1); }
+  .news__link p:nth-child(2) {
+    margin-top: 24px;
+    display: inline-block;
+    font-size: 24px;
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #084067;
+    text-decoration: underline;
+    line-height: 31px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .news__link p:nth-child(2):hover {
+      text-decoration: inherit; }
+  .news__link p:nth-child(3) {
+    color: #454545;
+    font-size: 16px;
+    font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 20px;
+    margin-top: 5px; }
   .news__photo {
     position: relative;
     overflow: hidden; }
@@ -571,34 +592,16 @@ input.error + label {
       transition: transform .3s ease, -webkit-transform .3s ease;
       width: 100%;
       height: auto; }
-  .news__date {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: #808080;
-    font-size: 12px;
-    font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    display: block;
-    background: #fff;
-    padding-right: 5px; }
-  .news__name {
-    margin-top: 24px;
-    display: inline-block;
-    font-size: 24px;
-    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: #084067;
-    text-decoration: underline;
-    line-height: 31px;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s; }
-    .news__name:hover {
-      text-decoration: inherit; }
-  .news__description {
-    color: #454545;
-    font-size: 16px;
-    font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 20px; }
+    .news__photo span {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: #808080;
+      font-size: 12px;
+      font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      display: block;
+      background: #fff;
+      padding-right: 5px; }
 
 .header__mob-menu {
   height: 0;
@@ -1421,7 +1424,7 @@ input.error + label {
       transition: border-bottom .3s; }
       .full-news__autor span:hover {
         border-bottom: 1px solid transparent; }
-  .full-news__name {
+  .full-news__name h1 {
     font-size: 60px;
     font-family: "Exo2-ExtraBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: #fff;
@@ -1429,33 +1432,37 @@ input.error + label {
     margin-top: 29px;
     letter-spacing: 1px;
     line-height: 73px; }
-  .full-news__description {
+  .full-news__name p {
     margin-top: 4px;
     font-family: "Exo2-SemiBoldItalic", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 20px;
     color: #fff;
     line-height: 26px; }
-  .full-news__sub {
+  .full-news__main-content {
+    position: relative;
+    padding: 50px 0 80px 0; }
+  .full-news__text span {
     position: absolute;
     top: -115px;
     left: 15px;
     color: #fff;
     font-size: 13px; }
-  .full-news__main-content {
-    position: relative;
-    padding: 50px 0 80px 0; }
-  .full-news__text {
+  .full-news__text p {
     font-size: 18px;
     line-height: 25px;
     color: #454545; }
-  .full-news__quote {
+    .full-news__text p + p {
+      margin-top: 20px; }
+  .full-news__quote span {
+    position: relative;
+    display: block;
     padding: 57px 100px;
     font-size: 20px;
     font-family: "Lato-SemiboldItalic", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: #084067;
-    position: relative;
-    line-height: 25px; }
-    .full-news__quote:before {
+    line-height: 25px;
+    top: 0; }
+    .full-news__quote span:before {
       content: '';
       position: absolute;
       top: 37px;
@@ -1467,15 +1474,34 @@ input.error + label {
       height: 65px; }
   .full-news__list {
     padding: 54px 50px 50px 102px; }
-    .full-news__list ul + ul {
-      padding-top: 62px; }
     .full-news__list li {
       font-size: 18px;
       color: #454545;
       line-height: 31px; }
-    .full-news__list li.marker {
+  .full-news__list-markers ul {
+    margin-left: 14px; }
+  .full-news__list-markers li {
+    position: relative; }
+    .full-news__list-markers li:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -14px;
+      top: 11px;
+      width: 8px;
+      height: 8px;
+      background-color: #454545;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+  .full-news__list-markers + .full-news__list-markers {
+    margin-top: 62px; }
+  .full-news__list-markers + .full-news__list-markers_iside {
+    margin-top: 62px; }
+  .full-news__list-markers_iside ul li ul {
+    margin-left: 50px; }
+    .full-news__list-markers_iside ul li ul li {
       position: relative; }
-      .full-news__list li.marker:before {
+      .full-news__list-markers_iside ul li ul li:before {
         content: "";
         display: block;
         position: absolute;
@@ -1486,13 +1512,31 @@ input.error + label {
         background-color: #454545;
         -webkit-border-radius: 50%;
                 border-radius: 50%; }
-  .full-news__list-markers {
-    margin-left: 14px; }
-  .full-news__list-markers_iside li.marker {
-    margin-left: 50px; }
+  .full-news__list-markers_iside + .full-news__list-markers_iside {
+    margin-top: 62px; }
   .full-news__more_wrap + .full-news__more_wrap {
     border-top: 1px solid #454545;
     padding-top: 25px; }
+  .full-news__more_wrap span {
+    font-size: 12px;
+    font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #454545;
+    display: block; }
+  .full-news__more_wrap a {
+    color: #084067;
+    font-size: 24px;
+    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-decoration: underline;
+    line-height: 30px; }
+    .full-news__more_wrap a:hover {
+      text-decoration: none;
+      color: #084067; }
+  .full-news__more_wrap p {
+    color: #454545;
+    font-size: 16px;
+    margin-bottom: 26px;
+    display: block;
+    line-height: 22px; }
   .full-news__more {
     font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 22px;
@@ -1501,26 +1545,6 @@ input.error + label {
     display: block;
     margin-bottom: 37px;
     letter-spacing: 2px; }
-  .full-news__more-date {
-    font-size: 12px;
-    font-family: "Exo2-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: #454545;
-    display: block; }
-  .full-news__more-link {
-    color: #084067;
-    font-size: 24px;
-    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    text-decoration: underline;
-    line-height: 30px; }
-    .full-news__more-link:hover {
-      text-decoration: none;
-      color: #084067; }
-  .full-news__more-info {
-    color: #454545;
-    font-size: 16px;
-    margin-bottom: 26px;
-    display: block;
-    line-height: 22px; }
 
 .page_full_news .full-news__type li a {
   text-transform: uppercase; }
@@ -1624,7 +1648,7 @@ input.error + label {
       transition: color .3s ease; }
       .tv-list__channels-list a:hover {
         color: #cef200; }
-    .tv-list__channels-list .active-list a {
+    .tv-list__channels-list li.active a {
       color: #084067;
       text-decoration: none;
       font-size: 22px;
@@ -1936,24 +1960,23 @@ input.error + label {
     margin-top: 40px;
     color: #4e4e4e;
     width: 460px; }
+    .add-services__item p {
+      font-family: "Lato-Medium", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      margin-top: 9px;
+      line-height: 20px; }
   .add-services__ic {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-  .add-services__name {
-    text-transform: uppercase;
-    font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 16px;
-    margin-left: 7px;
-    color: #084067;
-    line-height: 29px; }
-  .add-services__description {
-    font-family: "Lato-Medium", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 16px;
-    margin-top: 9px;
-    line-height: 20px;
-    line-height: 20px; }
+    .add-services__ic span {
+      text-transform: uppercase;
+      font-family: "Exo2-SemiBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      margin-left: 7px;
+      color: #084067;
+      line-height: 29px; }
   .add-services__price {
     font-size: 36px;
     color: #bedf00;
@@ -2227,12 +2250,12 @@ input.error + label {
       font-family: "Lato-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
     .specials-office__sub span + span {
       margin-left: 8px; }
-  .specials-office__title {
+  .specials-office__title h2 {
     font-size: 60px;
     color: #084067;
     font-family: "Exo2-ExtraBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0; }
-  .specials-office__descripton {
+  .specials-office__title p {
     color: #454545;
     font-size: 18px;
     margin-top: 15px;
@@ -2265,30 +2288,32 @@ input.error + label {
       background-position: 0px -201px;
       width: 61px;
       height: 47px; }
-  .specials-office__advantages-name {
-    font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 34px;
-    color: #000;
-    display: block;
-    padding-right: 180px;
-    line-height: 41px; }
-  .specials-office__advantages-profit {
-    color: #454545;
-    font-size: 18px;
-    line-height: 24px;
-    margin-top: 8px;
-    display: block;
-    position: relative;
-    z-index: 1;
-    font-family: "Lato-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .specials-office__advantages li span:nth-child(1) {
+      font-family: "Exo2-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 34px;
+      color: #000;
+      display: block;
+      padding-right: 180px;
+      line-height: 41px; }
+    .specials-office__advantages li span:nth-child(2) {
+      color: #454545;
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 8px;
+      display: block;
+      position: relative;
+      z-index: 1;
+      font-family: "Lato-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
   .specials-office .full-news__more {
     margin-top: 25px;
     margin-bottom: 54px; }
-  .specials-office .full-news__more-info {
+  .specials-office p {
     margin-top: 10px;
     padding-right: 10px;
     line-height: 18px;
     margin-bottom: 30px; }
+    .specials-office p + p {
+      margin-top: 20px; }
 
 .bonus {
   padding: 56px 0 107px 0;
@@ -2296,7 +2321,7 @@ input.error + label {
   background: #fff url("../img/bonus_bg.jpg") no-repeat center center;
   -webkit-background-size: cover;
           background-size: cover; }
-  .bonus__title {
+  .bonus h2 {
     font-size: 40px;
     color: #084067;
     font-family: "Exo2-ExtraBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -2336,7 +2361,7 @@ input.error + label {
     width: 655px;
     height: 447px;
     background-color: transparent; }
-  .slogan__title {
+  .slogan h2 {
     color: #084067;
     font-size: 40px;
     font-family: "Exo2-ExtraBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -2344,16 +2369,16 @@ input.error + label {
     line-height: 40px;
     z-index: 1;
     position: relative; }
-  .slogan__name {
+  .slogan p {
     font-size: 18px;
     color: #454545;
     line-height: 26px;
     position: relative;
     z-index: 1;
     font-family: "Lato-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-    .slogan__name + .slogan__name {
+    .slogan p + p {
       margin-top: 20px; }
-  .slogan__problem {
+  .slogan h3 {
     margin: 64px 0 14px 0;
     line-height: 36px;
     font-size: 30px;
@@ -2476,14 +2501,15 @@ input.error + label {
 .action-description {
   padding: 66px 0 50px 0;
   background: #fff url("../img/action-description__bg.png") no-repeat center bottom; }
-  .action-description__main {
+  .action-description h1 {
     color: #084067;
     font-size: 60px;
     font-family: "Exo2-ExtraBold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 71px;
     text-transform: uppercase;
     padding-right: 31%; }
-  .action-description__rules {
+  .action-description span {
+    display: block;
     color: #000000;
     font-size: 20px;
     font-family: "Lato-SemiboldItalic", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -2491,11 +2517,13 @@ input.error + label {
     margin-top: 71px;
     margin-bottom: 58px;
     padding-right: 31%; }
-  .action-description__more-info {
+  .action-description p {
     color: #454545;
     font-family: "Lato-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px; }
+    .action-description p + p {
+      margin-top: 20px; }
   .action-description__sponsor {
     margin-top: 78px;
     margin-bottom: 115px; }
@@ -2722,7 +2750,7 @@ input.error + label {
     right: 0; }
   .tarif__page .designer__price-finish:after {
     right: 0; }
-  .news__name {
+  .news__link p:nth-child(2) {
     font-size: 20px;
     line-height: 24px; }
   .full-news__list {
@@ -2781,7 +2809,7 @@ input.error + label {
     width: 260px; }
   .specials__page .callback__form-contacts input {
     width: 165px; }
-  .action-description__main {
+  .action-description h1 {
     padding-right: 0%; } }
 
 @media only screen and (max-width: 1400px) {
@@ -2808,7 +2836,7 @@ input.error + label {
     font-size: 27px; }
   .add-services__item {
     width: 330px; }
-  .specials-office__advantages-name {
+  .specials-office__advantages li span:nth-child(1) {
     padding-right: 0; }
   .specials__page .form-full__now {
     font-size: 18px; }
@@ -2856,7 +2884,7 @@ input.error + label {
     height: 84px;
     top: -21px;
     padding: 25px 6px; }
-  .news__name {
+  .news__link p:nth-child(2) {
     font-size: 16px; }
   .idex_page_business .service__name {
     font-size: 23px; }
@@ -2949,7 +2977,7 @@ input.error + label {
     top: 4px; }
   .designer__builder-form {
     width: 427px; }
-  .full-news__name {
+  .full-news__name h1 {
     font-size: 45px; }
   .default-section__main-content h1 {
     font-size: 45px; }

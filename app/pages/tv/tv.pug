@@ -41,9 +41,9 @@ block main
                         ul.nav.nav-tabs.tv-list__type-toggle
 
                             li.active
-                                a(href='#1_list_channels_type', data-toggle='tab') кабельное
+                                a(href='#1_list_channels_type', data-herf="1_list_channels_type1", data-toggle='tab') кабельное
                             li
-                                a(href='#2_list_channels_type', data-toggle='tab') ip-tv
+                                a(href='#2_list_channels_type', data-herf="2_list_channels_type2", data-toggle='tab') ip-tv
 
                         .tab-content
                             .tv-list__channels-list
@@ -51,7 +51,7 @@ block main
                                     ul.nav.nav-tabs
                                         li.active
                                             a(href="#list_categoty_public", data-toggle='tab') Общедоступные
-                                        li.active-list
+                                        li
                                             a(href="#list_categoty_hd", data-toggle='tab') HD
                                         li
                                             a(href="#list_categoty_fun", data-toggle='tab') Развлекательные
@@ -72,184 +72,269 @@ block main
 
                                 #2_list_channels_type.tab-pane
                                     ul.nav.nav-tabs
+                                        li.active
+                                            a(href="#list_ip_categoty_public", data-toggle='tab') Общедоступные
                                         li
-                                            a(href="#list_categoty_public", data-toggle='tab') Общедоступные
-                                        li.active-list
-                                            a(href="#list_categoty_hd", data-toggle='tab') HD
+                                            a(href="#list_ip_categoty_hd", data-toggle='tab') HD
                                         li
-                                            a(href="#list_categoty_fun", data-toggle='tab') Развлекательные
+                                            a(href="#list_ip_categoty_fun", data-toggle='tab') Развлекательные
                                         li
-                                            a(href="#list_categoty_learn", data-toggle='tab') Познавательные
+                                            a(href="#list_ip_categoty_learn", data-toggle='tab') Познавательные
                                         li
-                                            a(href="#list_categoty_sport", data-toggle='tab') Спортивные
+                                            a(href="#list_ip_categoty_sport", data-toggle='tab') Спортивные
 
                     .col-md-6.col-sm-8.col-xs-10
+
                         p.tv-list__selected-package пакет
                             span «HD»
                         span.tv-list__list-chanels /список каналов:
 
-                        //табы с списком каналов
+                        .tab-content.tv-list__list
+                            #1_list_channels_type1.tab-pane.active
+                                .tab-content
+                                    .tv-list__list-all
+                                        #list_categoty_public.tab-pane.active
+                                            ul
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Общедоступные
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Общедоступные
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Общедоступные
 
-                        .tab-content
-                            .tv-list__list-all
+                                        #list_categoty_hd.tab-pane
+                                            ul
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span HD
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span HD
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span HD
+                                        #list_categoty_fun.tab-pane
+                                            ul
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Развлекательные
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Развлекательные
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Развлекательные
 
 
-                                #list_categoty_public.tab-pane.active
-                                    ul
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные.
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                #list_categoty_hd.tab-pane
-                                    ul
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Каналы для взрослых
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
-                                        li
-                                            a(href="#")
-                                                img(src="img/logo_tv.png")
-                                                span Общедоступные
+
+                                        #list_categoty_learn.tab-pane
+                                            ul
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Познавательные
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Познавательные
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Познавательные
+
+                                        #list_categoty_sport.tab-pane
+                                            ul
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Спортивные
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Спортивные
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Спортивные
+
+
+                                        #list_categoty_children.tab-pane
+                                            ul
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Детские
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Детские
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Детские
+
+
+                                        #list_categoty_film.tab-pane
+                                            ul
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Фильмовые
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Фильмовые
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Фильмовые
+
+
+
+                                        #list_categoty_news.tab-pane
+                                            ul
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Новостные
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Новостные
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Новостные
+
+
+
+                                        #list_categoty_music.tab-pane
+                                            ul
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Музыкальные
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Музыкальные
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Музыкальные
+
+                                        #list_categoty_adult.tab-pane
+                                            ul
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Каналы для взрослых
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Каналы для взрослых
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Каналы для взрослых
+
+
+
+
+
+
+
+
+
+                            #2_list_channels_type2.tab-pane
+                                .tab-content
+                                    .tv-list__list-all
+                                        #list_ip_categoty_public.tab-pane.active
+                                            ul
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Общедоступные IP
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Общедоступные IP
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Общедоступные IP
+
+                                        #list_ip_categoty_hd.tab-pane
+                                            ul
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span HD IP
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span HD IP
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span HD IP
+                                        #list_ip_categoty_fun.tab-pane
+                                            ul
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Развлекательные IP
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Развлекательные IP
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Развлекательные IP
+                                        #list_ip_categoty_learn.tab-pane
+                                            ul
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Познавательные IP
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Познавательные IP
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Познавательные IP
+                                        #list_ip_categoty_sport.tab-pane
+                                            ul
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Спортивные IP
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Спортивные IP
+                                                li
+                                                    a(href="#")
+                                                        img(src="img/logo_tv.png")
+                                                        span Спортивные IP
+
+
+
 
 
 

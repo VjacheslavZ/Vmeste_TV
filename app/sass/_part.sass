@@ -124,6 +124,23 @@
         transform: scale(1.1)
       //.news__name
         text-decoration: none
+    p:nth-child(2)
+      margin-top: 24px
+      display: inline-block
+      font-size: 24px
+      font-family: $ESemiBold
+      color: $text_accent_color
+      text-decoration: underline
+      line-height: 31px
+      transition: all .3s
+      &:hover
+        text-decoration: inherit
+    p:nth-child(3)
+      color: $text_greyLight_color
+      font-size: 16px
+      font-family: $ERegular
+      line-height: 20px
+      margin-top: 5px
   &__photo
     position: relative
     overflow: hidden
@@ -131,32 +148,17 @@
       transition: transform .3s ease
       width: 100%
       height: auto
-  &__date
-    position: absolute
-    bottom: 0
-    left: 0
-    color: #808080
-    font-size: 12px
-    font-family: $ERegular
-    display: block
-    background: #fff
-    padding-right: 5px
-  &__name
-    margin-top: 24px
-    display: inline-block
-    font-size: 24px
-    font-family: $ESemiBold
-    color: $text_accent_color
-    text-decoration: underline
-    line-height: 31px
-    transition: all .3s
-    &:hover
-      text-decoration: inherit
-  &__description
-    color: $text_greyLight_color
-    font-size: 16px
-    font-family: $ERegular
-    line-height: 20px
+    span
+      position: absolute
+      bottom: 0
+      left: 0
+      color: #808080
+      font-size: 12px
+      font-family: $ERegular
+      display: block
+      background: #fff
+      padding-right: 5px
+
 
 .header__mob-menu
   height: 0
