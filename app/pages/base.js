@@ -1,9 +1,63 @@
 // validation
 $(document).ready(function () {
+
+    function createHiddenInputs() {
+        var inputs = $(".designer__builder-form input[type=radio]:checked, form input[type=radio]:checked");
+        var price = $(".designer__price-finish").text();
+
+        inputs.each(function (i, elem) {
+            var form = $(".mfp-hide.white-popup form .callback__wrap");
+            var hiddenInput = $('<input class="genereted">').attr('type','hidden');
+
+            form.append(hiddenInput.val(elem.value));
+        });
+
+        if(price){
+            $(".mfp-hide.white-popup form .callback__wrap").append($('<input class="genereted">').attr('type','hidden').val("Итого в месяц " + price + " Р"));
+        }
+
+
+        function removeHiddenElements() {
+            var hiddenEl = $(".genereted");
+            hiddenEl.remove()
+        }
+        
+        $(document).on("click", ".mfp-close-btn-in .mfp-close, .mfp-auto-cursor .mfp-content", removeHiddenElements);
+    }
+
+    var btnForm = $(".designer .custom__btn-form");
+    var btnFormTv = $("#form_tv_cable .custom__btn-form");
+    var btnFormIp = $("#form_ip_tv .custom__btn-form");
+
+
+    btnForm.on("click", createHiddenInputs);
+    btnFormTv.on("click", createHiddenInputs);
+    btnFormIp.on("click", createHiddenInputs);
+
     $.each($("form"), function () {
         $(this).validate({
             errorPlacement: function (error, element) {
             },
+
+            submitHandler: function(e) {
+
+                var specPage = $(".specials__page");
+                var pageTv = $(".page_tv");
+
+                if(specPage.length || pageTv.length){
+                    return false
+                }
+
+
+                $("button[href='#callBack']").magnificPopup({
+                    removalDelay: 300,
+                    mainClass: 'mfp-fade'
+                });
+
+                $("button[href='#callBack']").magnificPopup("open");
+
+            },
+
             rules: {
                 router: {
                     required: true
@@ -48,18 +102,22 @@ $(document).ready(function () {
 
             messages:{
                 router: {
-                    required: false
+                    required: true
                 },
                 tv:{
-                    required: false
+                    required: true
                 },
                 additional:{
-                    required: false
+                    required: true
                 }
-            }
+            },
+
         });
     });
 });
+
+
+
 
 $(document).ready(function () {
     $("#service__slider").owlCarousel({
@@ -172,7 +230,6 @@ $(document).ready(function () {
     });
 
     $('.slider-shares__wrap').slick({
-        // infinite: false,
         centerMode: true,
 
         centerPadding: '290px',
@@ -269,6 +326,29 @@ document.addEventListener("DOMContentLoaded", function () {
         selecterEl.classList.add("active")
     };
 
-})();
+})()
+
+;(function () {
+
+    var categoryCanal = document.querySelectorAll(".tv-list__channels-list ul li");
+
+
+
+    for(var i = 0, max = categoryCanal.length; i < max; i++){
+        categoryCanal[i].addEventListener("click", changeNamaPackage)
+    }
+
+    function changeNamaPackage(event) {
+        var target = event.target;
+
+        var selectetPackagetitle = document.querySelector(".tv-list__list .toggle.active");
+
+
+        if(target.tagName === "A"){
+
+            selectetPackagetitle.querySelector(".tv-list__selected-package span").innerHTML = target.innerHTML
+        }
+    }
+})()
 
 
